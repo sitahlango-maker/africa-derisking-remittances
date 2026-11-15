@@ -5,68 +5,91 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Remittance Costs Africa Map</title>
 <meta name="description" content="Interactive companion to the paper 'De-risking, Grey-Listing and the Cost of Remittances to Africa: Corridor-Level Evidence, 2011–2025' by Winnie Sitah Lang'o.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#fcfcfb; --surface:#ffffff; --ink:#0b0b0b; --ink2:#52514e; --muted:#8a897f; --line:#e6e5e0;
-  --never:#cfe0f5; --earlier:#2a78d6; --current:#eb6834; --nodata:#efeeea; --accent:#2a78d6;
-  --seq1:#cde2fb; --seq2:#86b6ef; --seq3:#3987e5; --seq4:#1c5cab; --seq5:#0d366b;
+  --bg:#f7f4ee; --surface:#fffdf9; --ink:#1d1b16; --ink2:#55524a; --muted:#8a857a; --line:#e7e1d6;
+  --band:#12302e; --band-ink:#f7f1e6; --band-ink2:#bcd3cc; --sea:#e3ebec;
+  --current:#d0603f; --earlier:#1f5f7a; --never:#8ec5b8; --nodata:#ebe6dc; --accent:#1f5f7a; --sage:#5f9e90;
+  --seq1:#f6e7cf; --seq2:#ecc08d; --seq3:#dd9058; --seq4:#bf6238; --seq5:#823d22;
+  --good1:#e3efe9; --good2:#b5d6cb; --good3:#79b3a4; --good4:#3f8578; --good5:#1d5a50;
+  --shadow:0 1px 2px rgba(29,27,22,.05),0 8px 24px rgba(29,27,22,.06);
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --bg:#1a1a19; --surface:#232322; --ink:#f0efec; --ink2:#c3c2b7; --muted:#8f8e86; --line:#3a3a38;
-    --never:#2c3f57; --earlier:#3987e5; --current:#d95926; --nodata:#2b2b2a;
-    --seq1:#184f95; --seq2:#256abf; --seq3:#3987e5; --seq4:#6da7ec; --seq5:#b7d3f6;
+    --bg:#141614; --surface:#1d201e; --ink:#f1ede4; --ink2:#c4bfb3; --muted:#8f8a7f; --line:#33362f;
+    --band:#0f2523; --band-ink:#f1ede4; --band-ink2:#9fbdb4; --sea:#1a2325;
+    --current:#e2734f; --earlier:#4f93b5; --never:#4a8577; --nodata:#2c2e2a; --accent:#6aa8c6; --sage:#7cb7a9;
+    --seq1:#4a2a1c; --seq2:#7a3f24; --seq3:#b25e35; --seq4:#dd8f5c; --seq5:#f2c694;
+    --good1:#1f3a35; --good2:#2c5a51; --good3:#3f8578; --good4:#6fb0a1; --good5:#b3dbd0;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.25);
   }
 }
 :root[data-theme="dark"]{
-  --bg:#1a1a19; --surface:#232322; --ink:#f0efec; --ink2:#c3c2b7; --muted:#8f8e86; --line:#3a3a38;
-  --never:#2c3f57; --earlier:#3987e5; --current:#d95926; --nodata:#2b2b2a;
-  --seq1:#184f95; --seq2:#256abf; --seq3:#3987e5; --seq4:#6da7ec; --seq5:#b7d3f6;
+  --bg:#141614; --surface:#1d201e; --ink:#f1ede4; --ink2:#c4bfb3; --muted:#8f8a7f; --line:#33362f;
+  --band:#0f2523; --band-ink:#f1ede4; --band-ink2:#9fbdb4; --sea:#1a2325;
+  --current:#e2734f; --earlier:#4f93b5; --never:#4a8577; --nodata:#2c2e2a; --accent:#6aa8c6; --sage:#7cb7a9;
+  --seq1:#4a2a1c; --seq2:#7a3f24; --seq3:#b25e35; --seq4:#dd8f5c; --seq5:#f2c694;
+  --good1:#1f3a35; --good2:#2c5a51; --good3:#3f8578; --good4:#6fb0a1; --good5:#b3dbd0;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.25);
 }
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-header{max-width:1200px;margin:0 auto;padding:24px 16px 8px}
-h1{font-size:1.45rem;line-height:1.25;margin:0 0 6px}
-.byline{color:var(--ink2);font-size:.9rem;margin:0}
-.findings{max-width:1200px;margin:12px auto 0;padding:0 16px}
-.findings .box{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
-.findings h2{font-size:1rem;margin:0 0 6px}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{background:var(--band);color:var(--band-ink)}
+header .inner{max-width:1200px;margin:0 auto;padding:36px 16px 30px}
+.kicker{text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;color:var(--band-ink2);margin:0 0 10px;font-weight:600}
+h1{font-family:Fraunces,Georgia,serif;font-weight:650;font-size:clamp(1.5rem,3.2vw,2.3rem);line-height:1.15;margin:0 0 10px;max-width:880px}
+.byline{color:var(--band-ink2);font-size:.92rem;margin:0}
+.findings{max-width:1200px;margin:-18px auto 0;padding:0 16px;position:relative}
+.findings .box{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.findings h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:1.1rem;margin:0 0 8px}
 .findings ul{margin:4px 0 0;padding-left:18px}
-.findings li{margin:2px 0}
+.findings li{margin:3px 0}
+.findings li b{color:var(--accent);font-weight:600}
 .note{color:var(--ink2);font-size:.85rem}
-main{max-width:1200px;margin:0 auto;padding:12px 16px 24px;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:16px}
+main{max-width:1200px;margin:0 auto;padding:18px 16px 24px;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:18px}
 @media (max-width:860px){main{grid-template-columns:1fr}}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px}
-.controls{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
-.controls button{font:inherit;font-size:.85rem;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:5px 12px;cursor:pointer}
-.controls button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px;box-shadow:var(--shadow)}
+.controls{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:10px;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:4px}
+.controls button{font:inherit;font-size:.84rem;font-weight:500;border:0;background:transparent;color:var(--ink2);border-radius:9px;padding:6px 12px;cursor:pointer;flex:1 1 auto}
+.controls button:hover{color:var(--ink)}
+.controls button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.mapwrap{background:var(--sea);border-radius:10px;overflow:hidden}
 #map{width:100%;height:auto;display:block}
-#map path.country{stroke:var(--surface);stroke-width:.6;cursor:pointer}
+#map path.country{stroke:var(--bg);stroke-width:.7;cursor:pointer;transition:opacity .15s}
 #map path.country.outside{stroke:var(--ink2);stroke-width:.9;stroke-dasharray:2.5 2}
-#map path.country:hover,#map path.country.selected{stroke:var(--ink);stroke-width:1.6;stroke-dasharray:none}
-.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.82rem;color:var(--ink2);margin-top:8px}
+#map:hover path.country{opacity:.82}
+#map path.country:hover,#map path.country.selected{opacity:1;stroke:var(--ink);stroke-width:1.6;stroke-dasharray:none}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.8rem;color:var(--ink2);margin-top:10px}
 .legend span{display:inline-flex;align-items:center;gap:6px}
-.legend i{width:14px;height:14px;border-radius:3px;display:inline-block}
+.legend i{width:14px;height:14px;border-radius:4px;display:inline-block;border:1px solid rgba(0,0,0,.06)}
 .legend i.dash{background:transparent;border:1.5px dashed var(--ink2)}
-#panel h2{margin:0 0 2px;font-size:1.2rem}
-#panel h3{font-size:.92rem;margin:14px 0 4px}
-#panel .tag{display:inline-block;font-size:.78rem;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--ink2);margin:4px 6px 0 0}
+#panel h2{font-family:Fraunces,Georgia,serif;font-weight:650;margin:0 0 4px;font-size:1.5rem}
+#panel h3{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:18px 0 6px;font-weight:600}
+#panel .tag{display:inline-block;font-size:.76rem;padding:3px 10px;border-radius:999px;background:var(--bg);border:1px solid var(--line);color:var(--ink2);margin:4px 6px 0 0}
+#panel .tag.status-current{background:color-mix(in srgb,var(--current) 14%,var(--surface));border-color:color-mix(in srgb,var(--current) 40%,var(--surface));color:var(--ink)}
+#panel .tag.status-earlier{background:color-mix(in srgb,var(--earlier) 12%,var(--surface));border-color:color-mix(in srgb,var(--earlier) 35%,var(--surface));color:var(--ink)}
 #panel table{border-collapse:collapse;width:100%;font-size:.86rem}
-#panel td,#panel th{padding:3px 4px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
-#panel th{color:var(--ink2);font-weight:600}
+#panel td,#panel th{padding:5px 4px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+#panel th{color:var(--muted);font-weight:500;font-size:.8rem}
 #panel td.num{text-align:right;font-variant-numeric:tabular-nums}
-.spark text{fill:var(--ink2);font-size:10px}
+.empty{display:flex;flex-direction:column;justify-content:center;min-height:260px;text-align:center;color:var(--ink2)}
+.empty b{font-family:Fraunces,Georgia,serif;font-size:1.2rem;color:var(--ink);font-weight:600}
+.spark text{fill:var(--muted);font-size:10px}
 .spark .axis{stroke:var(--line)}
-.tip{position:fixed;pointer-events:none;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:4px 8px;font-size:.82rem;box-shadow:0 2px 8px rgba(0,0,0,.12);display:none;z-index:5}
-footer{max-width:1200px;margin:0 auto;padding:4px 16px 32px;color:var(--ink2);font-size:.82rem}
+.tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--bg);border-radius:6px;padding:4px 9px;font-size:.8rem;display:none;z-index:5}
+footer{max-width:1200px;margin:0 auto;padding:4px 16px 36px;color:var(--ink2);font-size:.82rem}
 footer a{color:var(--accent)}
 </style>
 </head>
 <body>
-<header>
+<header><div class="inner">
+  <p class="kicker">Interactive companion to the research paper</p>
   <h1>De-risking, grey-listing and the cost of remittances to Africa, 2011–2025</h1>
-  <p class="byline">Interactive companion to the paper by Winnie Sitah Lang'o · Click a country to see its data</p>
-</header>
+  <p class="byline">Winnie Sitah Lang'o · Click a country to see its data</p>
+</div></header>
 
 <section class="findings"><div class="box">
   <h2>What the paper finds (all countries pooled)</h2>
@@ -82,10 +105,10 @@ footer a{color:var(--accent)}
       <button data-layer="t5q" aria-pressed="false">Corridors ≤5%, as quoted</button>
       <button data-layer="t5h" aria-pressed="false">Corridors ≤5%, with hidden costs</button>
     </div>
-    <svg id="map" viewBox="0 0 640 660" role="img" aria-label="Map of Africa"></svg>
+    <div class="mapwrap"><svg id="map" viewBox="0 0 640 660" role="img" aria-label="Map of Africa"></svg></div>
     <div class="legend" id="legend"></div>
   </div>
-  <div class="card" id="panel"><p class="note">Select a country on the map.</p></div>
+  <div class="card" id="panel"><div class="empty"><b>Choose a country</b><p>Click any country on the map to see its grey-list history, remittance prices and progress towards the SDG cost targets.</p></div></div>
 </main>
 
 <footer>
@@ -110,6 +133,7 @@ function greyStatus(c){
 }
 function latest(arr, years, year){ if (!arr) return null; const i = years.indexOf(year); return i >= 0 ? arr[i] : null; }
 const seqColors = () => ["--seq1","--seq2","--seq3","--seq4","--seq5"].map(css);
+const goodColors = () => ["--good1","--good2","--good3","--good4","--good5"].map(css);
 
 function fillFor(c){
   if (layer === "grey"){
@@ -125,7 +149,7 @@ function fillFor(c){
   }
   const t = c.targets_2024; if (!t) return css("--nodata");
   const v = layer === "t5q" ? t.le5_quoted : t.le5_high;
-  const cols = seqColors().slice().reverse(), cuts = [1, 25, 50, 75];   // more corridors meeting 5% = lighter
+  const cols = goodColors(), cuts = [1, 25, 50, 75];   // more corridors meeting 5% = darker teal
   return cols[cuts.filter(k => v >= k).length];
 }
 
@@ -141,7 +165,7 @@ function legend(){
     const c = seqColors(), lab = ["< 5%","5–7.5%","7.5–10%","10–15%","≥ 15%"];
     L.innerHTML = c.map((x,i) => item(x, lab[i])).join("") + nd + out;
   } else {
-    const c = seqColors().slice().reverse(), lab = ["0%","1–24%","25–49%","50–74%","≥ 75%"];
+    const c = goodColors(), lab = ["0%","1–24%","25–49%","50–74%","≥ 75%"];
     L.innerHTML = c.map((x,i) => item(x, lab[i])).join("") + nd + out;
   }
 }
@@ -169,7 +193,7 @@ function panel(iso){
   const name = c ? c.name : (iso || "This country");
   if (!c){ P.innerHTML = `<h2>${name}</h2><p class="note">Not covered by the study: no remittance price data and no grey-list episode in 2011–2026.</p>`; return; }
   const status = {current:"On the grey list (Nov 2026)", earlier:"Grey-listed earlier", never:"Not grey-listed, 2011–2026", nodata:"Not grey-listed"}[greyStatus(c)];
-  let h = `<h2>${name}</h2><span class="tag">${status}</span>`;
+  let h = `<h2>${name}</h2><span class="tag status-${greyStatus(c)}">${status}</span>`;
   if (c.in_price_data){
     h += `<span class="tag">${c.corridors} corridor${c.corridors>1?"s":""} in the price data</span>`;
     h += `<span class="tag">${c.in_main_model ? "In the main model" : "Outside the main model: " + c.why_not_in_main_model}</span>`;
@@ -182,7 +206,7 @@ function panel(iso){
     : `<p class="note">None in 2011–2026.</p>`);
   if (c.in_price_data){
     h += `<h3>Price of sending USD 200 (% of amount sent)</h3>`;
-    h += spark([{name:"Total cost", values:c.cost, color:css("--accent")}, {name:"Fee", values:c.fee, color:css("--current")}, {name:"Exchange-rate margin", values:c.fx, color:css("--muted")}], c.years, {label:"Price trend", unit:"%"});
+    h += spark([{name:"Total cost", values:c.cost, color:css("--accent")}, {name:"Fee", values:c.fee, color:css("--current")}, {name:"Exchange-rate margin", values:c.fx, color:css("--sage")}], c.years, {label:"Price trend", unit:"%"});
     const prov = Object.entries(c.cost_2024_by_provider || {});
     if (prov.length){
       h += `<h3>Average quoted cost by provider, 2024</h3><table><tr><th>Provider</th><th class="num">Cost</th><th class="num">Quotes</th></tr>` +
