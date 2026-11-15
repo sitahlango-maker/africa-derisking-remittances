@@ -1,0 +1,10 @@
+==============================================================================================================
+ADDITIONAL CHECK (not pre-specified): does grey-listing or de-risking change the number or mix of services?
+  Number of services: % change | Share of bank services: change in percentage points
+==============================================================================================================
+Number of services (log)             grey-listed              -5.1%  (95% CI -10.4 to +0.6)  p = 0.078  n = 3,733, countries = 29
+Number of services (log)             deposits abroad halve    -7.4%  (95% CI -10.9 to -3.7)  p = 0.000  n = 3,733, countries = 29
+Share of services offered by banks   grey-listed              -0.6 pts  (95% CI -3.3 to +2.1)  p = 0.642  n = 3,733, countries = 29
+Share of services offered by banks   deposits abroad halve    +0.5 pts  (95% CI -1.9 to +2.8)  p = 0.682  n = 3,733, countries = 29
+
+For scale: the average corridor-quarter has 12.9 services (median 11); banks offer 16% of services on average.

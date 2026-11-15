@@ -1,0 +1,37 @@
+iso3,country,listed_from,removed_at,checked,source
+DZA,Algeria,2011-10-28,2016-02-19,FATF,listed 28 Oct 2011; removed 19 Feb 2016
+DZA,Algeria,2024-10-25,2026-06-19,FATF,listed 25 Oct 2024; removed 19 Jun 2026
+AGO,Angola,2010-12-31,2016-02-19,FATF,on Feb 2011 list (commitment Feb 2010); removed 19 Feb 2016
+AGO,Angola,2024-10-25,,FATF,listed 25 Oct 2024; still listed
+MAR,Morocco,2010-12-31,2013-10-18,FATF,on Feb 2011 list; removed 18 Oct 2013
+MAR,Morocco,2021-02-25,2023-02-24,FATF,listed Feb 2021; removed 24 Feb 2023 (date: RBI)
+NAM,Namibia,2011-06-24,2015-02-27,FATF,"CORRECTED: first listed 24 Jun 2011, not on Feb 2011 list; removed 27 Feb 2015"
+NAM,Namibia,2024-02-23,2026-06-19,FATF,listed 23 Feb 2024; removed 19 Jun 2026
+SDN,Sudan,2010-12-31,2015-10-23,FATF,on Feb 2011 list; removed 23 Oct 2015
+ZWE,Zimbabwe,2011-06-24,2015-02-27,FATF,"CORRECTED: first listed 24 Jun 2011, not on Feb 2011 list; removed 27 Feb 2015"
+ZWE,Zimbabwe,2019-10-18,2022-03-04,FATF,listed 18 Oct 2019; removed Mar 2022 (date 4 Mar 2022: RBI)
+GHA,Ghana,2010-12-31,2013-02-22,FATF,on Feb 2011 list (commitment Oct 2010); removed 22 Feb 2013
+GHA,Ghana,2018-10-19,2021-06-25,FATF,listed 19 Oct 2018; removed Jun 2021
+TZA,Tanzania,2010-12-31,2014-06-27,FATF,on Feb 2011 list; removed 27 Jun 2014
+TZA,Tanzania,2022-10-21,2025-06-13,secondary,listed 21 Oct 2022 (FATF page did not load); removed 13 Jun 2025 (FATF)
+NGA,Nigeria,2010-12-31,2013-10-18,FATF,on Feb 2011 list; removed 18 Oct 2013
+NGA,Nigeria,2023-02-24,2025-10-24,secondary,listed 24 Feb 2023 (RBI); removed 24 Oct 2025 (FATF)
+ETH,Ethiopia,2010-12-31,2014-10-24,FATF,on Feb 2011 list (identified Jun 2010); removed 24 Oct 2014
+ETH,Ethiopia,2017-02-24,2019-10-18,FATF,commitment Feb 2017 (Jun 2017 statement); removed 18 Oct 2019
+KEN,Kenya,2010-12-31,2014-06-27,FATF,on Feb 2011 list; removed 27 Jun 2014
+KEN,Kenya,2024-02-23,,FATF,listed 23 Feb 2024; still listed
+STP,Sao Tome and Principe,2010-12-31,2013-10-18,FATF,on Feb 2011 list; 18 Oct 2013: to continue work with GIABA (left FATF process)
+UGA,Uganda,2014-02-14,2017-11-03,FATF,listed 14 Feb 2014; removed 3 Nov 2017
+UGA,Uganda,2020-02-21,2024-02-23,FATF,listed 21 Feb 2020; removed 23 Feb 2024
+TUN,Tunisia,2017-11-03,2019-10-18,FATF,listed 3 Nov 2017; removed 18 Oct 2019
+BWA,Botswana,2018-10-19,2021-10-21,secondary,listed 19 Oct 2018 (FATF); removed 21 Oct 2021 (IFC Review)
+MUS,Mauritius,2020-02-21,2021-10-21,secondary,listed 21 Feb 2020 (FATF); removed 21 Oct 2021 (IFC Review)
+BFA,Burkina Faso,2021-02-25,2025-10-24,FATF,listed Feb 2021; removed 24 Oct 2025
+SEN,Senegal,2021-02-25,2024-10-25,FATF,listed Feb 2021; removed 25 Oct 2024
+SSD,South Sudan,2021-06-25,,FATF,listed Jun 2021; still listed
+MLI,Mali,2021-10-21,2025-06-13,secondary,listed 21 Oct 2021 (IFC Review); removed 13 Jun 2025 (FATF)
+COD,"Congo, Dem. Rep.",2022-10-21,2026-10-30,secondary,listed 21 Oct 2022; removed 30 Oct 2026 (Sumsub; FATF page did not load)
+MOZ,Mozambique,2022-10-21,2025-10-24,secondary,listed 21 Oct 2022 (FATF page did not load); removed 24 Oct 2025 (FATF)
+ZAF,South Africa,2023-02-24,2025-10-24,secondary,listed 24 Feb 2023 (RBI); removed 24 Oct 2025 (FATF)
+CMR,Cameroon,2023-06-23,,FATF,listed 23 Jun 2023; still listed
+CIV,Cote d'Ivoire,2024-10-25,2026-10-30,secondary,listed 25 Oct 2024 (FATF); removed 30 Oct 2026 (Sumsub; FATF page did not load)

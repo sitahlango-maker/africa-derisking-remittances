@@ -1,0 +1,17 @@
+,count,mean,std,min,max
+Total cost of sending USD 200 (%),526,10.15,4.49,3.7,23.51
+Fee (% of USD 200),526,7.61,4.26,2.05,21.81
+Exchange-rate margin (%),526,2.54,2.08,-0.36,14.24
+Share of digital services (from 2016),376,0.19,0.13,0.0,0.91
+Share of zero-fee services,526,0.03,0.06,0.0,0.64
+Share of bank services,526,0.18,0.18,0.0,0.76
+Grey-listed at some point in the year (0/1),526,0.22,0.41,0.0,1.0
+"Banks' deposits abroad, BIS (USD million)",515,3202.09,6357.88,1.0,35586.34
+"International lending to banks, BIS (USD million)",492,2119.85,5075.05,0.0,34555.18
+"Commercial banks' foreign assets, IMF (USD million)",467,3853.01,9605.33,0.31,64799.31
+Reserves (months of imports),390,4.76,4.17,0.06,34.82
+Remittances received (% of GDP),467,4.88,5.72,0.0,27.16
+GDP per capita (USD),502,2159.19,1821.14,235.33,8646.06
+Adults with an account (%),390,43.23,17.44,5.82,90.12
+Adults with mobile money (%),289,29.21,19.37,0.03,87.5
+Fragile or conflict-affected (0/1),526,0.32,0.47,0.0,1.0

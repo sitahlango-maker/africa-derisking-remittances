@@ -1,0 +1,54 @@
+====================================================================================================
+TABLE 2. Grey-listing (H1) and de-risking (H2): corridor level
+  grey_qend  = change in price (points) while the receiving country is grey-listed
+  L1_log_dep = change in price (points) if banks' deposits abroad HALVED (previous quarter)
+====================================================================================================
+          model outcome   variable  coef ci95_lo ci95_hi     p mde80              verdict
+   A: grey only    cost  grey_qend -0.12   -0.65   +0.40 0.637  0.74         inconclusive
+  B: + controls    cost  grey_qend +0.07   -0.50   +0.65 0.804  0.82         inconclusive
+C: + de-risking    cost  grey_qend +0.08   -0.51   +0.67 0.781  0.83         inconclusive
+C: + de-risking    cost L1_log_dep +0.04   -0.25   +0.34 0.755  0.41 no meaningful effect
+   A: grey only     fee  grey_qend +0.12   -0.35   +0.59 0.598  0.67         inconclusive
+  B: + controls     fee  grey_qend +0.27   -0.25   +0.79 0.301  0.74         inconclusive
+C: + de-risking     fee  grey_qend +0.27   -0.25   +0.79 0.302  0.74         inconclusive
+C: + de-risking     fee L1_log_dep +0.11   -0.20   +0.42 0.460  0.44 no meaningful effect
+   A: grey only      fx  grey_qend -0.25   -0.57   +0.07 0.128  0.45         inconclusive
+  B: + controls      fx  grey_qend -0.20   -0.53   +0.13 0.232  0.47 no meaningful effect
+C: + de-risking      fx  grey_qend -0.19   -0.51   +0.14 0.244  0.46 no meaningful effect
+C: + de-risking      fx L1_log_dep -0.07   -0.31   +0.17 0.561  0.34 no meaningful effect
+
+Observations: 3,733-4,883 corridor-quarters; clusters (receiving countries): 38
+
+====================================================================================================
+TABLE 3. Channels (H3, H5): service level, total cost
+  each row = the effect for that type of service; de-risking rows = deposits abroad halving
+====================================================================================================
+                           model      outcome          variable  coef ci95_lo ci95_hi     p mde80                    verdict
+                S1: all services cost_pct_200         grey_qend -0.02   -0.23   +0.18 0.825  0.29       no meaningful effect
+            S2: bank vs non-bank cost_pct_200       grey_x_bank +0.46   -0.16   +1.07 0.142  0.87               inconclusive
+            S2: bank vs non-bank cost_pct_200    grey_x_nonbank -0.13   -0.40   +0.14 0.328  0.38       no meaningful effect
+      S3: digital vs not (2016+) cost_pct_200    grey_x_digital -0.68   -1.05   -0.31 0.001  0.53          MEANINGFUL EFFECT
+      S3: digital vs not (2016+) cost_pct_200 grey_x_nondigital +0.08   -0.23   +0.39 0.604  0.44       no meaningful effect
+             S4: zero-fee vs fee cost_pct_200   grey_x_zero_fee -1.35   -1.79   -0.91 0.000  0.62          MEANINGFUL EFFECT
+             S4: zero-fee vs fee cost_pct_200   grey_x_with_fee +0.06   -0.17   +0.28 0.609  0.31       no meaningful effect
+S5: de-risking, bank vs non-bank cost_pct_200        dep_x_bank +0.07   -0.19   +0.33 0.580  0.37       no meaningful effect
+S5: de-risking, bank vs non-bank cost_pct_200     dep_x_nonbank -0.15   -0.38   +0.09 0.217  0.33       no meaningful effect
+  S6: de-risking, digital vs not cost_pct_200     dep_x_digital +0.21   -0.06   +0.48 0.116  0.38       no meaningful effect
+  S6: de-risking, digital vs not cost_pct_200  dep_x_nondigital -0.26   -0.52   -0.01 0.043  0.36 real but negligible (<0.5)
+
+====================================================================================================
+TABLE 4. UK corridors (H4) and mobile money: corridor level, total cost, with controls
+  grey_x_mm = how the grey-listing effect changes for each +10 points of adults with mobile money
+====================================================================================================
+                                model outcome     variable  coef ci95_lo ci95_hi     p mde80              verdict
+              U1: UK vs other senders    cost    grey_x_uk -0.14   -0.66   +0.37 0.570  0.73         inconclusive
+              U1: UK vs other senders    cost grey_x_other +0.11   -0.56   +0.78 0.732  0.95         inconclusive
+          U2: de-risking, UK vs other    cost     dep_x_uk -0.04   -0.99   +0.91 0.934  1.35         inconclusive
+          U2: de-risking, UK vs other    cost  dep_x_other +0.06   -0.26   +0.38 0.711  0.45 no meaningful effect
+M1: grey x mobile money (per +10 pts)    cost    grey_qend -0.15   -0.60   +0.30 0.492  0.63         inconclusive
+M1: grey x mobile money (per +10 pts)    cost    grey_x_mm +0.23   -0.08   +0.54 0.140  0.44 no meaningful effect
+
+UK corridors in the data: 15; of which with a receiving country that changed grey-list status: 9
+
+Verdicts follow Section 4.6: 'no meaningful effect' only if the equivalence test at +/-0.5 passes;
+'inconclusive' if the estimate is neither significant nor provably below 0.5.

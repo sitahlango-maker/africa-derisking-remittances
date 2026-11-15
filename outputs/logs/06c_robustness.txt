@@ -1,0 +1,33 @@
+==============================================================================================================
+ROBUSTNESS CHECKS (Section 4.7): does the main conclusion hold when one thing changes?
+  coef = change in total cost (points); 'deposits abroad halve' = effect of a 50% fall
+==============================================================================================================
+                                         model              variable  coef ci95_lo ci95_hi     p mde80              verdict
+              0. MAIN MODEL (Table 2, model C)           grey-listed +0.08   -0.51   +0.67 0.781  0.83         inconclusive
+              0. MAIN MODEL (Table 2, model C) deposits abroad halve +0.04   -0.25   +0.34 0.755  0.41 no meaningful effect
+                1a. Grey-listed on 31 December           grey-listed +0.10   -0.49   +0.68 0.737  0.83         inconclusive
+                1a. Grey-listed on 31 December deposits abroad halve +0.05   -0.25   +0.34 0.740  0.42 no meaningful effect
+                 1b. Share of year grey-listed           grey-listed +0.15   -0.51   +0.81 0.651  0.94         inconclusive
+                 1b. Share of year grey-listed deposits abroad halve +0.05   -0.25   +0.34 0.745  0.42 no meaningful effect
+                2a. Deposits lagged 4 quarters           grey-listed +0.08   -0.50   +0.66 0.778  0.82         inconclusive
+                2a. Deposits lagged 4 quarters deposits abroad halve +0.05   -0.25   +0.36 0.717  0.43 no meaningful effect
+        2b. Deposits with unrelated banks only           grey-listed +0.12   -0.46   +0.71 0.673  0.83         inconclusive
+        2b. Deposits with unrelated banks only deposits abroad halve +0.08   -0.21   +0.38 0.560  0.41 no meaningful effect
+        2c. IMF commercial-bank foreign assets           grey-listed +0.23   -0.38   +0.84 0.446  0.86         inconclusive
+        2c. IMF commercial-bank foreign assets deposits abroad halve -0.04   -0.14   +0.06 0.368  0.14 no meaningful effect
+3. Excl. countries with BIS > 2x IMF (adapted)           grey-listed -0.00   -0.39   +0.38 0.987  0.55 no meaningful effect
+3. Excl. countries with BIS > 2x IMF (adapted) deposits abroad halve +0.04   -0.30   +0.39 0.795  0.49 no meaningful effect
+            4. Excl. negative-FX-margin quotes           grey-listed +0.15   -0.40   +0.71 0.577  0.79         inconclusive
+            4. Excl. negative-FX-margin quotes deposits abroad halve +0.09   -0.18   +0.35 0.513  0.38 no meaningful effect
+          5. Excl. top-5 negative-FX countries           grey-listed +0.18   -0.61   +0.97 0.646  1.12         inconclusive
+          5. Excl. top-5 negative-FX countries deposits abroad halve +0.03   -0.30   +0.37 0.836  0.48 no meaningful effect
+      6. Digital services only (service level)           grey-listed +0.05   -0.57   +0.68 0.865  0.89         inconclusive
+      6. Digital services only (service level) deposits abroad halve -0.14   -0.56   +0.28 0.509  0.60 no meaningful effect
+                 7. USD 500 instead of USD 200           grey-listed -0.06   -0.39   +0.28 0.726  0.48 no meaningful effect
+                 7. USD 500 instead of USD 200 deposits abroad halve -0.03   -0.23   +0.17 0.727  0.28 no meaningful effect
+          8. Outliers put back in (968 quotes)           grey-listed -0.02   -0.92   +0.88 0.960  1.28         inconclusive
+          8. Outliers put back in (968 quotes) deposits abroad halve +0.09   -0.30   +0.48 0.635  0.56 no meaningful effect
+
+Check 3 excluded (BIS > 2x IMF): AGO, CPV, DZA, MOZ, SWZ, TUN, UGA
+Check 5 excluded (most negative FX margins): NGA, SEN, TGO, EGY, GHA
+Libya is not among the receiving countries in the price data, so the planned 'exclude Libya' check does not apply.

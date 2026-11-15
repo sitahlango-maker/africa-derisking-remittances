@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Remittance Costs Africa Map</title>
+<meta name="description" content="Interactive companion to the paper 'De-risking, Grey-Listing and the Cost of Remittances to Africa: Corridor-Level Evidence, 2011–2025' by Winnie Sitah Lang'o.">
+<style>
+:root{
+  --bg:#fcfcfb; --surface:#ffffff; --ink:#0b0b0b; --ink2:#52514e; --muted:#8a897f; --line:#e6e5e0;
+  --never:#cfe0f5; --earlier:#2a78d6; --current:#eb6834; --nodata:#efeeea; --accent:#2a78d6;
+  --seq1:#cde2fb; --seq2:#86b6ef; --seq3:#3987e5; --seq4:#1c5cab; --seq5:#0d366b;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#1a1a19; --surface:#232322; --ink:#f0efec; --ink2:#c3c2b7; --muted:#8f8e86; --line:#3a3a38;
+    --never:#2c3f57; --earlier:#3987e5; --current:#d95926; --nodata:#2b2b2a;
+    --seq1:#184f95; --seq2:#256abf; --seq3:#3987e5; --seq4:#6da7ec; --seq5:#b7d3f6;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1a1a19; --surface:#232322; --ink:#f0efec; --ink2:#c3c2b7; --muted:#8f8e86; --line:#3a3a38;
+  --never:#2c3f57; --earlier:#3987e5; --current:#d95926; --nodata:#2b2b2a;
+  --seq1:#184f95; --seq2:#256abf; --seq3:#3987e5; --seq4:#6da7ec; --seq5:#b7d3f6;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{max-width:1200px;margin:0 auto;padding:24px 16px 8px}
+h1{font-size:1.45rem;line-height:1.25;margin:0 0 6px}
+.byline{color:var(--ink2);font-size:.9rem;margin:0}
+.findings{max-width:1200px;margin:12px auto 0;padding:0 16px}
+.findings .box{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.findings h2{font-size:1rem;margin:0 0 6px}
+.findings ul{margin:4px 0 0;padding-left:18px}
+.findings li{margin:2px 0}
+.note{color:var(--ink2);font-size:.85rem}
+main{max-width:1200px;margin:0 auto;padding:12px 16px 24px;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:16px}
+@media (max-width:860px){main{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px}
+.controls{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+.controls button{font:inherit;font-size:.85rem;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:5px 12px;cursor:pointer}
+.controls button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+#map{width:100%;height:auto;display:block}
+#map path.country{stroke:var(--surface);stroke-width:.6;cursor:pointer}
+#map path.country.outside{stroke:var(--ink2);stroke-width:.9;stroke-dasharray:2.5 2}
+#map path.country:hover,#map path.country.selected{stroke:var(--ink);stroke-width:1.6;stroke-dasharray:none}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.82rem;color:var(--ink2);margin-top:8px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:14px;height:14px;border-radius:3px;display:inline-block}
+.legend i.dash{background:transparent;border:1.5px dashed var(--ink2)}
+#panel h2{margin:0 0 2px;font-size:1.2rem}
+#panel h3{font-size:.92rem;margin:14px 0 4px}
+#panel .tag{display:inline-block;font-size:.78rem;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--ink2);margin:4px 6px 0 0}
+#panel table{border-collapse:collapse;width:100%;font-size:.86rem}
+#panel td,#panel th{padding:3px 4px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+#panel th{color:var(--ink2);font-weight:600}
+#panel td.num{text-align:right;font-variant-numeric:tabular-nums}
+.spark text{fill:var(--ink2);font-size:10px}
+.spark .axis{stroke:var(--line)}
+.tip{position:fixed;pointer-events:none;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:4px 8px;font-size:.82rem;box-shadow:0 2px 8px rgba(0,0,0,.12);display:none;z-index:5}
+footer{max-width:1200px;margin:0 auto;padding:4px 16px 32px;color:var(--ink2);font-size:.82rem}
+footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+<header>
+  <h1>De-risking, grey-listing and the cost of remittances to Africa, 2011–2025</h1>
+  <p class="byline">Interactive companion to the paper by Winnie Sitah Lang'o · Click a country to see its data</p>
+</header>
+
+<section class="findings"><div class="box">
+  <h2>What the paper finds (all countries pooled)</h2>
+  <ul id="findings"></ul>
+  <p class="note">These are average effects estimated across countries. The paper does not estimate effects for individual countries, so none are shown here; each country panel shows that country's data.</p>
+</div></section>
+
+<main>
+  <div class="card">
+    <div class="controls" role="group" aria-label="Map layer">
+      <button data-layer="grey" aria-pressed="true">Grey-list history</button>
+      <button data-layer="cost" aria-pressed="false">Quoted cost, 2024</button>
+      <button data-layer="t5q" aria-pressed="false">Corridors ≤5%, as quoted</button>
+      <button data-layer="t5h" aria-pressed="false">Corridors ≤5%, with hidden costs</button>
+    </div>
+    <svg id="map" viewBox="0 0 640 660" role="img" aria-label="Map of Africa"></svg>
+    <div class="legend" id="legend"></div>
+  </div>
+  <div class="card" id="panel"><p class="note">Select a country on the map.</p></div>
+</main>
+
+<footer>
+  <p><b>Sources:</b> <span id="sources"></span>. Boundaries: Natural Earth (public domain). Country names follow the World Bank; boundaries are illustrative and imply no position on territorial status.</p>
+  <p><b>Definitions.</b> Quoted cost: average total cost of sending USD 200 (fee plus exchange-rate margin) across the services surveyed. "With hidden costs": adds published estimates of recipient-side and intermediary charges (high scenario: +5.2 points for bank accounts, +1.39 for mobile wallets, +0 for cash pickup), which are assumptions, not measurements for these corridors. Grey-list dates are FATF plenary dates, checked against FATF statements.</p>
+  <p id="repo-link"></p>
+</footer>
+<div class="tip" id="tip"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+const FIX = {SDS: "SSD", SAH: "ESH", SOL: "SOM"};   // Natural Earth codes -> ISO3 used in the data
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+let DATA, layer = "grey", selected = null;
+
+function greyStatus(c){
+  if (!c) return "nodata";
+  const ep = c.grey_episodes || [];
+  if (ep.some(e => e.removed === null)) return "current";
+  if (ep.length) return "earlier";
+  return c.in_price_data ? "never" : "nodata";
+}
+function latest(arr, years, year){ if (!arr) return null; const i = years.indexOf(year); return i >= 0 ? arr[i] : null; }
+const seqColors = () => ["--seq1","--seq2","--seq3","--seq4","--seq5"].map(css);
+
+function fillFor(c){
+  if (layer === "grey"){
+    const s = greyStatus(c);
+    return css({current:"--current", earlier:"--earlier", never:"--never", nodata:"--nodata"}[s]);
+  }
+  if (!c || !c.in_price_data) return css("--nodata");
+  if (layer === "cost"){
+    const v = latest(c.cost, c.years, 2024);
+    if (v === null) return css("--nodata");
+    const cols = seqColors(), cuts = [5, 7.5, 10, 15];
+    return cols[cuts.filter(k => v >= k).length];
+  }
+  const t = c.targets_2024; if (!t) return css("--nodata");
+  const v = layer === "t5q" ? t.le5_quoted : t.le5_high;
+  const cols = seqColors().slice().reverse(), cuts = [1, 25, 50, 75];   // more corridors meeting 5% = lighter
+  return cols[cuts.filter(k => v >= k).length];
+}
+
+function legend(){
+  const L = document.getElementById("legend");
+  const item = (col, txt, cls="") => `<span><i class="${cls}" style="background:${col}"></i>${txt}</span>`;
+  const nd = item(css("--nodata"), "No price data");
+  const out = `<span><i class="dash"></i>Outside the main model (missing data)</span>`;
+  if (layer === "grey"){
+    L.innerHTML = item(css("--current"),"On the grey list (Nov 2026)") + item(css("--earlier"),"Grey-listed earlier, 2011–2026")
+      + item(css("--never"),"Not grey-listed, 2011–2026") + nd + out;
+  } else if (layer === "cost"){
+    const c = seqColors(), lab = ["< 5%","5–7.5%","7.5–10%","10–15%","≥ 15%"];
+    L.innerHTML = c.map((x,i) => item(x, lab[i])).join("") + nd + out;
+  } else {
+    const c = seqColors().slice().reverse(), lab = ["0%","1–24%","25–49%","50–74%","≥ 75%"];
+    L.innerHTML = c.map((x,i) => item(x, lab[i])).join("") + nd + out;
+  }
+}
+
+function spark(series, years, opts){
+  const W = 330, H = 120, m = {l:34, r:8, t:8, b:18};
+  const all = series.flatMap(s => s.values).filter(v => v !== null);
+  if (!all.length) return '<p class="note">No data.</p>';
+  const x = d3.scaleLinear().domain(d3.extent(years)).range([m.l, W - m.r]);
+  const y = d3.scaleLinear().domain([Math.min(0, d3.min(all)), d3.max(all)]).nice().range([H - m.b, m.t]);
+  let s = `<svg class="spark" viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="${opts.label}">`;
+  y.ticks(3).forEach(t => { s += `<line class="axis" x1="${m.l}" x2="${W-m.r}" y1="${y(t)}" y2="${y(t)}"/><text x="${m.l-4}" y="${y(t)+3}" text-anchor="end">${t}${opts.unit||""}</text>`; });
+  s += `<text x="${x(years[0])}" y="${H-4}" text-anchor="start">${years[0]}</text><text x="${x(years[years.length-1])}" y="${H-4}" text-anchor="end">${years[years.length-1]}</text>`;
+  series.forEach(se => {
+    const line = d3.line().defined((d,i) => se.values[i] !== null).x((d,i) => x(years[i])).y((d,i) => y(se.values[i]));
+    s += `<path d="${line(years)}" fill="none" stroke="${se.color}" stroke-width="2"/>`;
+  });
+  s += "</svg>";
+  s += `<div class="legend">${series.map(se => `<span><i style="background:${se.color}"></i>${se.name}</span>`).join("")}</div>`;
+  return s;
+}
+
+function panel(iso){
+  const c = DATA.countries[iso], P = document.getElementById("panel");
+  const name = c ? c.name : (iso || "This country");
+  if (!c){ P.innerHTML = `<h2>${name}</h2><p class="note">Not covered by the study: no remittance price data and no grey-list episode in 2011–2026.</p>`; return; }
+  const status = {current:"On the grey list (Nov 2026)", earlier:"Grey-listed earlier", never:"Not grey-listed, 2011–2026", nodata:"Not grey-listed"}[greyStatus(c)];
+  let h = `<h2>${name}</h2><span class="tag">${status}</span>`;
+  if (c.in_price_data){
+    h += `<span class="tag">${c.corridors} corridor${c.corridors>1?"s":""} in the price data</span>`;
+    h += `<span class="tag">${c.in_main_model ? "In the main model" : "Outside the main model: " + c.why_not_in_main_model}</span>`;
+  } else {
+    h += `<span class="tag">No remittance price data for this country</span>`;
+  }
+  h += `<h3>Grey-list episodes (FATF)</h3>`;
+  h += (c.grey_episodes.length ? `<table><tr><th>Listed</th><th>Removed</th><th>Checked against</th></tr>` +
+    c.grey_episodes.map(e => `<tr><td>${e.listed === "2010-12-31" ? "before 2011" : e.listed}</td><td>${e.removed || "still listed"}</td><td title="${e.source}">${e.checked === "FATF" ? "FATF statement" : "official or press report"}</td></tr>`).join("") + `</table>`
+    : `<p class="note">None in 2011–2026.</p>`);
+  if (c.in_price_data){
+    h += `<h3>Price of sending USD 200 (% of amount sent)</h3>`;
+    h += spark([{name:"Total cost", values:c.cost, color:css("--accent")}, {name:"Fee", values:c.fee, color:css("--current")}, {name:"Exchange-rate margin", values:c.fx, color:css("--muted")}], c.years, {label:"Price trend", unit:"%"});
+    const prov = Object.entries(c.cost_2024_by_provider || {});
+    if (prov.length){
+      h += `<h3>Average quoted cost by provider, 2024</h3><table><tr><th>Provider</th><th class="num">Cost</th><th class="num">Quotes</th></tr>` +
+        prov.map(([k,v]) => `<tr><td>${k}</td><td class="num">${v.cost.toFixed(2)}%</td><td class="num">${v.quotes}</td></tr>`).join("") + `</table>`;
+    }
+    const t = c.targets_2024;
+    if (t){
+      h += `<h3>Corridors meeting the SDG 10.c benchmarks, 2024</h3><table><tr><th></th><th class="num">As quoted</th><th class="num">Low</th><th class="num">High</th></tr>
+        <tr><td>At or below 5%</td><td class="num">${t.le5_quoted}%</td><td class="num">${t.le5_low}%</td><td class="num">${t.le5_high}%</td></tr>
+        <tr><td>At or below 3%</td><td class="num">${t.le3_quoted}%</td><td class="num">${t.le3_low}%</td><td class="num">${t.le3_high}%</td></tr></table>
+        <p class="note">${t.pairs} corridor and payout-method pairs. Low and high add published estimates of unrecorded charges (see definitions below).</p>`;
+    }
+    h += `<h3>Banks' balances abroad (USD million)</h3>`;
+    h += spark([{name:"Deposits abroad (BIS)", values:c.deposits_abroad_bis_usdmn, color:css("--accent")}, {name:"Commercial banks' foreign assets (IMF)", values:c.foreign_assets_imf_usdmn, color:css("--current")}], c.years, {label:"Balances abroad"});
+    const f = (o, u) => o ? `${o.value}${u} (${o.year})` : "not available";
+    h += `<h3>Context</h3><table>
+      <tr><td>Remittances received, % of GDP</td><td class="num">${f(c.remit_pct_gdp_latest, "%")}</td></tr>
+      <tr><td>Adults with an account</td><td class="num">${f(c.account_pct_latest, "%")}</td></tr>
+      <tr><td>Adults with mobile money</td><td class="num">${f(c.mobile_money_pct_latest, "%")}</td></tr></table>`;
+  }
+  P.innerHTML = h;
+}
+
+function draw(geo){
+  const svg = d3.select("#map");
+  const proj = d3.geoMercator().fitExtent([[8, 8], [632, 652]], geo);
+  const path = d3.geoPath(proj), tip = document.getElementById("tip");
+  svg.selectAll("path").data(geo.features).join("path")
+    .attr("class", f => { const c = DATA.countries[f.properties.iso]; return "country" + (c && c.in_price_data && !c.in_main_model ? " outside" : ""); })
+    .attr("d", path).attr("fill", f => fillFor(DATA.countries[f.properties.iso]))
+    .attr("tabindex", 0).attr("aria-label", f => f.properties.name)
+    .on("mousemove", (ev, f) => { tip.style.display = "block"; tip.style.left = ev.clientX + 12 + "px"; tip.style.top = ev.clientY + 12 + "px";
+        const c = DATA.countries[f.properties.iso]; tip.textContent = (c ? c.name : f.properties.name); })
+    .on("mouseleave", () => tip.style.display = "none")
+    .on("click keydown", (ev, f) => { if (ev.type === "keydown" && ev.key !== "Enter") return;
+        selected = f.properties.iso; svg.selectAll("path").classed("selected", d => d.properties.iso === selected); panel(selected); });
+}
+function recolor(){ d3.select("#map").selectAll("path").attr("fill", f => fillFor(DATA.countries[f.properties.iso])); legend(); }
+
+document.querySelectorAll(".controls button").forEach(b => b.addEventListener("click", () => {
+  layer = b.dataset.layer;
+  document.querySelectorAll(".controls button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  recolor();
+}));
+
+Promise.all([d3.json("map_data.json"), d3.json("ne_110m_admin_0_countries.geojson")]).then(([data, world]) => {
+  DATA = data;
+  const f = data.meta.pooled_findings;
+  document.getElementById("findings").innerHTML =
+    `<li>Grey-listing changes the quoted cost of sending USD 200 by <b>${f.grey_listing_service_level}</b>, following individual services over time.</li>
+     <li>At corridor level: <b>${f.grey_listing_corridor_level}</b>.</li>
+     <li>If a country's banks' deposits abroad halve: <b>${f.deposits_abroad_halve}</b>.</li>
+     <li>Years after removal from the grey list: <b>${f.years_after_removal}</b> on average.</li>
+     <li>But the quoted price misses costs paid along the chain and by recipients: with published estimates of those costs, the share of corridors meeting 5% can halve.</li>`;
+  document.getElementById("sources").textContent = data.meta.sources;
+  world.features.forEach(ft => { const p = ft.properties; let iso = p.ISO_A3 && p.ISO_A3 !== "-99" ? p.ISO_A3 : p.ADM0_A3; p.iso = FIX[iso] || iso; p.name = p.NAME || p.ADMIN || p.iso; });
+  const africa = {type: "FeatureCollection", features: world.features.filter(ft => ft.properties.CONTINENT === "Africa")};
+  draw(africa); legend();
+}).catch(err => { document.getElementById("panel").innerHTML = `<p class="note">The map data could not be loaded (${err}).</p>`; });
+</script>
+</body>
+</html>

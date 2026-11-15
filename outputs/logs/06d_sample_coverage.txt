@@ -1,0 +1,35 @@
+====================================================================================================
+COUNTRIES IN THE PRICE DATA BUT NOT IN THE MAIN MODEL
+====================================================================================================
+  BEN Benin (WAEMU) | missing for the whole period: ['L1_log_reserves']
+  CIV Côte d'Ivoire (WAEMU) | missing for the whole period: ['L1_log_reserves']
+  ERI Eritrea | missing for the whole period: ['L1_log_remit_in']
+  MLI Mali (WAEMU) | missing for the whole period: ['L1_log_reserves']
+  NAM Namibia | missing for the whole period: ['L1_log_dep']
+  SEN Senegal (WAEMU) | missing for the whole period: ['L1_log_reserves']
+  SOM Somalia | missing for the whole period: ['L1_log_reserves', 'L1_log_remit_in']
+  SSD South Sudan | missing for the whole period: none (never all at once)
+  TGO Togo (WAEMU) | missing for the whole period: ['L1_log_reserves']
+
+====================================================================================================
+MAIN MODEL WITH AND WITHOUT THE RESERVES CONTROL
+====================================================================================================
+                                             model              variable  coef ci95_lo ci95_hi     p mde80              verdict  n_obs  n_clusters
+                  0. MAIN MODEL (Table 2, model C)           grey-listed +0.08   -0.51   +0.67 0.781  0.83         inconclusive   3733          29
+                  0. MAIN MODEL (Table 2, model C) deposits abroad halve +0.04   -0.25   +0.34 0.755  0.41 no meaningful effect   3733          29
+                       9. Without reserves control           grey-listed -0.12   -0.67   +0.44 0.676  0.79         inconclusive   4325          34
+                       9. Without reserves control deposits abroad halve -0.16   -0.75   +0.44 0.596  0.84         inconclusive   4325          34
+9b. Without reserves control, main-model rows only           grey-listed +0.08   -0.51   +0.67 0.793  0.84         inconclusive   3733          29
+9b. Without reserves control, main-model rows only deposits abroad halve +0.05   -0.23   +0.33 0.719  0.40 no meaningful effect   3733          29
+
+Countries brought back by dropping the reserves control: BEN, CIV, MLI, SEN, TGO
+
+====================================================================================================
+CHECK 9, LEAVING OUT ONE WAEMU COUNTRY AT A TIME (de-risking estimate only)
+====================================================================================================
+                  model              variable  coef ci95_lo ci95_hi     p mde80      verdict  n_obs  n_clusters
+9c. Check 9 without BEN deposits abroad halve -0.16   -0.75   +0.44 0.591  0.84 inconclusive   4305          33
+9c. Check 9 without CIV deposits abroad halve -0.12   -0.73   +0.48 0.680  0.86 inconclusive   4271          33
+9c. Check 9 without MLI deposits abroad halve -0.24   -0.85   +0.36 0.421  0.86 inconclusive   4162          33
+9c. Check 9 without SEN deposits abroad halve -0.18   -0.79   +0.43 0.557  0.87 inconclusive   4222          33
+9c. Check 9 without TGO deposits abroad halve -0.15   -0.75   +0.44 0.608  0.85 inconclusive   4233          33

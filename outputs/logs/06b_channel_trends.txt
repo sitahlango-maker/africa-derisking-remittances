@@ -1,0 +1,21 @@
+==============================================================================================================
+ADDITIONAL CHECK (not pre-specified): do the channel effects survive type-specific time trends?
+  'common quarters' = step 6 model; 'own quarters' = each type of service gets its own quarter effects
+==============================================================================================================
+                                               model      outcome          variable  coef ci95_lo ci95_hi     p mde80              verdict
+      S2 bank vs non-bank | common quarters (step 6) cost_pct_200       grey_x_bank +0.46   -0.16   +1.07 0.142  0.87         inconclusive
+      S2 bank vs non-bank | common quarters (step 6) cost_pct_200    grey_x_nonbank -0.13   -0.40   +0.14 0.328  0.38 no meaningful effect
+          S2 bank vs non-bank | own quarters (check) cost_pct_200       grey_x_bank -0.02   -0.73   +0.69 0.958  1.00         inconclusive
+          S2 bank vs non-bank | own quarters (check) cost_pct_200    grey_x_nonbank -0.02   -0.25   +0.20 0.837  0.32 no meaningful effect
+S3 digital vs not (2016+) | common quarters (step 6) cost_pct_200    grey_x_digital -0.68   -1.05   -0.31 0.001  0.53    MEANINGFUL EFFECT
+S3 digital vs not (2016+) | common quarters (step 6) cost_pct_200 grey_x_nondigital +0.08   -0.23   +0.39 0.604  0.44 no meaningful effect
+    S3 digital vs not (2016+) | own quarters (check) cost_pct_200    grey_x_digital +0.21   -0.37   +0.80 0.466  0.83         inconclusive
+    S3 digital vs not (2016+) | own quarters (check) cost_pct_200 grey_x_nondigital -0.29   -0.60   +0.03 0.072  0.44         inconclusive
+       S4 zero-fee vs fee | common quarters (step 6) cost_pct_200   grey_x_zero_fee -1.35   -1.79   -0.91 0.000  0.62    MEANINGFUL EFFECT
+       S4 zero-fee vs fee | common quarters (step 6) cost_pct_200   grey_x_with_fee +0.06   -0.17   +0.28 0.609  0.31 no meaningful effect
+           S4 zero-fee vs fee | own quarters (check) cost_pct_200   grey_x_zero_fee +0.17   -0.27   +0.61 0.445  0.63         inconclusive
+           S4 zero-fee vs fee | own quarters (check) cost_pct_200   grey_x_with_fee -0.05   -0.27   +0.16 0.615  0.30 no meaningful effect
+
+Services that contribute to the estimate (observed both on and off the list):
+  zero-fee : 139 services
+  digital  : 447 services

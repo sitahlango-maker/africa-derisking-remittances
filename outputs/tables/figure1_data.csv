@@ -1,0 +1,93 @@
+year,group,mean,size,panel
+2011,Banks,16.675045045045046,333,(a) By type of provider
+2011,Mobile operators,,1,(a) By type of provider
+2011,Money transfer operators,9.337106017191978,698,(a) By type of provider
+2012,Banks,18.584135135135135,370,(a) By type of provider
+2012,Money transfer operators,9.269669811320755,848,(a) By type of provider
+2013,Banks,17.652355163727957,794,(a) By type of provider
+2013,Money transfer operators,9.329306326304106,1802,(a) By type of provider
+2014,Banks,17.153984575835473,778,(a) By type of provider
+2014,Money transfer operators,8.52793670115642,1643,(a) By type of provider
+2015,Banks,13.683713768115942,552,(a) By type of provider
+2015,Mobile operators,,3,(a) By type of provider
+2015,Money transfer operators,8.018321640582839,1853,(a) By type of provider
+2016,Banks,12.68325925925926,675,(a) By type of provider
+2016,Mobile operators,,16,(a) By type of provider
+2016,Money transfer operators,7.931787644787645,2590,(a) By type of provider
+2017,Banks,12.721568047337279,676,(a) By type of provider
+2017,Mobile operators,2.8847619047619046,42,(a) By type of provider
+2017,Money transfer operators,7.85891242937853,2832,(a) By type of provider
+2018,Banks,12.777119645494832,677,(a) By type of provider
+2018,Mobile operators,2.98,52,(a) By type of provider
+2018,Money transfer operators,7.5830776455854725,3194,(a) By type of provider
+2019,Banks,13.456505295007565,661,(a) By type of provider
+2019,Mobile operators,3.8304,50,(a) By type of provider
+2019,Money transfer operators,7.5223935763446335,3923,(a) By type of provider
+2020,Banks,12.117642526964561,649,(a) By type of provider
+2020,Mobile operators,3.994736842105263,57,(a) By type of provider
+2020,Money transfer operators,7.2315863102673,4003,(a) By type of provider
+2021,Banks,13.137853881278538,657,(a) By type of provider
+2021,Mobile operators,4.5256140350877185,57,(a) By type of provider
+2021,Money transfer operators,6.858332657200812,4930,(a) By type of provider
+2022,Banks,16.61129746835443,632,(a) By type of provider
+2022,Mobile operators,4.839821428571428,56,(a) By type of provider
+2022,Money transfer operators,6.761664157885933,5979,(a) By type of provider
+2023,Banks,16.570122282608697,736,(a) By type of provider
+2023,Mobile operators,5.0338095238095235,63,(a) By type of provider
+2023,Money transfer operators,6.428956765718658,7841,(a) By type of provider
+2024,Banks,16.300890410958903,731,(a) By type of provider
+2024,Mobile operators,5.20015625,64,(a) By type of provider
+2024,Money transfer operators,6.470815551008477,6842,(a) By type of provider
+2025,Banks,17.10364705882353,425,(a) By type of provider
+2025,Mobile operators,5.5768571428571425,35,(a) By type of provider
+2025,Money transfer operators,5.844530293768653,3045,(a) By type of provider
+2016,Non-digital,9.051542288557213,2211,(b) Digital and non-digital (from 2016)
+2016,Digital,7.892324455205812,413,(b) Digital and non-digital (from 2016)
+2017,Non-digital,9.026496496496497,2997,(b) Digital and non-digital (from 2016)
+2017,Digital,7.388578199052133,633,(b) Digital and non-digital (from 2016)
+2018,Non-digital,8.768893316983446,3262,(b) Digital and non-digital (from 2016)
+2018,Digital,7.00025850340136,735,(b) Digital and non-digital (from 2016)
+2019,Non-digital,8.697573643410854,3870,(b) Digital and non-digital (from 2016)
+2019,Digital,6.75936754176611,838,(b) Digital and non-digital (from 2016)
+2020,Non-digital,8.261749089016137,3842,(b) Digital and non-digital (from 2016)
+2020,Digital,6.340895679662803,949,(b) Digital and non-digital (from 2016)
+2021,Non-digital,8.168751461304653,4277,(b) Digital and non-digital (from 2016)
+2021,Digital,6.039305364511692,1454,(b) Digital and non-digital (from 2016)
+2022,Non-digital,8.508090850653526,4667,(b) Digital and non-digital (from 2016)
+2022,Digital,5.888611521418021,2031,(b) Digital and non-digital (from 2016)
+2023,Non-digital,8.169521531100479,6061,(b) Digital and non-digital (from 2016)
+2023,Digital,5.285438193647149,2613,(b) Digital and non-digital (from 2016)
+2024,Non-digital,8.16494543470353,5499,(b) Digital and non-digital (from 2016)
+2024,Digital,5.467994492886645,2179,(b) Digital and non-digital (from 2016)
+2025,Non-digital,8.274509953277475,2434,(b) Digital and non-digital (from 2016)
+2025,Digital,4.799923344096817,1076,(b) Digital and non-digital (from 2016)
+2011,With a fee,11.820415458937198,1035,(c) Zero-fee and fee-charging
+2011,Zero fee,,22,(c) Zero-fee and fee-charging
+2012,With a fee,12.099225181598063,1239,(c) Zero-fee and fee-charging
+2012,Zero fee,,20,(c) Zero-fee and fee-charging
+2013,With a fee,11.771677927927929,2664,(c) Zero-fee and fee-charging
+2013,Zero fee,,20,(c) Zero-fee and fee-charging
+2014,With a fee,11.210868865647628,2486,(c) Zero-fee and fee-charging
+2014,Zero fee,,23,(c) Zero-fee and fee-charging
+2015,With a fee,9.330882472549817,2459,(c) Zero-fee and fee-charging
+2015,Zero fee,4.1206249999999995,32,(c) Zero-fee and fee-charging
+2016,With a fee,9.027499234771962,3267,(c) Zero-fee and fee-charging
+2016,Zero fee,3.988924731182796,93,(c) Zero-fee and fee-charging
+2017,With a fee,8.874138613861385,3535,(c) Zero-fee and fee-charging
+2017,Zero fee,3.7821052631578946,95,(c) Zero-fee and fee-charging
+2018,With a fee,8.626608582574772,3845,(c) Zero-fee and fee-charging
+2018,Zero fee,3.8158552631578946,152,(c) Zero-fee and fee-charging
+2019,With a fee,8.57184898139947,4516,(c) Zero-fee and fee-charging
+2019,Zero fee,3.1952604166666667,192,(c) Zero-fee and fee-charging
+2020,With a fee,8.180598366085228,4529,(c) Zero-fee and fee-charging
+2020,Zero fee,2.7069465648854965,262,(c) Zero-fee and fee-charging
+2021,With a fee,7.927583070354557,5387,(c) Zero-fee and fee-charging
+2021,Zero fee,2.944796511627907,344,(c) Zero-fee and fee-charging
+2022,With a fee,8.074531022193423,6173,(c) Zero-fee and fee-charging
+2022,Zero fee,3.4722857142857144,525,(c) Zero-fee and fee-charging
+2023,With a fee,7.756847688810306,7918,(c) Zero-fee and fee-charging
+2023,Zero fee,2.5232804232804233,756,(c) Zero-fee and fee-charging
+2024,With a fee,7.8653016374605,6963,(c) Zero-fee and fee-charging
+2024,Zero fee,2.8634965034965036,715,(c) Zero-fee and fee-charging
+2025,With a fee,7.829731687929826,3113,(c) Zero-fee and fee-charging
+2025,Zero fee,2.3448866498740553,397,(c) Zero-fee and fee-charging

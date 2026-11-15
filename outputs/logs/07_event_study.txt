@@ -1,0 +1,48 @@
+====================================================================================================
+EVENT STUDY: change in total cost (points) by year relative to the event, vs the year before
+  k-3 = 3 or more years before; k0 = the event's first year; k4 = 4 or more years after
+====================================================================================================
+
+--- LISTING: number of events in the price data = 22 ---
+             model variable  coef ci95_lo ci95_hi     p mde80              verdict
+ stacked | listing      k-3 +0.48   -0.21   +1.17 0.166  0.98         inconclusive
+ stacked | listing      k-2 +0.38   -0.17   +0.94 0.167  0.78         inconclusive
+ stacked | listing       k0 -0.01   -0.41   +0.39 0.959  0.57 no meaningful effect
+ stacked | listing       k1 +0.05   -0.56   +0.65 0.880  0.86         inconclusive
+ stacked | listing       k2 +0.07   -0.94   +1.08 0.895  1.44         inconclusive
+ stacked | listing       k3 +0.94   -0.61   +2.49 0.226  2.20         inconclusive
+ stacked | listing       k4 -0.02   -1.65   +1.61 0.982  2.32         inconclusive
+standard | listing      k-3 +0.89   +0.05   +1.74 0.038  1.19    MEANINGFUL EFFECT
+standard | listing      k-2 +0.54   -0.02   +1.10 0.056  0.79         inconclusive
+standard | listing       k0 +0.09   -0.26   +0.44 0.606  0.50 no meaningful effect
+standard | listing       k1 +0.11   -0.45   +0.68 0.684  0.80         inconclusive
+standard | listing       k2 +0.01   -0.71   +0.73 0.976  1.02         inconclusive
+standard | listing       k3 +1.02   -0.44   +2.48 0.167  2.08         inconclusive
+standard | listing       k4 +0.58   -0.79   +1.94 0.397  1.94         inconclusive
+
+--- REMOVAL: number of events in the price data = 22 ---
+             model variable  coef ci95_lo ci95_hi     p mde80      verdict
+ stacked | removal      k-3 -0.45   -1.30   +0.39 0.286  1.20 inconclusive
+ stacked | removal      k-2 -0.13   -0.84   +0.57 0.706  1.00 inconclusive
+ stacked | removal       k0 -0.44   -1.27   +0.39 0.294  1.18 inconclusive
+ stacked | removal       k1 -0.34   -1.28   +0.60 0.471  1.34 inconclusive
+ stacked | removal       k2 -0.52   -1.27   +0.23 0.170  1.07 inconclusive
+ stacked | removal       k3 -0.76   -1.61   +0.09 0.078  1.20 inconclusive
+ stacked | removal       k4 -0.43   -1.34   +0.49 0.352  1.30 inconclusive
+standard | removal      k-3 -1.06   -2.55   +0.43 0.156  2.12 inconclusive
+standard | removal      k-2 -0.47   -1.61   +0.67 0.406  1.62 inconclusive
+standard | removal       k0 -0.26   -0.97   +0.45 0.455  1.01 inconclusive
+standard | removal       k1 -0.32   -1.47   +0.83 0.578  1.64 inconclusive
+standard | removal       k2 -0.18   -1.27   +0.91 0.738  1.55 inconclusive
+standard | removal       k3 -0.47   -1.74   +0.80 0.457  1.81 inconclusive
+standard | removal       k4 -0.18   -1.38   +1.02 0.761  1.70 inconclusive
+
+====================================================================================================
+STACKED SUMMARY: average change in total cost in the years after the event (one number per event type)
+====================================================================================================
+                    model variable  coef ci95_lo ci95_hi     p mde80      verdict
+stacked average | listing    after -0.13   -1.03   +0.77 0.773  1.28 inconclusive
+stacked average | removal    after -0.31   -1.08   +0.46 0.422  1.09 inconclusive
+Events used in the stacked design: {'stacked average | listing': 22, 'stacked average | removal': 22}
+
+Saved outputs/figures/figure2_event_study.png

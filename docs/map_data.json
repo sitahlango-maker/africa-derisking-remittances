@@ -1,0 +1,5893 @@
+{
+ "meta": {
+  "title": "De-risking, grey-listing and the cost of remittances to Africa, 2011-2025",
+  "author": "Winnie Sitah Lang'o",
+  "pooled_findings": {
+   "grey_listing_service_level": "-0.02 percentage points (95% CI -0.23 to +0.18)",
+   "grey_listing_corridor_level": "+0.08 percentage points (95% CI -0.51 to +0.67)",
+   "deposits_abroad_halve": "+0.04 percentage points (95% CI -0.25 to +0.34)",
+   "years_after_removal": "-0.31 percentage points (95% CI -1.08 to +0.46)"
+  },
+  "sources": "World Bank RPW 2011-2025 Q3; FATF statements; BIS LBS; IMF MFS; World Bank WDI, Findex 2025, FCS lists"
+ },
+ "countries": {
+  "AGO": {
+   "name": "Angola",
+   "in_price_data": true,
+   "grey_episodes": [
+    {
+     "listed": "2010-12-31",
+     "removed": "2016-02-19",
+     "checked": "FATF",
+     "source": "on Feb 2011 list (commitment Feb 2010); removed 19 Feb 2016"
+    },
+    {
+     "listed": "2024-10-25",
+     "removed": null,
+     "checked": "FATF",
+     "source": "listed 25 Oct 2024; still listed"
+    }
+   ],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 1,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    18.01,
+    19.43,
+    19.34,
+    19.55,
+    16.93,
+    16.61,
+    18.83,
+    19.61,
+    19.17,
+    20.6,
+    19.06,
+    20.0,
+    19.04,
+    17.86,
+    18.71
+   ],
+   "fee": [
+    15.28,
+    17.17,
+    17.02,
+    17.72,
+    15.47,
+    14.35,
+    16.79,
+    17.75,
+    17.25,
+    18.99,
+    17.6,
+    18.48,
+    17.7,
+    16.58,
+    17.62
+   ],
+   "fx": [
+    2.73,
+    2.26,
+    2.32,
+    1.83,
+    1.46,
+    2.26,
+    2.04,
+    1.85,
+    1.91,
+    1.61,
+    1.46,
+    1.52,
+    1.34,
+    1.28,
+    1.09
+   ],
+   "n_quotes": [
+    16,
+    17,
+    36,
+    35,
+    26,
+    31,
+    28,
+    28,
+    32,
+    33,
+    41,
+    45,
+    52,
+    60,
+    28
+   ],
+   "deposits_abroad_bis_usdmn": [
+    21748.0,
+    23751.0,
+    18034.0,
+    14103.0,
+    13179.0,
+    12935.0,
+    10405.0,
+    9321.0,
+    10924.0,
+    8811.0,
+    8914.0,
+    7065.0,
+    6575.0,
+    6279.0,
+    5856.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    8790.0,
+    6492.0,
+    6025.0,
+    5362.0,
+    4649.0,
+    4418.0,
+    3967.0,
+    4467.0,
+    3792.0,
+    3446.0,
+    3060.0,
+    3211.0,
+    3112.0,
+    2809.0,
+    3108.0
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2025,
+    "value": 0.0
+   },
+   "account_pct_latest": {
+    "year": 2014,
+    "value": 29.3
+   },
+   "mobile_money_pct_latest": null,
+   "cost_2024_by_provider": {
+    "Bank": {
+     "cost": 28.95,
+     "quotes": 16
+    },
+    "Money transfer operator": {
+     "cost": 13.83,
+     "quotes": 44
+    }
+   },
+   "targets_2024": {
+    "pairs": 2,
+    "le5_quoted": 0.0,
+    "le5_low": 0.0,
+    "le5_high": 0.0,
+    "le3_quoted": 0.0,
+    "le3_low": 0.0,
+    "le3_high": 0.0
+   }
+  },
+  "BEN": {
+   "name": "Benin",
+   "in_price_data": true,
+   "grey_episodes": [],
+   "in_main_model": false,
+   "why_not_in_main_model": "no reserves data",
+   "corridors": 1,
+   "years": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021
+   ],
+   "cost": [
+    21.12,
+    22.65,
+    12.3,
+    11.54,
+    15.08,
+    21.36
+   ],
+   "fee": [
+    20.62,
+    16.26,
+    12.21,
+    11.9,
+    13.22,
+    9.5
+   ],
+   "fx": [
+    0.5,
+    6.39,
+    0.1,
+    -0.36,
+    1.86,
+    11.86
+   ],
+   "n_quotes": [
+    6,
+    8,
+    8,
+    8,
+    8,
+    1
+   ],
+   "deposits_abroad_bis_usdmn": [
+    31.0,
+    37.0,
+    62.0,
+    40.0,
+    63.0,
+    36.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    2614.0,
+    2441.0,
+    2034.0,
+    2197.0,
+    2965.0,
+    4041.0
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2021,
+    "value": 1.3
+   },
+   "account_pct_latest": {
+    "year": 2021,
+    "value": 48.6
+   },
+   "mobile_money_pct_latest": {
+    "year": 2021,
+    "value": 36.7
+   },
+   "cost_2024_by_provider": {},
+   "targets_2024": null
+  },
+  "BFA": {
+   "name": "Burkina Faso",
+   "in_price_data": false,
+   "grey_episodes": [
+    {
+     "listed": "2021-02-25",
+     "removed": "2025-10-24",
+     "checked": "FATF",
+     "source": "listed Feb 2021; removed 24 Oct 2025"
+    }
+   ]
+  },
+  "BWA": {
+   "name": "Botswana",
+   "in_price_data": true,
+   "grey_episodes": [
+    {
+     "listed": "2018-10-19",
+     "removed": "2021-10-21",
+     "checked": "secondary",
+     "source": "listed 19 Oct 2018 (FATF); removed 21 Oct 2021 (IFC Review)"
+    }
+   ],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 1,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    18.02,
+    19.71,
+    19.29,
+    20.03,
+    18.62,
+    18.84,
+    19.45,
+    18.07,
+    17.54,
+    19.86,
+    17.76,
+    17.93,
+    15.35,
+    15.13,
+    15.61
+   ],
+   "fee": [
+    14.65,
+    15.97,
+    15.62,
+    16.17,
+    14.21,
+    13.94,
+    14.98,
+    13.96,
+    13.61,
+    15.95,
+    14.4,
+    14.57,
+    13.24,
+    13.32,
+    14.09
+   ],
+   "fx": [
+    3.37,
+    3.74,
+    3.67,
+    3.85,
+    4.4,
+    4.9,
+    4.46,
+    4.12,
+    3.93,
+    3.91,
+    3.36,
+    3.36,
+    2.11,
+    1.81,
+    1.53
+   ],
+   "n_quotes": [
+    17,
+    19,
+    40,
+    36,
+    29,
+    33,
+    33,
+    40,
+    46,
+    42,
+    58,
+    72,
+    111,
+    120,
+    57
+   ],
+   "deposits_abroad_bis_usdmn": [
+    1170.0,
+    1373.0,
+    1058.0,
+    1543.0,
+    1153.0,
+    1589.0,
+    1374.0,
+    2361.0,
+    1210.0,
+    1189.0,
+    922.0,
+    1661.0,
+    1029.0,
+    1497.0,
+    1508.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    734.0,
+    915.0,
+    779.0,
+    824.0,
+    879.0,
+    892.0,
+    1164.0,
+    1240.0,
+    1229.0,
+    1325.0,
+    1501.0,
+    1608.0,
+    1426.0,
+    1721.0,
+    1657.0
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2025,
+    "value": 0.8
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 61.4
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 51.6
+   },
+   "cost_2024_by_provider": {
+    "Bank": {
+     "cost": 31.11,
+     "quotes": 20
+    },
+    "Money transfer operator": {
+     "cost": 11.93,
+     "quotes": 100
+    }
+   },
+   "targets_2024": {
+    "pairs": 3,
+    "le5_quoted": 0.0,
+    "le5_low": 0.0,
+    "le5_high": 0.0,
+    "le3_quoted": 0.0,
+    "le3_low": 0.0,
+    "le3_high": 0.0
+   }
+  },
+  "CIV": {
+   "name": "Côte d'Ivoire",
+   "in_price_data": true,
+   "grey_episodes": [
+    {
+     "listed": "2024-10-25",
+     "removed": "2026-10-30",
+     "checked": "secondary",
+     "source": "listed 25 Oct 2024 (FATF); removed 30 Oct 2026 (Sumsub; FATF page did not load)"
+    }
+   ],
+   "in_main_model": false,
+   "why_not_in_main_model": "no reserves data",
+   "corridors": 1,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    9.89,
+    12.12,
+    10.95,
+    11.35,
+    6.13,
+    6.24,
+    6.16,
+    5.86,
+    5.55,
+    5.0,
+    3.98,
+    4.62,
+    4.34,
+    4.62,
+    4.12
+   ],
+   "fee": [
+    9.89,
+    12.12,
+    10.95,
+    11.33,
+    6.13,
+    6.24,
+    6.16,
+    5.86,
+    5.43,
+    4.87,
+    3.93,
+    4.45,
+    4.22,
+    4.15,
+    3.76
+   ],
+   "fx": [
+    0.0,
+    0.0,
+    0.0,
+    0.02,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.12,
+    0.14,
+    0.05,
+    0.18,
+    0.12,
+    0.48,
+    0.36
+   ],
+   "n_quotes": [
+    37,
+    35,
+    74,
+    71,
+    48,
+    45,
+    49,
+    54,
+    65,
+    73,
+    82,
+    93,
+    140,
+    115,
+    45
+   ],
+   "deposits_abroad_bis_usdmn": [
+    1301.0,
+    889.0,
+    606.0,
+    1145.0,
+    1208.0,
+    865.0,
+    546.0,
+    517.0,
+    613.0,
+    376.0,
+    369.0,
+    605.0,
+    919.0,
+    874.0,
+    1216.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    842.0,
+    1340.0,
+    1430.0,
+    1535.0,
+    1536.0,
+    1976.0,
+    2686.0,
+    2235.0,
+    2539.0,
+    3017.0,
+    3884.0,
+    4486.0,
+    4423.0,
+    4637.0,
+    5857.0
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2024,
+    "value": 2.0
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 57.6
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 53.4
+   },
+   "cost_2024_by_provider": {
+    "Money transfer operator": {
+     "cost": 4.51,
+     "quotes": 108
+    }
+   },
+   "targets_2024": {
+    "pairs": 3,
+    "le5_quoted": 67.0,
+    "le5_low": 67.0,
+    "le5_high": 33.0,
+    "le3_quoted": 0.0,
+    "le3_low": 0.0,
+    "le3_high": 0.0
+   }
+  },
+  "CMR": {
+   "name": "Cameroon",
+   "in_price_data": true,
+   "grey_episodes": [
+    {
+     "listed": "2023-06-23",
+     "removed": null,
+     "checked": "FATF",
+     "source": "listed 23 Jun 2023; still listed"
+    }
+   ],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 1,
+   "years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    4.49,
+    4.91,
+    5.01,
+    4.64,
+    4.37,
+    3.98,
+    4.39,
+    5.83,
+    5.43,
+    4.64,
+    4.01
+   ],
+   "fee": [
+    4.49,
+    4.88,
+    4.85,
+    4.64,
+    4.25,
+    3.86,
+    3.55,
+    4.68,
+    4.08,
+    3.37,
+    2.39
+   ],
+   "fx": [
+    0.0,
+    0.03,
+    0.15,
+    0.0,
+    0.13,
+    0.12,
+    0.84,
+    1.16,
+    1.35,
+    1.27,
+    1.62
+   ],
+   "n_quotes": [
+    8,
+    30,
+    32,
+    36,
+    59,
+    63,
+    80,
+    88,
+    126,
+    109,
+    42
+   ],
+   "deposits_abroad_bis_usdmn": [
+    323.0,
+    409.0,
+    528.0,
+    428.0,
+    152.0,
+    402.0,
+    288.0,
+    1443.0,
+    1851.0,
+    1006.0,
+    864.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    1097.0,
+    1439.0,
+    1783.0,
+    1585.0,
+    1897.0,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2024,
+    "value": 1.3
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 60.9
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 55.1
+   },
+   "cost_2024_by_provider": {
+    "Money transfer operator": {
+     "cost": 4.14,
+     "quotes": 105
+    }
+   },
+   "targets_2024": {
+    "pairs": 3,
+    "le5_quoted": 67.0,
+    "le5_low": 67.0,
+    "le5_high": 33.0,
+    "le3_quoted": 0.0,
+    "le3_low": 0.0,
+    "le3_high": 0.0
+   }
+  },
+  "COD": {
+   "name": "Congo, Dem. Rep.",
+   "in_price_data": true,
+   "grey_episodes": [
+    {
+     "listed": "2022-10-21",
+     "removed": "2026-10-30",
+     "checked": "secondary",
+     "source": "listed 21 Oct 2022; removed 30 Oct 2026 (Sumsub; FATF page did not load)"
+    }
+   ],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 1,
+   "years": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    7.8,
+    8.69,
+    7.99,
+    8.18,
+    8.36,
+    7.99,
+    7.7,
+    7.01,
+    6.48,
+    4.53
+   ],
+   "fee": [
+    4.09,
+    4.06,
+    3.78,
+    3.78,
+    3.82,
+    3.39,
+    3.27,
+    2.97,
+    2.79,
+    2.05
+   ],
+   "fx": [
+    3.71,
+    4.62,
+    4.21,
+    4.4,
+    4.54,
+    4.6,
+    4.43,
+    4.04,
+    3.69,
+    2.48
+   ],
+   "n_quotes": [
+    27,
+    38,
+    44,
+    47,
+    45,
+    71,
+    76,
+    108,
+    86,
+    34
+   ],
+   "deposits_abroad_bis_usdmn": [
+    534.0,
+    733.0,
+    659.0,
+    728.0,
+    1646.0,
+    1722.0,
+    1806.0,
+    1865.0,
+    2011.0,
+    1866.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    1634.0,
+    2165.0,
+    2480.0,
+    3362.0,
+    5651.0,
+    7866.0,
+    6295.0,
+    6629.0,
+    null,
+    null
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2025,
+    "value": 3.6
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 39.2
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 35.1
+   },
+   "cost_2024_by_provider": {
+    "Money transfer operator": {
+     "cost": 6.48,
+     "quotes": 86
+    }
+   },
+   "targets_2024": {
+    "pairs": 2,
+    "le5_quoted": 50.0,
+    "le5_low": 50.0,
+    "le5_high": 50.0,
+    "le3_quoted": 0.0,
+    "le3_low": 0.0,
+    "le3_high": 0.0
+   }
+  },
+  "COM": {
+   "name": "Comoros",
+   "in_price_data": true,
+   "grey_episodes": [],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 1,
+   "years": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    5.38,
+    4.93,
+    5.08,
+    4.76,
+    4.65,
+    4.79,
+    7.14,
+    6.37,
+    5.66,
+    4.4
+   ],
+   "fee": [
+    4.72,
+    4.28,
+    4.38,
+    4.17,
+    4.14,
+    4.25,
+    6.5,
+    5.41,
+    4.82,
+    3.7
+   ],
+   "fx": [
+    0.67,
+    0.65,
+    0.7,
+    0.59,
+    0.51,
+    0.55,
+    0.64,
+    0.96,
+    0.84,
+    0.7
+   ],
+   "n_quotes": [
+    26,
+    38,
+    38,
+    47,
+    54,
+    52,
+    67,
+    82,
+    74,
+    27
+   ],
+   "deposits_abroad_bis_usdmn": [
+    8.0,
+    9.0,
+    7.0,
+    16.0,
+    19.0,
+    10.0,
+    10.0,
+    6.0,
+    3.0,
+    8.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    30.0,
+    19.0,
+    19.0,
+    25.0,
+    25.0,
+    19.0,
+    18.0,
+    18.0,
+    13.0,
+    null
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2023,
+    "value": 20.8
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 45.5
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 14.1
+   },
+   "cost_2024_by_provider": {
+    "Money transfer operator": {
+     "cost": 4.98,
+     "quotes": 69
+    }
+   },
+   "targets_2024": {
+    "pairs": 2,
+    "le5_quoted": 0.0,
+    "le5_low": 0.0,
+    "le5_high": 0.0,
+    "le3_quoted": 0.0,
+    "le3_low": 0.0,
+    "le3_high": 0.0
+   }
+  },
+  "CPV": {
+   "name": "Cabo Verde",
+   "in_price_data": true,
+   "grey_episodes": [],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 2,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    9.5,
+    9.26,
+    11.92,
+    10.35,
+    10.78,
+    9.32,
+    10.12,
+    9.66,
+    8.21,
+    8.76,
+    8.34,
+    8.43,
+    8.31,
+    8.81,
+    7.65
+   ],
+   "fee": [
+    8.32,
+    8.24,
+    9.51,
+    8.6,
+    9.53,
+    7.71,
+    8.86,
+    8.3,
+    6.12,
+    5.73,
+    5.5,
+    5.77,
+    5.77,
+    6.11,
+    5.75
+   ],
+   "fx": [
+    1.18,
+    1.02,
+    2.41,
+    1.75,
+    1.25,
+    1.62,
+    1.26,
+    1.37,
+    2.1,
+    3.03,
+    2.84,
+    2.66,
+    2.53,
+    2.7,
+    1.9
+   ],
+   "n_quotes": [
+    11,
+    22,
+    49,
+    36,
+    28,
+    52,
+    52,
+    56,
+    60,
+    64,
+    72,
+    78,
+    84,
+    80,
+    39
+   ],
+   "deposits_abroad_bis_usdmn": [
+    1348.0,
+    1227.0,
+    1592.0,
+    1317.0,
+    1454.0,
+    595.0,
+    750.0,
+    603.0,
+    575.0,
+    480.0,
+    174.0,
+    278.0,
+    251.0,
+    332.0,
+    311.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    134.0,
+    237.0,
+    368.0,
+    250.0,
+    257.0,
+    244.0,
+    318.0,
+    258.0,
+    256.0,
+    304.0,
+    352.0,
+    366.0,
+    425.0,
+    554.0,
+    568.0
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2025,
+    "value": 11.7
+   },
+   "account_pct_latest": null,
+   "mobile_money_pct_latest": null,
+   "cost_2024_by_provider": {
+    "Bank": {
+     "cost": 11.79,
+     "quotes": 24
+    },
+    "Money transfer operator": {
+     "cost": 7.54,
+     "quotes": 56
+    }
+   },
+   "targets_2024": {
+    "pairs": 4,
+    "le5_quoted": 25.0,
+    "le5_low": 25.0,
+    "le5_high": 25.0,
+    "le3_quoted": 0.0,
+    "le3_low": 0.0,
+    "le3_high": 0.0
+   }
+  },
+  "DZA": {
+   "name": "Algeria",
+   "in_price_data": true,
+   "grey_episodes": [
+    {
+     "listed": "2011-10-28",
+     "removed": "2016-02-19",
+     "checked": "FATF",
+     "source": "listed 28 Oct 2011; removed 19 Feb 2016"
+    },
+    {
+     "listed": "2024-10-25",
+     "removed": "2026-06-19",
+     "checked": "FATF",
+     "source": "listed 25 Oct 2024; removed 19 Jun 2026"
+    }
+   ],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 2,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    11.29,
+    14.41,
+    13.11,
+    13.63,
+    10.82,
+    8.53,
+    8.34,
+    9.57,
+    9.71,
+    9.43,
+    9.17,
+    10.94,
+    10.88,
+    7.25,
+    5.71
+   ],
+   "fee": [
+    10.58,
+    13.46,
+    12.0,
+    12.13,
+    6.51,
+    5.31,
+    4.6,
+    5.22,
+    5.0,
+    4.8,
+    4.6,
+    5.91,
+    5.06,
+    3.27,
+    4.38
+   ],
+   "fx": [
+    0.71,
+    0.95,
+    1.11,
+    1.5,
+    4.32,
+    3.21,
+    3.73,
+    4.35,
+    4.71,
+    4.63,
+    4.58,
+    5.03,
+    5.82,
+    3.98,
+    1.33
+   ],
+   "n_quotes": [
+    30,
+    27,
+    58,
+    59,
+    27,
+    39,
+    50,
+    46,
+    55,
+    63,
+    65,
+    54,
+    58,
+    29,
+    11
+   ],
+   "deposits_abroad_bis_usdmn": [
+    2714.0,
+    3244.0,
+    2303.0,
+    2462.0,
+    2579.0,
+    2997.0,
+    2752.0,
+    2641.0,
+    2835.0,
+    2610.0,
+    2741.0,
+    3028.0,
+    2827.0,
+    2521.0,
+    2336.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    1007.0,
+    1017.0,
+    616.0,
+    508.0,
+    536.0,
+    564.0,
+    591.0,
+    830.0,
+    756.0,
+    620.0,
+    684.0,
+    725.0,
+    901.0,
+    732.0,
+    1031.0
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2025,
+    "value": 0.6
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 35.3
+   },
+   "mobile_money_pct_latest": null,
+   "cost_2024_by_provider": {
+    "Money transfer operator": {
+     "cost": 6.4,
+     "quotes": 25
+    }
+   },
+   "targets_2024": {
+    "pairs": 4,
+    "le5_quoted": 50.0,
+    "le5_low": 50.0,
+    "le5_high": 0.0,
+    "le3_quoted": 50.0,
+    "le3_low": 50.0,
+    "le3_high": 0.0
+   }
+  },
+  "EGY": {
+   "name": "Egypt, Arab Rep.",
+   "in_price_data": true,
+   "grey_episodes": [],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 8,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    4.05,
+    4.31,
+    4.18,
+    4.46,
+    5.65,
+    5.93,
+    5.6,
+    5.07,
+    4.95,
+    4.8,
+    4.56,
+    4.37,
+    4.26,
+    5.02,
+    5.26
+   ],
+   "fee": [
+    3.27,
+    3.29,
+    3.06,
+    2.98,
+    3.45,
+    3.42,
+    3.3,
+    3.19,
+    3.15,
+    3.07,
+    2.82,
+    2.65,
+    2.81,
+    3.66,
+    4.02
+   ],
+   "fx": [
+    0.78,
+    1.02,
+    1.12,
+    1.48,
+    2.21,
+    2.51,
+    2.3,
+    1.88,
+    1.8,
+    1.73,
+    1.74,
+    1.72,
+    1.45,
+    1.36,
+    1.24
+   ],
+   "n_quotes": [
+    38,
+    36,
+    68,
+    68,
+    108,
+    315,
+    346,
+    369,
+    445,
+    404,
+    403,
+    443,
+    501,
+    483,
+    231
+   ],
+   "deposits_abroad_bis_usdmn": [
+    16143.0,
+    10655.0,
+    9173.0,
+    6893.0,
+    8238.0,
+    13063.0,
+    20380.0,
+    11807.0,
+    17958.0,
+    18661.0,
+    11721.0,
+    15185.0,
+    11990.0,
+    16208.0,
+    35586.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    20555.0,
+    18204.0,
+    16372.0,
+    13112.0,
+    9868.0,
+    9230.0,
+    19444.0,
+    11415.0,
+    20048.0,
+    21799.0,
+    13892.0,
+    16115.0,
+    13630.0,
+    23219.0,
+    46091.0
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2025,
+    "value": 11.4
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 43.1
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 15.6
+   },
+   "cost_2024_by_provider": {
+    "Bank": {
+     "cost": 13.71,
+     "quotes": 38
+    },
+    "Money transfer operator": {
+     "cost": 4.23,
+     "quotes": 441
+    }
+   },
+   "targets_2024": {
+    "pairs": 15,
+    "le5_quoted": 53.0,
+    "le5_low": 53.0,
+    "le5_high": 33.0,
+    "le3_quoted": 20.0,
+    "le3_low": 20.0,
+    "le3_high": 13.0
+   }
+  },
+  "ERI": {
+   "name": "Eritrea",
+   "in_price_data": true,
+   "grey_episodes": [],
+   "in_main_model": false,
+   "why_not_in_main_model": "no remittance inflows data",
+   "corridors": 2,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    13.16,
+    14.12,
+    11.44,
+    9.09,
+    9.1,
+    7.87,
+    11.99,
+    9.06,
+    7.7,
+    7.53,
+    7.62,
+    7.81,
+    8.47,
+    7.25,
+    7.25
+   ],
+   "fee": [
+    10.02,
+    10.55,
+    9.19,
+    9.09,
+    8.93,
+    7.68,
+    8.02,
+    6.65,
+    5.39,
+    5.04,
+    4.76,
+    4.6,
+    4.69,
+    3.81,
+    3.78
+   ],
+   "fx": [
+    3.14,
+    3.57,
+    2.25,
+    0.0,
+    0.17,
+    0.2,
+    3.98,
+    2.42,
+    2.3,
+    2.49,
+    2.86,
+    3.21,
+    3.77,
+    3.44,
+    3.47
+   ],
+   "n_quotes": [
+    10,
+    11,
+    13,
+    14,
+    22,
+    27,
+    31,
+    43,
+    65,
+    68,
+    85,
+    83,
+    77,
+    81,
+    41
+   ],
+   "deposits_abroad_bis_usdmn": [
+    14.0,
+    413.0,
+    401.0,
+    577.0,
+    609.0,
+    621.0,
+    700.0,
+    648.0,
+    684.0,
+    771.0,
+    1023.0,
+    480.0,
+    450.0,
+    407.0,
+    361.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    352.0,
+    415.0,
+    409.0,
+    532.0,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "remit_pct_gdp_latest": null,
+   "account_pct_latest": null,
+   "mobile_money_pct_latest": null,
+   "cost_2024_by_provider": {
+    "Money transfer operator": {
+     "cost": 7.25,
+     "quotes": 81
+    }
+   },
+   "targets_2024": {
+    "pairs": 2,
+    "le5_quoted": 0.0,
+    "le5_low": 0.0,
+    "le5_high": 0.0,
+    "le3_quoted": 0.0,
+    "le3_low": 0.0,
+    "le3_high": 0.0
+   }
+  },
+  "ETH": {
+   "name": "Ethiopia",
+   "in_price_data": true,
+   "grey_episodes": [
+    {
+     "listed": "2010-12-31",
+     "removed": "2014-10-24",
+     "checked": "FATF",
+     "source": "on Feb 2011 list (identified Jun 2010); removed 24 Oct 2014"
+    },
+    {
+     "listed": "2017-02-24",
+     "removed": "2019-10-18",
+     "checked": "FATF",
+     "source": "commitment Feb 2017 (Jun 2017 statement); removed 18 Oct 2019"
+    }
+   ],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 4,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    10.07,
+    8.19,
+    7.92,
+    7.81,
+    7.69,
+    7.2,
+    6.85,
+    6.84,
+    6.82,
+    6.84,
+    6.57,
+    5.54,
+    5.71,
+    6.4,
+    6.05
+   ],
+   "fee": [
+    7.33,
+    6.63,
+    6.03,
+    5.76,
+    5.51,
+    5.2,
+    4.97,
+    4.69,
+    4.61,
+    4.29,
+    3.75,
+    3.26,
+    3.04,
+    2.89,
+    2.91
+   ],
+   "fx": [
+    2.74,
+    1.56,
+    1.89,
+    2.05,
+    2.18,
+    2.0,
+    1.88,
+    2.15,
+    2.21,
+    2.54,
+    2.83,
+    2.28,
+    2.67,
+    3.51,
+    3.14
+   ],
+   "n_quotes": [
+    38,
+    47,
+    98,
+    82,
+    102,
+    115,
+    114,
+    118,
+    152,
+    146,
+    193,
+    224,
+    307,
+    272,
+    118
+   ],
+   "deposits_abroad_bis_usdmn": [
+    615.0,
+    1105.0,
+    1077.0,
+    992.0,
+    1303.0,
+    1366.0,
+    1161.0,
+    1306.0,
+    1500.0,
+    1756.0,
+    1519.0,
+    1251.0,
+    1273.0,
+    2051.0,
+    2431.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2024,
+    "value": 4.8
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 48.8
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 9.5
+   },
+   "cost_2024_by_provider": {
+    "Bank": {
+     "cost": 5.05,
+     "quotes": 24
+    },
+    "Money transfer operator": {
+     "cost": 6.53,
+     "quotes": 248
+    }
+   },
+   "targets_2024": {
+    "pairs": 10,
+    "le5_quoted": 30.0,
+    "le5_low": 30.0,
+    "le5_high": 0.0,
+    "le3_quoted": 0.0,
+    "le3_low": 0.0,
+    "le3_high": 0.0
+   }
+  },
+  "GHA": {
+   "name": "Ghana",
+   "in_price_data": true,
+   "grey_episodes": [
+    {
+     "listed": "2010-12-31",
+     "removed": "2013-02-22",
+     "checked": "FATF",
+     "source": "on Feb 2011 list (commitment Oct 2010); removed 22 Feb 2013"
+    },
+    {
+     "listed": "2018-10-19",
+     "removed": "2021-06-25",
+     "checked": "FATF",
+     "source": "listed 19 Oct 2018; removed Jun 2021"
+    }
+   ],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 5,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    10.9,
+    11.49,
+    11.39,
+    9.35,
+    8.94,
+    7.57,
+    7.8,
+    7.05,
+    7.9,
+    6.94,
+    6.96,
+    9.36,
+    7.84,
+    6.76,
+    5.86
+   ],
+   "fee": [
+    6.82,
+    8.37,
+    7.65,
+    7.36,
+    6.8,
+    5.39,
+    5.45,
+    4.77,
+    4.65,
+    3.92,
+    3.06,
+    2.57,
+    2.44,
+    2.62,
+    2.41
+   ],
+   "fx": [
+    4.07,
+    3.11,
+    3.74,
+    2.0,
+    2.14,
+    2.18,
+    2.35,
+    2.28,
+    3.24,
+    3.01,
+    3.9,
+    6.78,
+    5.41,
+    4.15,
+    3.45
+   ],
+   "n_quotes": [
+    77,
+    123,
+    256,
+    252,
+    250,
+    255,
+    252,
+    268,
+    315,
+    335,
+    511,
+    638,
+    820,
+    680,
+    292
+   ],
+   "deposits_abroad_bis_usdmn": [
+    1455.0,
+    1459.0,
+    1737.0,
+    1571.0,
+    1725.0,
+    1995.0,
+    1692.0,
+    1072.0,
+    1779.0,
+    1545.0,
+    1094.0,
+    1806.0,
+    1478.0,
+    3106.0,
+    3765.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    1236.0,
+    1131.0,
+    1298.0,
+    1481.0,
+    1401.0,
+    1736.0,
+    1791.0,
+    1798.0,
+    1875.0,
+    2107.0,
+    1740.0,
+    1738.0,
+    2009.0,
+    3056.0,
+    null
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2025,
+    "value": 2.1
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 81.2
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 78.3
+   },
+   "cost_2024_by_provider": {
+    "Bank": {
+     "cost": 10.24,
+     "quotes": 27
+    },
+    "Money transfer operator": {
+     "cost": 6.62,
+     "quotes": 653
+    }
+   },
+   "targets_2024": {
+    "pairs": 15,
+    "le5_quoted": 27.0,
+    "le5_low": 27.0,
+    "le5_high": 0.0,
+    "le3_quoted": 7.0,
+    "le3_low": 7.0,
+    "le3_high": 0.0
+   }
+  },
+  "GMB": {
+   "name": "Gambia, The",
+   "in_price_data": true,
+   "grey_episodes": [],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 1,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    10.9,
+    11.3,
+    14.91,
+    10.86,
+    8.57,
+    11.03,
+    10.21,
+    12.16,
+    12.83,
+    10.29,
+    12.3,
+    13.45,
+    12.82,
+    11.45,
+    12.16
+   ],
+   "fee": [
+    8.65,
+    9.67,
+    7.44,
+    6.77,
+    5.68,
+    4.77,
+    4.95,
+    4.84,
+    4.83,
+    4.62,
+    4.01,
+    3.17,
+    3.22,
+    2.92,
+    2.37
+   ],
+   "fx": [
+    2.26,
+    1.62,
+    7.47,
+    4.09,
+    2.9,
+    6.26,
+    5.26,
+    7.32,
+    8.0,
+    5.68,
+    8.29,
+    10.28,
+    9.6,
+    8.52,
+    9.79
+   ],
+   "n_quotes": [
+    16,
+    17,
+    31,
+    34,
+    38,
+    40,
+    40,
+    48,
+    54,
+    62,
+    73,
+    95,
+    124,
+    103,
+    45
+   ],
+   "deposits_abroad_bis_usdmn": [
+    72.0,
+    104.0,
+    110.0,
+    104.0,
+    65.0,
+    66.0,
+    109.0,
+    119.0,
+    131.0,
+    211.0,
+    318.0,
+    338.0,
+    301.0,
+    327.0,
+    406.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    65.0,
+    81.0,
+    78.0,
+    91.0,
+    null,
+    null,
+    93.0,
+    131.0,
+    174.0,
+    230.0,
+    268.0,
+    228.0,
+    224.0,
+    254.0,
+    null
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2025,
+    "value": 23.8
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 38.2
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 19.1
+   },
+   "cost_2024_by_provider": {
+    "Money transfer operator": {
+     "cost": 11.45,
+     "quotes": 103
+    }
+   },
+   "targets_2024": {
+    "pairs": 2,
+    "le5_quoted": 0.0,
+    "le5_low": 0.0,
+    "le5_high": 0.0,
+    "le3_quoted": 0.0,
+    "le3_low": 0.0,
+    "le3_high": 0.0
+   }
+  },
+  "KEN": {
+   "name": "Kenya",
+   "in_price_data": true,
+   "grey_episodes": [
+    {
+     "listed": "2010-12-31",
+     "removed": "2014-06-27",
+     "checked": "FATF",
+     "source": "on Feb 2011 list; removed 27 Jun 2014"
+    },
+    {
+     "listed": "2024-02-23",
+     "removed": null,
+     "checked": "FATF",
+     "source": "listed 23 Feb 2024; still listed"
+    }
+   ],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 6,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    14.0,
+    12.15,
+    12.4,
+    10.53,
+    9.22,
+    9.23,
+    8.33,
+    8.19,
+    8.29,
+    7.84,
+    8.32,
+    7.59,
+    7.31,
+    7.9,
+    7.29
+   ],
+   "fee": [
+    10.43,
+    9.35,
+    9.65,
+    7.91,
+    6.31,
+    5.98,
+    5.66,
+    5.28,
+    5.17,
+    4.48,
+    4.75,
+    4.46,
+    4.11,
+    4.31,
+    4.41
+   ],
+   "fx": [
+    3.58,
+    2.8,
+    2.74,
+    2.62,
+    2.91,
+    3.24,
+    2.66,
+    2.91,
+    3.11,
+    3.36,
+    3.56,
+    3.14,
+    3.2,
+    3.59,
+    2.88
+   ],
+   "n_quotes": [
+    71,
+    89,
+    161,
+    169,
+    194,
+    238,
+    264,
+    315,
+    357,
+    334,
+    460,
+    544,
+    681,
+    591,
+    266
+   ],
+   "deposits_abroad_bis_usdmn": [
+    5679.0,
+    5148.0,
+    5102.0,
+    6258.0,
+    6519.0,
+    6457.0,
+    5354.0,
+    4981.0,
+    4693.0,
+    4087.0,
+    3922.0,
+    2793.0,
+    4903.0,
+    5611.0,
+    6057.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    1827.0,
+    1493.0,
+    1928.0,
+    1854.0,
+    2271.0,
+    2038.0,
+    2327.0,
+    3313.0,
+    3831.0,
+    4713.0,
+    4730.0,
+    4127.0,
+    6877.0,
+    5334.0,
+    6227.0
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2025,
+    "value": 3.8
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 90.1
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 87.5
+   },
+   "cost_2024_by_provider": {
+    "Bank": {
+     "cost": 17.82,
+     "quotes": 52
+    },
+    "Mobile operator": {
+     "cost": 7.77,
+     "quotes": 12
+    },
+    "Money transfer operator": {
+     "cost": 6.92,
+     "quotes": 527
+    }
+   },
+   "targets_2024": {
+    "pairs": 17,
+    "le5_quoted": 24.0,
+    "le5_low": 24.0,
+    "le5_high": 12.0,
+    "le3_quoted": 0.0,
+    "le3_low": 0.0,
+    "le3_high": 0.0
+   }
+  },
+  "LBR": {
+   "name": "Liberia",
+   "in_price_data": true,
+   "grey_episodes": [],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 1,
+   "years": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    6.96,
+    5.35,
+    5.32,
+    5.25,
+    5.38,
+    5.55,
+    5.3,
+    6.78,
+    4.22,
+    6.79,
+    5.06,
+    5.16,
+    5.56,
+    5.7
+   ],
+   "fee": [
+    6.96,
+    5.35,
+    5.32,
+    5.25,
+    5.38,
+    5.55,
+    5.3,
+    4.79,
+    4.21,
+    4.65,
+    4.88,
+    4.97,
+    5.45,
+    5.61
+   ],
+   "fx": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.99,
+    0.01,
+    2.14,
+    0.18,
+    0.19,
+    0.11,
+    0.09
+   ],
+   "n_quotes": [
+    6,
+    28,
+    28,
+    28,
+    28,
+    28,
+    31,
+    43,
+    44,
+    53,
+    78,
+    84,
+    76,
+    37
+   ],
+   "deposits_abroad_bis_usdmn": [
+    152.0,
+    125.0,
+    146.0,
+    63.0,
+    161.0,
+    200.0,
+    160.0,
+    173.0,
+    181.0,
+    174.0,
+    261.0,
+    377.0,
+    429.0,
+    595.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    161.0,
+    147.0,
+    220.0,
+    137.0,
+    103.0,
+    56.0,
+    101.0,
+    109.0,
+    118.0,
+    177.0,
+    166.0,
+    210.0,
+    258.0,
+    null
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2024,
+    "value": 21.3
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 52.2
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 47.5
+   },
+   "cost_2024_by_provider": {
+    "Bank": {
+     "cost": 6.38,
+     "quotes": 16
+    },
+    "Money transfer operator": {
+     "cost": 5.34,
+     "quotes": 60
+    }
+   },
+   "targets_2024": {
+    "pairs": 3,
+    "le5_quoted": 67.0,
+    "le5_low": 67.0,
+    "le5_high": 33.0,
+    "le3_quoted": 67.0,
+    "le3_low": 33.0,
+    "le3_high": 0.0
+   }
+  },
+  "LSO": {
+   "name": "Lesotho",
+   "in_price_data": true,
+   "grey_episodes": [],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 1,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    16.1,
+    16.26,
+    16.32,
+    16.74,
+    14.51,
+    15.89,
+    16.33,
+    14.46,
+    16.1,
+    7.64,
+    15.09,
+    19.9,
+    18.49,
+    14.12,
+    11.71
+   ],
+   "fee": [
+    14.65,
+    15.81,
+    15.62,
+    16.17,
+    14.51,
+    15.89,
+    16.17,
+    14.46,
+    15.93,
+    7.64,
+    15.09,
+    19.9,
+    18.46,
+    14.03,
+    11.62
+   ],
+   "fx": [
+    1.46,
+    0.45,
+    0.71,
+    0.57,
+    0.0,
+    0.0,
+    0.16,
+    0.0,
+    0.17,
+    0.0,
+    0.0,
+    -0.0,
+    0.03,
+    0.08,
+    0.09
+   ],
+   "n_quotes": [
+    17,
+    19,
+    40,
+    36,
+    28,
+    28,
+    29,
+    37,
+    33,
+    29,
+    31,
+    34,
+    37,
+    44,
+    21
+   ],
+   "deposits_abroad_bis_usdmn": [
+    597.0,
+    647.0,
+    542.0,
+    408.0,
+    373.0,
+    358.0,
+    454.0,
+    468.0,
+    402.0,
+    396.0,
+    363.0,
+    294.0,
+    439.0,
+    396.0,
+    392.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    416.0,
+    302.0,
+    346.0,
+    288.0,
+    273.0,
+    243.0,
+    406.0,
+    396.0,
+    357.0,
+    458.0,
+    490.0,
+    343.0,
+    589.0,
+    504.0,
+    571.0
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2025,
+    "value": 20.8
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 61.6
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 53.5
+   },
+   "cost_2024_by_provider": {
+    "Bank": {
+     "cost": 23.47,
+     "quotes": 16
+    },
+    "Money transfer operator": {
+     "cost": 8.77,
+     "quotes": 28
+    }
+   },
+   "targets_2024": {
+    "pairs": 3,
+    "le5_quoted": 0.0,
+    "le5_low": 0.0,
+    "le5_high": 0.0,
+    "le3_quoted": 0.0,
+    "le3_low": 0.0,
+    "le3_high": 0.0
+   }
+  },
+  "MAR": {
+   "name": "Morocco",
+   "in_price_data": true,
+   "grey_episodes": [
+    {
+     "listed": "2010-12-31",
+     "removed": "2013-10-18",
+     "checked": "FATF",
+     "source": "on Feb 2011 list; removed 18 Oct 2013"
+    },
+    {
+     "listed": "2021-02-25",
+     "removed": "2023-02-24",
+     "checked": "FATF",
+     "source": "listed Feb 2021; removed 24 Feb 2023 (date: RBI)"
+    }
+   ],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 7,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    8.65,
+    10.01,
+    9.67,
+    9.27,
+    7.16,
+    6.47,
+    6.44,
+    6.22,
+    6.0,
+    5.9,
+    5.64,
+    5.46,
+    5.3,
+    5.73,
+    6.11
+   ],
+   "fee": [
+    6.65,
+    7.95,
+    7.46,
+    6.97,
+    5.16,
+    4.31,
+    4.23,
+    4.1,
+    3.89,
+    3.65,
+    3.23,
+    3.03,
+    3.05,
+    3.67,
+    4.5
+   ],
+   "fx": [
+    1.99,
+    2.06,
+    2.22,
+    2.31,
+    2.0,
+    2.16,
+    2.21,
+    2.12,
+    2.11,
+    2.26,
+    2.41,
+    2.42,
+    2.25,
+    2.06,
+    1.61
+   ],
+   "n_quotes": [
+    146,
+    148,
+    331,
+    345,
+    345,
+    379,
+    416,
+    450,
+    527,
+    522,
+    642,
+    684,
+    903,
+    808,
+    361
+   ],
+   "deposits_abroad_bis_usdmn": [
+    2189.0,
+    1711.0,
+    2519.0,
+    3362.0,
+    3126.0,
+    2283.0,
+    5511.0,
+    4320.0,
+    4566.0,
+    6509.0,
+    5146.0,
+    5512.0,
+    4769.0,
+    5791.0,
+    7556.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    3051.0,
+    3330.0,
+    3441.0,
+    3462.0,
+    3847.0,
+    3427.0,
+    5794.0,
+    5374.0,
+    6115.0,
+    7835.0,
+    6993.0,
+    6242.0,
+    7407.0,
+    9194.0,
+    10852.0
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2025,
+    "value": 7.5
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 44.4
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 5.9
+   },
+   "cost_2024_by_provider": {
+    "Bank": {
+     "cost": 13.33,
+     "quotes": 83
+    },
+    "Money transfer operator": {
+     "cost": 4.8,
+     "quotes": 703
+    },
+    "Other": {
+     "cost": 6.81,
+     "quotes": 22
+    }
+   },
+   "targets_2024": {
+    "pairs": 16,
+    "le5_quoted": 50.0,
+    "le5_low": 44.0,
+    "le5_high": 19.0,
+    "le3_quoted": 0.0,
+    "le3_low": 0.0,
+    "le3_high": 0.0
+   }
+  },
+  "MDG": {
+   "name": "Madagascar",
+   "in_price_data": true,
+   "grey_episodes": [],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 1,
+   "years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    7.92,
+    7.89,
+    8.59,
+    6.61,
+    8.2,
+    8.34,
+    9.51,
+    10.0,
+    8.52,
+    7.05,
+    5.24
+   ],
+   "fee": [
+    5.65,
+    5.4,
+    4.54,
+    4.35,
+    4.3,
+    4.07,
+    4.56,
+    5.61,
+    4.4,
+    3.4,
+    2.18
+   ],
+   "fx": [
+    2.27,
+    2.49,
+    4.05,
+    2.26,
+    3.9,
+    4.27,
+    4.95,
+    4.39,
+    4.12,
+    3.65,
+    3.06
+   ],
+   "n_quotes": [
+    7,
+    22,
+    23,
+    24,
+    35,
+    42,
+    39,
+    48,
+    72,
+    66,
+    29
+   ],
+   "deposits_abroad_bis_usdmn": [
+    324.0,
+    544.0,
+    258.0,
+    348.0,
+    277.0,
+    392.0,
+    396.0,
+    452.0,
+    542.0,
+    454.0,
+    525.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    296.0,
+    299.0,
+    327.0,
+    268.0,
+    256.0,
+    400.0,
+    380.0,
+    437.0,
+    371.0,
+    592.0,
+    null
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2025,
+    "value": 3.1
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 24.5
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 19.4
+   },
+   "cost_2024_by_provider": {
+    "Money transfer operator": {
+     "cost": 6.64,
+     "quotes": 64
+    }
+   },
+   "targets_2024": {
+    "pairs": 3,
+    "le5_quoted": 33.0,
+    "le5_low": 33.0,
+    "le5_high": 0.0,
+    "le3_quoted": 0.0,
+    "le3_low": 0.0,
+    "le3_high": 0.0
+   }
+  },
+  "MLI": {
+   "name": "Mali",
+   "in_price_data": true,
+   "grey_episodes": [
+    {
+     "listed": "2021-10-21",
+     "removed": "2025-06-13",
+     "checked": "secondary",
+     "source": "listed 21 Oct 2021 (IFC Review); removed 13 Jun 2025 (FATF)"
+    }
+   ],
+   "in_main_model": false,
+   "why_not_in_main_model": "no reserves data",
+   "corridors": 4,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    9.75,
+    11.53,
+    10.84,
+    11.19,
+    5.23,
+    6.54,
+    6.51,
+    5.08,
+    4.87,
+    4.55,
+    3.7,
+    4.42,
+    4.28,
+    5.89,
+    9.19
+   ],
+   "fee": [
+    9.71,
+    11.53,
+    10.84,
+    11.19,
+    5.23,
+    6.49,
+    5.85,
+    5.07,
+    4.9,
+    4.39,
+    3.58,
+    4.3,
+    4.25,
+    5.72,
+    9.13
+   ],
+   "fx": [
+    0.04,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.05,
+    0.65,
+    0.01,
+    -0.03,
+    0.16,
+    0.12,
+    0.12,
+    0.03,
+    0.17,
+    0.06
+   ],
+   "n_quotes": [
+    37,
+    36,
+    72,
+    67,
+    48,
+    71,
+    76,
+    85,
+    95,
+    105,
+    111,
+    103,
+    120,
+    120,
+    53
+   ],
+   "deposits_abroad_bis_usdmn": [
+    150.0,
+    166.0,
+    158.0,
+    94.0,
+    59.0,
+    53.0,
+    50.0,
+    50.0,
+    71.0,
+    150.0,
+    67.0,
+    102.0,
+    72.0,
+    57.0,
+    68.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    744.0,
+    842.0,
+    1175.0,
+    1350.0,
+    1328.0,
+    1406.0,
+    1545.0,
+    1520.0,
+    1437.0,
+    1938.0,
+    1919.0,
+    1959.0,
+    1902.0,
+    1814.0,
+    2455.0
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2024,
+    "value": 4.0
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 54.7
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 48.4
+   },
+   "cost_2024_by_provider": {
+    "Bank": {
+     "cost": 15.53,
+     "quotes": 20
+    },
+    "Mobile operator": {
+     "cost": 1.78,
+     "quotes": 16
+    },
+    "Money transfer operator": {
+     "cost": 4.44,
+     "quotes": 83
+    }
+   },
+   "targets_2024": {
+    "pairs": 9,
+    "le5_quoted": 67.0,
+    "le5_low": 67.0,
+    "le5_high": 67.0,
+    "le3_quoted": 33.0,
+    "le3_low": 33.0,
+    "le3_high": 22.0
+   }
+  },
+  "MOZ": {
+   "name": "Mozambique",
+   "in_price_data": true,
+   "grey_episodes": [
+    {
+     "listed": "2022-10-21",
+     "removed": "2025-10-24",
+     "checked": "secondary",
+     "source": "listed 21 Oct 2022 (FATF page did not load); removed 24 Oct 2025 (FATF)"
+    }
+   ],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 2,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    18.67,
+    19.67,
+    19.5,
+    19.56,
+    17.36,
+    16.27,
+    14.7,
+    14.14,
+    13.6,
+    12.19,
+    11.42,
+    11.05,
+    9.24,
+    8.34,
+    8.02
+   ],
+   "fee": [
+    14.65,
+    15.97,
+    15.62,
+    15.87,
+    13.11,
+    12.19,
+    11.44,
+    10.77,
+    9.72,
+    9.13,
+    8.14,
+    8.2,
+    8.16,
+    8.02,
+    7.7
+   ],
+   "fx": [
+    4.02,
+    3.7,
+    3.88,
+    3.69,
+    4.25,
+    4.08,
+    3.26,
+    3.37,
+    3.88,
+    3.06,
+    3.28,
+    2.85,
+    1.08,
+    0.32,
+    0.32
+   ],
+   "n_quotes": [
+    17,
+    19,
+    40,
+    37,
+    33,
+    48,
+    58,
+    58,
+    74,
+    88,
+    122,
+    133,
+    198,
+    206,
+    94
+   ],
+   "deposits_abroad_bis_usdmn": [
+    2263.0,
+    2483.0,
+    2433.0,
+    2448.0,
+    2081.0,
+    1645.0,
+    2856.0,
+    3073.0,
+    3300.0,
+    3383.0,
+    2612.0,
+    2594.0,
+    2740.0,
+    3179.0,
+    3524.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    960.0,
+    1213.0,
+    1139.0,
+    1056.0,
+    1088.0,
+    903.0,
+    846.0,
+    898.0,
+    935.0,
+    1135.0,
+    1634.0,
+    1632.0,
+    1111.0,
+    1132.0,
+    1256.0
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2025,
+    "value": 1.2
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 54.4
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 45.7
+   },
+   "cost_2024_by_provider": {
+    "Bank": {
+     "cost": 28.83,
+     "quotes": 15
+    },
+    "Money transfer operator": {
+     "cost": 6.73,
+     "quotes": 191
+    }
+   },
+   "targets_2024": {
+    "pairs": 6,
+    "le5_quoted": 17.0,
+    "le5_low": 17.0,
+    "le5_high": 17.0,
+    "le3_quoted": 17.0,
+    "le3_low": 17.0,
+    "le3_high": 0.0
+   }
+  },
+  "MUS": {
+   "name": "Mauritius",
+   "in_price_data": false,
+   "grey_episodes": [
+    {
+     "listed": "2020-02-21",
+     "removed": "2021-10-21",
+     "checked": "secondary",
+     "source": "listed 21 Feb 2020 (FATF); removed 21 Oct 2021 (IFC Review)"
+    }
+   ]
+  },
+  "MWI": {
+   "name": "Malawi",
+   "in_price_data": true,
+   "grey_episodes": [],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 1,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    16.42,
+    20.58,
+    22.19,
+    20.07,
+    15.67,
+    19.12,
+    16.56,
+    16.24,
+    15.57,
+    16.2,
+    15.95,
+    16.96,
+    18.02,
+    18.14,
+    21.57
+   ],
+   "fee": [
+    14.65,
+    15.63,
+    14.74,
+    14.96,
+    13.08,
+    12.94,
+    13.24,
+    12.9,
+    12.33,
+    12.39,
+    12.07,
+    13.73,
+    14.54,
+    14.6,
+    12.68
+   ],
+   "fx": [
+    1.78,
+    4.95,
+    7.45,
+    5.11,
+    2.59,
+    6.18,
+    3.32,
+    3.33,
+    3.24,
+    3.81,
+    3.88,
+    3.23,
+    3.48,
+    3.54,
+    8.9
+   ],
+   "n_quotes": [
+    17,
+    19,
+    44,
+    44,
+    37,
+    39,
+    43,
+    48,
+    56,
+    60,
+    70,
+    70,
+    66,
+    71,
+    27
+   ],
+   "deposits_abroad_bis_usdmn": [
+    191.0,
+    161.0,
+    424.0,
+    244.0,
+    236.0,
+    218.0,
+    448.0,
+    205.0,
+    240.0,
+    165.0,
+    158.0,
+    200.0,
+    228.0,
+    136.0,
+    244.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    null,
+    null,
+    null,
+    null,
+    156.0,
+    204.0,
+    261.0,
+    156.0,
+    133.0,
+    248.0,
+    302.0,
+    361.0,
+    273.0,
+    231.0,
+    null
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2025,
+    "value": 2.0
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 50.4
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 47.4
+   },
+   "cost_2024_by_provider": {
+    "Bank": {
+     "cost": 28.25,
+     "quotes": 16
+    },
+    "Money transfer operator": {
+     "cost": 15.2,
+     "quotes": 55
+    }
+   },
+   "targets_2024": {
+    "pairs": 3,
+    "le5_quoted": 0.0,
+    "le5_low": 0.0,
+    "le5_high": 0.0,
+    "le3_quoted": 0.0,
+    "le3_low": 0.0,
+    "le3_high": 0.0
+   }
+  },
+  "NAM": {
+   "name": "Namibia",
+   "in_price_data": true,
+   "grey_episodes": [
+    {
+     "listed": "2011-06-24",
+     "removed": "2015-02-27",
+     "checked": "FATF",
+     "source": "CORRECTED: first listed 24 Jun 2011, not on Feb 2011 list; removed 27 Feb 2015"
+    },
+    {
+     "listed": "2024-02-23",
+     "removed": "2026-06-19",
+     "checked": "FATF",
+     "source": "listed 23 Feb 2024; removed 19 Jun 2026"
+    }
+   ],
+   "in_main_model": false,
+   "why_not_in_main_model": "no BIS deposits abroad data",
+   "corridors": 1,
+   "years": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    22.05,
+    23.51,
+    19.69,
+    17.06,
+    19.71,
+    14.32,
+    19.56,
+    11.03,
+    13.42,
+    12.35
+   ],
+   "fee": [
+    14.33,
+    9.27,
+    9.55,
+    10.88,
+    9.4,
+    10.29,
+    14.13,
+    8.54,
+    12.07,
+    7.09
+   ],
+   "fx": [
+    7.72,
+    14.24,
+    10.14,
+    6.17,
+    10.32,
+    4.03,
+    5.43,
+    2.49,
+    1.35,
+    5.26
+   ],
+   "n_quotes": [
+    11,
+    12,
+    12,
+    12,
+    8,
+    6,
+    7,
+    7,
+    8,
+    3
+   ],
+   "deposits_abroad_bis_usdmn": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "foreign_assets_imf_usdmn": [
+    620.0,
+    954.0,
+    1171.0,
+    1321.0,
+    1343.0,
+    1242.0,
+    1673.0,
+    1994.0,
+    2119.0,
+    2261.0
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2024,
+    "value": 0.7
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 72.9
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 48.4
+   },
+   "cost_2024_by_provider": {
+    "Money transfer operator": {
+     "cost": 13.42,
+     "quotes": 8
+    }
+   },
+   "targets_2024": {
+    "pairs": 1,
+    "le5_quoted": 0.0,
+    "le5_low": 0.0,
+    "le5_high": 0.0,
+    "le3_quoted": 0.0,
+    "le3_low": 0.0,
+    "le3_high": 0.0
+   }
+  },
+  "NGA": {
+   "name": "Nigeria",
+   "in_price_data": true,
+   "grey_episodes": [
+    {
+     "listed": "2010-12-31",
+     "removed": "2013-10-18",
+     "checked": "FATF",
+     "source": "on Feb 2011 list; removed 18 Oct 2013"
+    },
+    {
+     "listed": "2023-02-24",
+     "removed": "2025-10-24",
+     "checked": "secondary",
+     "source": "listed 24 Feb 2023 (RBI); removed 24 Oct 2025 (FATF)"
+    }
+   ],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 10,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    9.77,
+    10.77,
+    9.66,
+    9.01,
+    8.64,
+    8.05,
+    7.94,
+    8.12,
+    8.27,
+    7.86,
+    6.03,
+    4.92,
+    5.13,
+    6.26,
+    4.94
+   ],
+   "fee": [
+    8.5,
+    9.33,
+    8.35,
+    8.04,
+    7.22,
+    6.12,
+    5.84,
+    5.21,
+    4.9,
+    4.5,
+    4.38,
+    3.47,
+    3.46,
+    3.84,
+    3.52
+   ],
+   "fx": [
+    1.27,
+    1.44,
+    1.32,
+    0.97,
+    1.42,
+    1.93,
+    2.1,
+    2.91,
+    3.37,
+    3.37,
+    1.65,
+    1.45,
+    1.67,
+    2.42,
+    1.42
+   ],
+   "n_quotes": [
+    83,
+    125,
+    248,
+    217,
+    228,
+    299,
+    335,
+    381,
+    488,
+    514,
+    549,
+    725,
+    942,
+    652,
+    348
+   ],
+   "deposits_abroad_bis_usdmn": [
+    10527.0,
+    23818.0,
+    25812.0,
+    20501.0,
+    13404.0,
+    14480.0,
+    26997.0,
+    31120.0,
+    17528.0,
+    19477.0,
+    23790.0,
+    24565.0,
+    22391.0,
+    28424.0,
+    34520.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    10905.0,
+    12895.0,
+    13383.0,
+    12456.0,
+    8082.0,
+    6805.0,
+    8642.0,
+    10213.0,
+    9966.0,
+    12301.0,
+    14373.0,
+    16688.0,
+    14899.0,
+    null,
+    null
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2025,
+    "value": 7.8
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 63.3
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 32.8
+   },
+   "cost_2024_by_provider": {
+    "Bank": {
+     "cost": 13.4,
+     "quotes": 37
+    },
+    "Money transfer operator": {
+     "cost": 5.83,
+     "quotes": 615
+    }
+   },
+   "targets_2024": {
+    "pairs": 19,
+    "le5_quoted": 42.0,
+    "le5_low": 42.0,
+    "le5_high": 11.0,
+    "le3_quoted": 5.0,
+    "le3_low": 5.0,
+    "le3_high": 0.0
+   }
+  },
+  "RWA": {
+   "name": "Rwanda",
+   "in_price_data": true,
+   "grey_episodes": [],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 4,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    17.3,
+    15.4,
+    15.02,
+    13.47,
+    13.05,
+    13.26,
+    12.71,
+    12.75,
+    12.07,
+    9.86,
+    10.59,
+    8.49,
+    7.34,
+    7.32,
+    6.98
+   ],
+   "fee": [
+    14.6,
+    13.09,
+    12.7,
+    11.44,
+    11.07,
+    10.91,
+    9.85,
+    8.54,
+    7.38,
+    5.63,
+    5.63,
+    4.53,
+    3.54,
+    3.08,
+    2.75
+   ],
+   "fx": [
+    2.7,
+    2.3,
+    2.32,
+    2.03,
+    1.98,
+    2.35,
+    2.86,
+    4.21,
+    4.69,
+    4.23,
+    4.96,
+    3.96,
+    3.8,
+    4.24,
+    4.23
+   ],
+   "n_quotes": [
+    64,
+    74,
+    146,
+    128,
+    120,
+    128,
+    121,
+    127,
+    140,
+    136,
+    178,
+    233,
+    290,
+    235,
+    106
+   ],
+   "deposits_abroad_bis_usdmn": [
+    596.0,
+    237.0,
+    293.0,
+    175.0,
+    113.0,
+    211.0,
+    204.0,
+    380.0,
+    272.0,
+    259.0,
+    149.0,
+    173.0,
+    129.0,
+    294.0,
+    406.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    260.0,
+    237.0,
+    308.0,
+    332.0,
+    229.0,
+    314.0,
+    260.0,
+    369.0,
+    302.0,
+    347.0,
+    339.0,
+    345.0,
+    642.0,
+    889.0,
+    1153.0
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2024,
+    "value": 3.4
+   },
+   "account_pct_latest": {
+    "year": 2017,
+    "value": 50.0
+   },
+   "mobile_money_pct_latest": {
+    "year": 2017,
+    "value": 31.1
+   },
+   "cost_2024_by_provider": {
+    "Bank": {
+     "cost": 17.98,
+     "quotes": 8
+    },
+    "Mobile operator": {
+     "cost": 8.72,
+     "quotes": 12
+    },
+    "Money transfer operator": {
+     "cost": 6.84,
+     "quotes": 215
+    }
+   },
+   "targets_2024": {
+    "pairs": 9,
+    "le5_quoted": 11.0,
+    "le5_low": 11.0,
+    "le5_high": 11.0,
+    "le3_quoted": 11.0,
+    "le3_low": 11.0,
+    "le3_high": 0.0
+   }
+  },
+  "SDN": {
+   "name": "Sudan",
+   "in_price_data": true,
+   "grey_episodes": [
+    {
+     "listed": "2010-12-31",
+     "removed": "2015-10-23",
+     "checked": "FATF",
+     "source": "on Feb 2011 list; removed 23 Oct 2015"
+    }
+   ],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 3,
+   "years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    10.7,
+    5.04,
+    4.73,
+    7.51,
+    8.11,
+    8.38,
+    6.33,
+    4.21,
+    10.02,
+    15.09,
+    16.08
+   ],
+   "fee": [
+    4.02,
+    3.03,
+    3.04,
+    3.21,
+    3.1,
+    3.02,
+    2.9,
+    2.84,
+    2.82,
+    2.75,
+    2.63
+   ],
+   "fx": [
+    6.68,
+    2.0,
+    1.69,
+    4.31,
+    5.01,
+    5.35,
+    3.43,
+    1.37,
+    7.2,
+    12.34,
+    13.44
+   ],
+   "n_quotes": [
+    8,
+    39,
+    42,
+    40,
+    45,
+    49,
+    39,
+    42,
+    41,
+    41,
+    14
+   ],
+   "deposits_abroad_bis_usdmn": [
+    198.0,
+    208.0,
+    336.0,
+    339.0,
+    557.0,
+    668.0,
+    609.0,
+    817.0,
+    1153.0,
+    1562.0,
+    961.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    601.0,
+    526.0,
+    962.0,
+    591.0,
+    741.0,
+    1061.0,
+    1292.0,
+    1579.0,
+    null,
+    null,
+    null
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2025,
+    "value": 0.0
+   },
+   "account_pct_latest": null,
+   "mobile_money_pct_latest": null,
+   "cost_2024_by_provider": {
+    "Money transfer operator": {
+     "cost": 16.11,
+     "quotes": 38
+    }
+   },
+   "targets_2024": {
+    "pairs": 4,
+    "le5_quoted": 25.0,
+    "le5_low": 25.0,
+    "le5_high": 0.0,
+    "le3_quoted": 25.0,
+    "le3_low": 25.0,
+    "le3_high": 0.0
+   }
+  },
+  "SEN": {
+   "name": "Senegal",
+   "in_price_data": true,
+   "grey_episodes": [
+    {
+     "listed": "2021-02-25",
+     "removed": "2024-10-25",
+     "checked": "FATF",
+     "source": "listed Feb 2021; removed 25 Oct 2024"
+    }
+   ],
+   "in_main_model": false,
+   "why_not_in_main_model": "no reserves data",
+   "corridors": 2,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    9.39,
+    10.47,
+    9.29,
+    9.53,
+    5.83,
+    5.77,
+    5.64,
+    5.45,
+    5.59,
+    4.8,
+    4.32,
+    4.38,
+    4.33,
+    4.75,
+    5.93
+   ],
+   "fee": [
+    9.36,
+    10.47,
+    9.29,
+    9.52,
+    5.75,
+    5.57,
+    5.46,
+    5.37,
+    5.09,
+    4.72,
+    4.27,
+    4.22,
+    4.03,
+    4.39,
+    5.82
+   ],
+   "fx": [
+    0.03,
+    0.0,
+    0.0,
+    0.01,
+    0.07,
+    0.2,
+    0.17,
+    0.07,
+    0.5,
+    0.08,
+    0.05,
+    0.16,
+    0.3,
+    0.36,
+    0.11
+   ],
+   "n_quotes": [
+    44,
+    53,
+    113,
+    111,
+    94,
+    101,
+    115,
+    121,
+    139,
+    149,
+    190,
+    184,
+    254,
+    231,
+    97
+   ],
+   "deposits_abroad_bis_usdmn": [
+    136.0,
+    328.0,
+    195.0,
+    229.0,
+    290.0,
+    190.0,
+    237.0,
+    329.0,
+    345.0,
+    481.0,
+    374.0,
+    256.0,
+    608.0,
+    488.0,
+    1149.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    895.0,
+    941.0,
+    997.0,
+    1163.0,
+    1331.0,
+    1951.0,
+    2269.0,
+    2534.0,
+    2133.0,
+    2707.0,
+    2884.0,
+    3305.0,
+    3477.0,
+    3113.0,
+    3108.0
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2023,
+    "value": 10.6
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 76.5
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 66.9
+   },
+   "cost_2024_by_provider": {
+    "Bank": {
+     "cost": 18.59,
+     "quotes": 16
+    },
+    "Money transfer operator": {
+     "cost": 3.63,
+     "quotes": 210
+    },
+    "Other": {
+     "cost": 7.4,
+     "quotes": 5
+    }
+   },
+   "targets_2024": {
+    "pairs": 6,
+    "le5_quoted": 83.0,
+    "le5_low": 83.0,
+    "le5_high": 67.0,
+    "le3_quoted": 33.0,
+    "le3_low": 33.0,
+    "le3_high": 0.0
+   }
+  },
+  "SLE": {
+   "name": "Sierra Leone",
+   "in_price_data": true,
+   "grey_episodes": [],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 1,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    9.02,
+    7.29,
+    7.9,
+    7.95,
+    5.54,
+    9.46,
+    11.08,
+    9.38,
+    10.78,
+    9.96,
+    8.4,
+    8.49,
+    7.37,
+    5.89,
+    5.26
+   ],
+   "fee": [
+    5.14,
+    5.01,
+    4.2,
+    5.33,
+    5.48,
+    5.07,
+    5.11,
+    4.87,
+    5.25,
+    4.73,
+    3.81,
+    3.22,
+    2.93,
+    2.8,
+    2.53
+   ],
+   "fx": [
+    3.88,
+    2.28,
+    3.7,
+    2.62,
+    0.05,
+    4.38,
+    5.98,
+    4.5,
+    5.53,
+    5.23,
+    4.59,
+    5.27,
+    4.44,
+    3.09,
+    2.74
+   ],
+   "n_quotes": [
+    19,
+    26,
+    56,
+    36,
+    35,
+    36,
+    35,
+    51,
+    50,
+    50,
+    62,
+    82,
+    108,
+    91,
+    36
+   ],
+   "deposits_abroad_bis_usdmn": [
+    137.0,
+    189.0,
+    173.0,
+    159.0,
+    135.0,
+    146.0,
+    120.0,
+    120.0,
+    126.0,
+    135.0,
+    153.0,
+    186.0,
+    230.0,
+    280.0,
+    226.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    218.0,
+    276.0,
+    305.0,
+    265.0,
+    242.0,
+    232.0,
+    246.0,
+    231.0,
+    192.0,
+    262.0,
+    334.0,
+    448.0,
+    449.0,
+    449.0,
+    465.0
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2024,
+    "value": 4.6
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 38.6
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 32.2
+   },
+   "cost_2024_by_provider": {
+    "Money transfer operator": {
+     "cost": 5.89,
+     "quotes": 91
+    }
+   },
+   "targets_2024": {
+    "pairs": 2,
+    "le5_quoted": 50.0,
+    "le5_low": 50.0,
+    "le5_high": 0.0,
+    "le3_quoted": 0.0,
+    "le3_low": 0.0,
+    "le3_high": 0.0
+   }
+  },
+  "SOM": {
+   "name": "Somalia",
+   "in_price_data": true,
+   "grey_episodes": [],
+   "in_main_model": false,
+   "why_not_in_main_model": "no reserves or remittance inflows data",
+   "corridors": 5,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    8.96,
+    6.11,
+    5.93,
+    6.56,
+    6.93,
+    8.11,
+    8.06,
+    7.49,
+    7.82,
+    8.44,
+    7.88,
+    7.04,
+    6.66,
+    6.59,
+    6.01
+   ],
+   "fee": [
+    7.35,
+    4.82,
+    5.0,
+    5.0,
+    5.41,
+    5.36,
+    5.26,
+    4.68,
+    4.97,
+    5.03,
+    3.46,
+    2.68,
+    2.35,
+    2.38,
+    2.16
+   ],
+   "fx": [
+    1.62,
+    1.3,
+    0.93,
+    1.56,
+    1.51,
+    2.75,
+    2.79,
+    2.8,
+    2.85,
+    3.4,
+    4.42,
+    4.36,
+    4.31,
+    4.21,
+    3.84
+   ],
+   "n_quotes": [
+    8,
+    11,
+    20,
+    20,
+    59,
+    103,
+    88,
+    96,
+    105,
+    119,
+    141,
+    152,
+    190,
+    198,
+    102
+   ],
+   "deposits_abroad_bis_usdmn": [
+    30.0,
+    14.0,
+    23.0,
+    21.0,
+    16.0,
+    16.0,
+    35.0,
+    33.0,
+    57.0,
+    23.0,
+    16.0,
+    8.0,
+    21.0,
+    19.0,
+    19.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    135.0,
+    157.0,
+    358.0,
+    592.0,
+    679.0,
+    777.0,
+    944.0,
+    1096.0
+   ],
+   "remit_pct_gdp_latest": null,
+   "account_pct_latest": {
+    "year": 2014,
+    "value": 38.7
+   },
+   "mobile_money_pct_latest": {
+    "year": 2014,
+    "value": 37.1
+   },
+   "cost_2024_by_provider": {
+    "Money transfer operator": {
+     "cost": 6.59,
+     "quotes": 198
+    }
+   },
+   "targets_2024": {
+    "pairs": 11,
+    "le5_quoted": 18.0,
+    "le5_low": 18.0,
+    "le5_high": 9.0,
+    "le3_quoted": 0.0,
+    "le3_low": 0.0,
+    "le3_high": 0.0
+   }
+  },
+  "SSD": {
+   "name": "South Sudan",
+   "in_price_data": true,
+   "grey_episodes": [
+    {
+     "listed": "2021-06-25",
+     "removed": null,
+     "checked": "FATF",
+     "source": "listed Jun 2021; still listed"
+    }
+   ],
+   "in_main_model": false,
+   "why_not_in_main_model": "inputs never all available in the same year",
+   "corridors": 5,
+   "years": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    9.82,
+    9.65,
+    9.67,
+    9.1,
+    8.92,
+    8.1,
+    9.05,
+    9.26,
+    9.27,
+    9.87
+   ],
+   "fee": [
+    8.46,
+    8.27,
+    7.54,
+    6.76,
+    6.88,
+    5.64,
+    5.66,
+    5.98,
+    7.04,
+    7.6
+   ],
+   "fx": [
+    1.36,
+    1.39,
+    2.13,
+    2.34,
+    2.05,
+    2.46,
+    3.39,
+    3.28,
+    2.24,
+    2.27
+   ],
+   "n_quotes": [
+    69,
+    87,
+    96,
+    121,
+    119,
+    122,
+    149,
+    188,
+    181,
+    88
+   ],
+   "deposits_abroad_bis_usdmn": [
+    null,
+    2.0,
+    1.0,
+    2.0,
+    2.0,
+    2.0,
+    1.0,
+    1.0,
+    2.0,
+    1.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    137.0,
+    192.0,
+    293.0,
+    359.0,
+    241.0,
+    275.0,
+    523.0,
+    545.0,
+    502.0,
+    513.0
+   ],
+   "remit_pct_gdp_latest": null,
+   "account_pct_latest": {
+    "year": 2021,
+    "value": 5.8
+   },
+   "mobile_money_pct_latest": {
+    "year": 2021,
+    "value": 0.8
+   },
+   "cost_2024_by_provider": {
+    "Bank": {
+     "cost": 14.91,
+     "quotes": 56
+    },
+    "Money transfer operator": {
+     "cost": 6.75,
+     "quotes": 125
+    }
+   },
+   "targets_2024": {
+    "pairs": 7,
+    "le5_quoted": 57.0,
+    "le5_low": 57.0,
+    "le5_high": 57.0,
+    "le3_quoted": 0.0,
+    "le3_low": 0.0,
+    "le3_high": 0.0
+   }
+  },
+  "STP": {
+   "name": "Sao Tome and Principe",
+   "in_price_data": false,
+   "grey_episodes": [
+    {
+     "listed": "2010-12-31",
+     "removed": "2013-10-18",
+     "checked": "FATF",
+     "source": "on Feb 2011 list; 18 Oct 2013: to continue work with GIABA (left FATF process)"
+    }
+   ]
+  },
+  "SWZ": {
+   "name": "Eswatini",
+   "in_price_data": true,
+   "grey_episodes": [],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 1,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    16.1,
+    16.37,
+    16.32,
+    16.55,
+    14.51,
+    15.89,
+    16.55,
+    17.36,
+    19.6,
+    8.08,
+    16.14,
+    21.81,
+    21.05,
+    15.13,
+    12.22
+   ],
+   "fee": [
+    14.65,
+    15.92,
+    15.62,
+    15.99,
+    14.51,
+    15.89,
+    16.39,
+    17.36,
+    19.38,
+    8.08,
+    16.14,
+    21.81,
+    21.01,
+    15.03,
+    12.11
+   ],
+   "fx": [
+    1.46,
+    0.45,
+    0.71,
+    0.57,
+    0.0,
+    0.0,
+    0.17,
+    0.0,
+    0.22,
+    0.0,
+    0.0,
+    0.0,
+    0.04,
+    0.1,
+    0.11
+   ],
+   "n_quotes": [
+    17,
+    19,
+    40,
+    36,
+    28,
+    28,
+    28,
+    28,
+    25,
+    21,
+    27,
+    29,
+    29,
+    36,
+    17
+   ],
+   "deposits_abroad_bis_usdmn": [
+    444.0,
+    532.0,
+    603.0,
+    494.0,
+    403.0,
+    836.0,
+    327.0,
+    633.0,
+    590.0,
+    742.0,
+    626.0,
+    804.0,
+    800.0,
+    786.0,
+    888.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    199.0,
+    247.0,
+    175.0,
+    123.0,
+    144.0,
+    211.0,
+    199.0,
+    162.0,
+    150.0,
+    204.0,
+    209.0,
+    276.0,
+    261.0,
+    241.0,
+    272.0
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2025,
+    "value": 0.7
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 65.1
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 50.4
+   },
+   "cost_2024_by_provider": {
+    "Bank": {
+     "cost": 23.47,
+     "quotes": 16
+    },
+    "Money transfer operator": {
+     "cost": 8.46,
+     "quotes": 20
+    }
+   },
+   "targets_2024": {
+    "pairs": 2,
+    "le5_quoted": 0.0,
+    "le5_low": 0.0,
+    "le5_high": 0.0,
+    "le3_quoted": 0.0,
+    "le3_low": 0.0,
+    "le3_high": 0.0
+   }
+  },
+  "TGO": {
+   "name": "Togo",
+   "in_price_data": true,
+   "grey_episodes": [],
+   "in_main_model": false,
+   "why_not_in_main_model": "no reserves data",
+   "corridors": 3,
+   "years": [
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    11.66,
+    12.22,
+    8.18,
+    7.29,
+    7.75,
+    7.22,
+    6.13,
+    6.14,
+    5.2,
+    4.83,
+    4.41,
+    4.38,
+    4.06
+   ],
+   "fee": [
+    11.66,
+    12.2,
+    8.12,
+    7.24,
+    7.05,
+    6.31,
+    6.11,
+    5.94,
+    4.86,
+    4.63,
+    4.21,
+    4.12,
+    3.85
+   ],
+   "fx": [
+    0.0,
+    0.02,
+    0.06,
+    0.05,
+    0.7,
+    0.91,
+    0.03,
+    0.19,
+    0.33,
+    0.2,
+    0.2,
+    0.27,
+    0.21
+   ],
+   "n_quotes": [
+    122,
+    113,
+    83,
+    81,
+    86,
+    87,
+    102,
+    113,
+    110,
+    126,
+    185,
+    151,
+    58
+   ],
+   "deposits_abroad_bis_usdmn": [
+    178.0,
+    113.0,
+    110.0,
+    119.0,
+    201.0,
+    152.0,
+    138.0,
+    169.0,
+    209.0,
+    191.0,
+    229.0,
+    169.0,
+    268.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    986.0,
+    894.0,
+    996.0,
+    1243.0,
+    1415.0,
+    1306.0,
+    1371.0,
+    2092.0,
+    2478.0,
+    2945.0,
+    2910.0,
+    2695.0,
+    3145.0
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2020,
+    "value": 8.7
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 57.4
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 48.0
+   },
+   "cost_2024_by_provider": {
+    "Money transfer operator": {
+     "cost": 4.35,
+     "quotes": 150
+    }
+   },
+   "targets_2024": {
+    "pairs": 6,
+    "le5_quoted": 83.0,
+    "le5_low": 83.0,
+    "le5_high": 67.0,
+    "le3_quoted": 17.0,
+    "le3_low": 17.0,
+    "le3_high": 0.0
+   }
+  },
+  "TUN": {
+   "name": "Tunisia",
+   "in_price_data": true,
+   "grey_episodes": [
+    {
+     "listed": "2017-11-03",
+     "removed": "2019-10-18",
+     "checked": "FATF",
+     "source": "listed 3 Nov 2017; removed 18 Oct 2019"
+    }
+   ],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 2,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    10.09,
+    12.55,
+    11.64,
+    11.57,
+    6.29,
+    7.8,
+    8.35,
+    8.03,
+    8.26,
+    7.86,
+    7.13,
+    7.94,
+    7.0,
+    6.93,
+    5.93
+   ],
+   "fee": [
+    9.02,
+    11.19,
+    9.65,
+    9.92,
+    4.55,
+    5.02,
+    5.32,
+    5.05,
+    4.82,
+    4.58,
+    4.12,
+    4.4,
+    3.88,
+    4.43,
+    3.98
+   ],
+   "fx": [
+    1.07,
+    1.36,
+    1.99,
+    1.65,
+    1.74,
+    2.79,
+    3.03,
+    2.97,
+    3.43,
+    3.28,
+    3.02,
+    3.55,
+    3.12,
+    2.49,
+    1.95
+   ],
+   "n_quotes": [
+    40,
+    34,
+    72,
+    72,
+    44,
+    89,
+    111,
+    120,
+    143,
+    144,
+    161,
+    137,
+    193,
+    177,
+    84
+   ],
+   "deposits_abroad_bis_usdmn": [
+    3860.0,
+    3786.0,
+    4074.0,
+    3303.0,
+    3586.0,
+    2772.0,
+    3351.0,
+    4527.0,
+    4509.0,
+    3482.0,
+    3202.0,
+    3107.0,
+    3801.0,
+    3229.0,
+    2592.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    918.0,
+    1226.0,
+    1517.0,
+    1311.0,
+    1323.0,
+    1122.0,
+    986.0,
+    999.0,
+    1240.0,
+    1090.0,
+    1189.0,
+    1117.0,
+    1331.0,
+    1188.0,
+    1569.0
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2025,
+    "value": 6.7
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 37.8
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 2.6
+   },
+   "cost_2024_by_provider": {
+    "Bank": {
+     "cost": 13.22,
+     "quotes": 26
+    },
+    "Money transfer operator": {
+     "cost": 5.77,
+     "quotes": 145
+    },
+    "Other": {
+     "cost": 7.63,
+     "quotes": 6
+    }
+   },
+   "targets_2024": {
+    "pairs": 4,
+    "le5_quoted": 0.0,
+    "le5_low": 0.0,
+    "le5_high": 0.0,
+    "le3_quoted": 0.0,
+    "le3_low": 0.0,
+    "le3_high": 0.0
+   }
+  },
+  "TZA": {
+   "name": "Tanzania",
+   "in_price_data": true,
+   "grey_episodes": [
+    {
+     "listed": "2010-12-31",
+     "removed": "2014-06-27",
+     "checked": "FATF",
+     "source": "on Feb 2011 list; removed 27 Jun 2014"
+    },
+    {
+     "listed": "2022-10-21",
+     "removed": "2025-06-13",
+     "checked": "secondary",
+     "source": "listed 21 Oct 2022 (FATF page did not load); removed 13 Jun 2025 (FATF)"
+    }
+   ],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 3,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    10.13,
+    12.45,
+    10.26,
+    10.72,
+    10.55,
+    11.77,
+    11.67,
+    11.12,
+    10.97,
+    9.93,
+    9.74,
+    9.08,
+    9.1,
+    9.21,
+    11.06
+   ],
+   "fee": [
+    8.22,
+    9.13,
+    7.11,
+    7.86,
+    8.3,
+    9.52,
+    9.18,
+    8.3,
+    7.77,
+    7.14,
+    6.22,
+    5.58,
+    5.86,
+    6.7,
+    8.19
+   ],
+   "fx": [
+    1.91,
+    3.32,
+    3.15,
+    2.86,
+    2.25,
+    2.25,
+    2.49,
+    2.82,
+    3.2,
+    2.79,
+    3.52,
+    3.49,
+    3.24,
+    2.52,
+    2.87
+   ],
+   "n_quotes": [
+    6,
+    11,
+    21,
+    20,
+    39,
+    82,
+    91,
+    110,
+    142,
+    156,
+    181,
+    237,
+    355,
+    302,
+    124
+   ],
+   "deposits_abroad_bis_usdmn": [
+    1284.0,
+    823.0,
+    1323.0,
+    1263.0,
+    1358.0,
+    981.0,
+    1219.0,
+    1510.0,
+    1425.0,
+    1545.0,
+    1871.0,
+    2211.0,
+    2099.0,
+    3101.0,
+    2824.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    1083.0,
+    887.0,
+    867.0,
+    761.0,
+    1012.0,
+    768.0,
+    727.0,
+    967.0,
+    1066.0,
+    1269.0,
+    1396.0,
+    1039.0,
+    1662.0,
+    2707.0,
+    3045.0
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2024,
+    "value": 1.4
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 59.8
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 52.9
+   },
+   "cost_2024_by_provider": {
+    "Bank": {
+     "cost": 16.35,
+     "quotes": 64
+    },
+    "Mobile operator": {
+     "cost": 3.57,
+     "quotes": 8
+    },
+    "Money transfer operator": {
+     "cost": 7.42,
+     "quotes": 230
+    }
+   },
+   "targets_2024": {
+    "pairs": 9,
+    "le5_quoted": 22.0,
+    "le5_low": 22.0,
+    "le5_high": 11.0,
+    "le3_quoted": 0.0,
+    "le3_low": 0.0,
+    "le3_high": 0.0
+   }
+  },
+  "UGA": {
+   "name": "Uganda",
+   "in_price_data": true,
+   "grey_episodes": [
+    {
+     "listed": "2014-02-14",
+     "removed": "2017-11-03",
+     "checked": "FATF",
+     "source": "listed 14 Feb 2014; removed 3 Nov 2017"
+    },
+    {
+     "listed": "2020-02-21",
+     "removed": "2024-02-23",
+     "checked": "FATF",
+     "source": "listed 21 Feb 2020; removed 23 Feb 2024"
+    }
+   ],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 3,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    14.77,
+    13.8,
+    13.62,
+    12.69,
+    12.17,
+    11.8,
+    11.27,
+    10.56,
+    11.67,
+    11.06,
+    10.14,
+    11.49,
+    10.6,
+    7.78,
+    8.11
+   ],
+   "fee": [
+    11.78,
+    10.89,
+    11.24,
+    10.6,
+    10.07,
+    10.02,
+    9.1,
+    8.06,
+    8.29,
+    7.97,
+    6.85,
+    7.83,
+    6.94,
+    4.81,
+    5.4
+   ],
+   "fx": [
+    3.0,
+    2.91,
+    2.38,
+    2.09,
+    2.11,
+    1.78,
+    2.17,
+    2.5,
+    3.38,
+    3.09,
+    3.28,
+    3.66,
+    3.66,
+    2.96,
+    2.71
+   ],
+   "n_quotes": [
+    62,
+    77,
+    143,
+    136,
+    131,
+    133,
+    152,
+    165,
+    161,
+    154,
+    179,
+    212,
+    290,
+    260,
+    125
+   ],
+   "deposits_abroad_bis_usdmn": [
+    1389.0,
+    1436.0,
+    1582.0,
+    1814.0,
+    1840.0,
+    1726.0,
+    2309.0,
+    1603.0,
+    1904.0,
+    2339.0,
+    2798.0,
+    2148.0,
+    2163.0,
+    2105.0,
+    3493.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    568.0,
+    545.0,
+    676.0,
+    446.0,
+    710.0,
+    698.0,
+    624.0,
+    784.0,
+    827.0,
+    1088.0,
+    1211.0,
+    1112.0,
+    968.0,
+    1372.0,
+    1512.0
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2025,
+    "value": 4.5
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 72.8
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 67.7
+   },
+   "cost_2024_by_provider": {
+    "Bank": {
+     "cost": 14.84,
+     "quotes": 56
+    },
+    "Mobile operator": {
+     "cost": 5.62,
+     "quotes": 8
+    },
+    "Money transfer operator": {
+     "cost": 5.85,
+     "quotes": 196
+    }
+   },
+   "targets_2024": {
+    "pairs": 7,
+    "le5_quoted": 29.0,
+    "le5_low": 29.0,
+    "le5_high": 14.0,
+    "le3_quoted": 0.0,
+    "le3_low": 0.0,
+    "le3_high": 0.0
+   }
+  },
+  "ZAF": {
+   "name": "South Africa",
+   "in_price_data": true,
+   "grey_episodes": [
+    {
+     "listed": "2023-02-24",
+     "removed": "2025-10-24",
+     "checked": "secondary",
+     "source": "listed 24 Feb 2023 (RBI); removed 24 Oct 2025 (FATF)"
+    }
+   ],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 2,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    8.78,
+    8.76,
+    9.47,
+    8.47,
+    8.45,
+    8.31,
+    8.06,
+    7.74,
+    7.7,
+    7.85,
+    7.36,
+    6.5,
+    6.97,
+    7.31,
+    6.46
+   ],
+   "fee": [
+    5.07,
+    5.12,
+    5.07,
+    4.98,
+    4.92,
+    3.95,
+    4.48,
+    4.45,
+    3.85,
+    3.91,
+    3.8,
+    3.29,
+    3.58,
+    3.66,
+    3.64
+   ],
+   "fx": [
+    3.71,
+    3.63,
+    4.4,
+    3.49,
+    3.53,
+    4.36,
+    3.58,
+    3.29,
+    3.85,
+    3.93,
+    3.56,
+    3.21,
+    3.39,
+    3.65,
+    2.82
+   ],
+   "n_quotes": [
+    31,
+    37,
+    71,
+    57,
+    56,
+    77,
+    70,
+    84,
+    95,
+    91,
+    112,
+    160,
+    183,
+    176,
+    86
+   ],
+   "deposits_abroad_bis_usdmn": [
+    23202.0,
+    23468.0,
+    28969.0,
+    28529.0,
+    24692.0,
+    28735.0,
+    28326.0,
+    19576.0,
+    20550.0,
+    30254.0,
+    24437.0,
+    24854.0,
+    22116.0,
+    22603.0,
+    29765.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    57422.0,
+    53199.0,
+    47666.0,
+    47696.0,
+    48053.0,
+    42379.0,
+    47102.0,
+    41684.0,
+    45074.0,
+    64799.0,
+    57385.0,
+    51011.0,
+    48563.0,
+    52593.0,
+    63411.0
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2025,
+    "value": 0.2
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 81.1
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 31.6
+   },
+   "cost_2024_by_provider": {
+    "Money transfer operator": {
+     "cost": 7.25,
+     "quotes": 172
+    }
+   },
+   "targets_2024": {
+    "pairs": 4,
+    "le5_quoted": 25.0,
+    "le5_low": 25.0,
+    "le5_high": 0.0,
+    "le3_quoted": 0.0,
+    "le3_low": 0.0,
+    "le3_high": 0.0
+   }
+  },
+  "ZMB": {
+   "name": "Zambia",
+   "in_price_data": true,
+   "grey_episodes": [],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 2,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    14.48,
+    15.29,
+    16.43,
+    17.5,
+    16.73,
+    15.76,
+    15.46,
+    15.45,
+    13.05,
+    13.36,
+    11.76,
+    11.38,
+    11.09,
+    10.56,
+    10.6
+   ],
+   "fee": [
+    11.59,
+    12.34,
+    13.0,
+    14.08,
+    11.93,
+    10.68,
+    11.76,
+    11.25,
+    10.09,
+    10.33,
+    8.89,
+    8.24,
+    8.24,
+    8.12,
+    8.54
+   ],
+   "fx": [
+    2.89,
+    2.95,
+    3.43,
+    3.42,
+    4.8,
+    5.08,
+    3.71,
+    4.2,
+    2.97,
+    3.03,
+    2.87,
+    3.14,
+    2.85,
+    2.44,
+    2.06
+   ],
+   "n_quotes": [
+    38,
+    40,
+    74,
+    53,
+    50,
+    56,
+    59,
+    66,
+    85,
+    90,
+    130,
+    193,
+    259,
+    259,
+    118
+   ],
+   "deposits_abroad_bis_usdmn": [
+    950.0,
+    660.0,
+    769.0,
+    711.0,
+    1042.0,
+    1071.0,
+    1171.0,
+    1425.0,
+    1214.0,
+    1291.0,
+    1552.0,
+    1693.0,
+    1052.0,
+    1345.0,
+    1705.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    971.0,
+    713.0,
+    903.0,
+    905.0,
+    1097.0,
+    1333.0,
+    1493.0,
+    1719.0,
+    1404.0,
+    1665.0,
+    2049.0,
+    2393.0,
+    1747.0,
+    1919.0,
+    2186.0
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2025,
+    "value": 1.4
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 72.7
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 69.3
+   },
+   "cost_2024_by_provider": {
+    "Bank": {
+     "cost": 27.88,
+     "quotes": 19
+    },
+    "Money transfer operator": {
+     "cost": 9.18,
+     "quotes": 240
+    }
+   },
+   "targets_2024": {
+    "pairs": 6,
+    "le5_quoted": 0.0,
+    "le5_low": 0.0,
+    "le5_high": 0.0,
+    "le3_quoted": 0.0,
+    "le3_low": 0.0,
+    "le3_high": 0.0
+   }
+  },
+  "ZWE": {
+   "name": "Zimbabwe",
+   "in_price_data": true,
+   "grey_episodes": [
+    {
+     "listed": "2011-06-24",
+     "removed": "2015-02-27",
+     "checked": "FATF",
+     "source": "CORRECTED: first listed 24 Jun 2011, not on Feb 2011 list; removed 27 Feb 2015"
+    },
+    {
+     "listed": "2019-10-18",
+     "removed": "2022-03-04",
+     "checked": "FATF",
+     "source": "listed 18 Oct 2019; removed Mar 2022 (date 4 Mar 2022: RBI)"
+    }
+   ],
+   "in_main_model": true,
+   "why_not_in_main_model": null,
+   "corridors": 4,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "cost": [
+    14.03,
+    12.98,
+    12.59,
+    13.99,
+    11.75,
+    11.57,
+    11.05,
+    10.73,
+    10.59,
+    10.03,
+    10.32,
+    9.62,
+    8.72,
+    8.74,
+    8.46
+   ],
+   "fee": [
+    8.63,
+    9.52,
+    9.71,
+    11.09,
+    8.67,
+    8.69,
+    8.46,
+    7.83,
+    7.57,
+    7.15,
+    7.06,
+    6.72,
+    5.96,
+    5.68,
+    5.63
+   ],
+   "fx": [
+    5.41,
+    3.46,
+    2.88,
+    2.91,
+    3.08,
+    2.88,
+    2.59,
+    2.9,
+    3.02,
+    2.87,
+    3.26,
+    2.9,
+    2.77,
+    3.07,
+    2.83
+   ],
+   "n_quotes": [
+    50,
+    62,
+    119,
+    97,
+    110,
+    134,
+    150,
+    169,
+    185,
+    194,
+    229,
+    280,
+    409,
+    406,
+    206
+   ],
+   "deposits_abroad_bis_usdmn": [
+    421.0,
+    244.0,
+    280.0,
+    102.0,
+    105.0,
+    119.0,
+    192.0,
+    209.0,
+    453.0,
+    450.0,
+    768.0,
+    465.0,
+    347.0,
+    354.0,
+    418.0
+   ],
+   "foreign_assets_imf_usdmn": [
+    642.0,
+    642.0,
+    704.0,
+    533.0,
+    359.0,
+    298.0,
+    266.0,
+    null,
+    0.0,
+    0.0,
+    1.0,
+    960.0,
+    938.0,
+    780.0,
+    1060.0
+   ],
+   "remit_pct_gdp_latest": {
+    "year": 2024,
+    "value": 8.5
+   },
+   "account_pct_latest": {
+    "year": 2024,
+    "value": 49.5
+   },
+   "mobile_money_pct_latest": {
+    "year": 2024,
+    "value": 43.3
+   },
+   "cost_2024_by_provider": {
+    "Bank": {
+     "cost": 16.8,
+     "quotes": 43
+    },
+    "Money transfer operator": {
+     "cost": 7.81,
+     "quotes": 359
+    }
+   },
+   "targets_2024": {
+    "pairs": 12,
+    "le5_quoted": 33.0,
+    "le5_low": 33.0,
+    "le5_high": 8.0,
+    "le3_quoted": 0.0,
+    "le3_low": 0.0,
+    "le3_high": 0.0
+   }
+  }
+ }
+}

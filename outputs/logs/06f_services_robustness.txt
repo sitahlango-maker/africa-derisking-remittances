@@ -1,0 +1,23 @@
+========================================================================================================================
+SERVICES RESULT, ROBUSTNESS (additional, not pre-specified): % change in the number of services
+========================================================================================================================
+0. As in 06e                               grey-listed                        -5.1%  (95% CI  -10.4 to   +0.6)  p = 0.078  n = 3,733, countries = 29
+0. As in 06e                               deposits abroad halve              -7.4%  (95% CI  -10.9 to   -3.7)  p = 0.000 *  n = 3,733, countries = 29
+2a. Deposits lagged 4 quarters             grey-listed                        -5.0%  (95% CI  -10.4 to   +0.7)  p = 0.083  n = 3,748, countries = 30
+2a. Deposits lagged 4 quarters             deposits abroad halve              -6.6%  (95% CI  -10.2 to   -2.8)  p = 0.001 *  n = 3,748, countries = 30
+2b. Deposits with unrelated banks only     grey-listed                        -3.2%  (95% CI  -10.1 to   +4.1)  p = 0.367  n = 3,486, countries = 29
+2b. Deposits with unrelated banks only     deposits abroad halve              -5.6%  (95% CI   -9.9 to   -1.2)  p = 0.016 *  n = 3,486, countries = 29
+2c. IMF commercial-bank foreign assets     grey-listed                        -4.8%  (95% CI  -11.6 to   +2.6)  p = 0.192  n = 3,507, countries = 30
+2c. IMF commercial-bank foreign assets     deposits abroad halve              -0.8%  (95% CI   -1.7 to   +0.1)  p = 0.080  n = 3,507, countries = 30
+3. Excl. countries with BIS > 2x IMF       grey-listed                        -9.4%  (95% CI  -14.8 to   -3.8)  p = 0.003 *  n = 3,101, countries = 22
+3. Excl. countries with BIS > 2x IMF       deposits abroad halve              -5.3%  (95% CI   -9.0 to   -1.5)  p = 0.008 *  n = 3,101, countries = 22
+9. Without reserves control (adds WAEMU)   grey-listed                        -4.3%  (95% CI  -11.6 to   +3.7)  p = 0.272  n = 4,325, countries = 34
+9. Without reserves control (adds WAEMU)   deposits abroad halve              -5.8%  (95% CI  -11.4 to   +0.1)  p = 0.053  n = 4,325, countries = 34
+10. Distinct firms instead of services     grey-listed                        -3.1%  (95% CI   -7.0 to   +1.0)  p = 0.131  n = 3,733, countries = 29
+10. Distinct firms instead of services     deposits abroad halve              -6.2%  (95% CI   -9.3 to   -3.0)  p = 0.001 *  n = 3,733, countries = 29
+11. Placebo: deposits 4 quarters ahead     grey-listed                        -3.8%  (95% CI   -9.8 to   +2.7)  p = 0.237  n = 3,276, countries = 29
+11. Placebo: deposits 4 quarters ahead     deposits abroad halve              -4.1%  (95% CI   -7.2 to   -0.9)  p = 0.015 *  n = 3,276, countries = 29
+11. Placebo: deposits 4 quarters ahead     deposits AHEAD halve (placebo)     -5.1%  (95% CI   -8.6 to   -1.5)  p = 0.008 *  n = 3,276, countries = 29
+
+* = statistically different from zero at the 5% level
+Check 3 excluded: AGO, CPV, DZA, MOZ, SWZ, TUN, UGA

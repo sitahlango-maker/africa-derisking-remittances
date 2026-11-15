@@ -1,0 +1,328 @@
+--- CHECKS ---
+Episodes                 : 36
+Countries ever listed    : 25
+Countries listed twice   : 11
+Listed on 2026-11-13    : Angola, Cameroon, Kenya, South Sudan
+Checked against FATF    : 27 | secondary source: 9
+
+Countries on the list at any point in each year:
+year
+2011    12
+2012    12
+2013    12
+2014     9
+2015     6
+2016     3
+2017     3
+2018     4
+2019     5
+2020     5
+2021    10
+2022    10
+2023    12
+2024    16
+2025    14
+2026     8
+
+Timeline (1 = on the list at some point that year):
+                       11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26
+country                                                                              
+Algeria                 1   1   1   1   1   1   0   0   0   0   0   0   0   1   1   1
+Angola                  1   1   1   1   1   1   0   0   0   0   0   0   0   1   1   1
+Botswana                0   0   0   0   0   0   0   1   1   1   1   0   0   0   0   0
+Burkina Faso            0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   0
+Cameroon                0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1
+Congo, Dem. Rep.        0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1
+Cote d'Ivoire           0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1
+Ethiopia                1   1   1   1   0   0   1   1   1   0   0   0   0   0   0   0
+Ghana                   1   1   1   0   0   0   0   1   1   1   1   0   0   0   0   0
+Kenya                   1   1   1   1   0   0   0   0   0   0   0   0   0   1   1   1
+Mali                    0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   0
+Mauritius               0   0   0   0   0   0   0   0   0   1   1   0   0   0   0   0
+Morocco                 1   1   1   0   0   0   0   0   0   0   1   1   1   0   0   0
+Mozambique              0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   0
+Namibia                 1   1   1   1   1   0   0   0   0   0   0   0   0   1   1   1
+Nigeria                 1   1   1   0   0   0   0   0   0   0   0   0   1   1   1   0
+Sao Tome and Principe   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0
+Senegal                 0   0   0   0   0   0   0   0   0   0   1   1   1   1   0   0
+South Africa            0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   0
+South Sudan             0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1
+Sudan                   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0
+Tanzania                1   1   1   1   0   0   0   0   0   0   0   1   1   1   1   0
+Tunisia                 0   0   0   0   0   0   1   1   1   0   0   0   0   0   0   0
+Uganda                  0   0   0   1   1   1   1   0   0   1   1   1   1   1   0   0
+Zimbabwe                1   1   1   1   1   0   0   0   1   1   1   1   0   0   0   0
+Loading cleaned data...
+
+--- CHECKS ---
+Service panel  : 62,777 quotes, 6,767 services
+Corridor panel : 4,883 corridor-quarters, 105 corridors, 38 receiving countries
+Country panel  : 526 country-years, 38 countries
+
+Corridors whose receiving country changed grey-list status during the period: 66 of 105
+Share of corridor-quarters with the receiving country grey-listed: 19%
+
+Share of corridor-quarters with each condition available (after lagging):
+  L1_log_dep             99%
+  L1_log_reserves        82%
+  L1_log_remit_in        93%
+  L1_log_gdp_pc          95%
+  L1_mobile_money_pct    64%
+  L1_log_odc_assets      91%
+  fcs                    100%
+
+Table 1 (saved to outputs/tables/table1_summary_statistics.csv):
+                                                     count     mean      std     min       max
+Total cost of sending USD 200 (%)                      526    10.15     4.49    3.70     23.51
+Fee (% of USD 200)                                     526     7.61     4.26    2.05     21.81
+Exchange-rate margin (%)                               526     2.54     2.08   -0.36     14.24
+Share of digital services (from 2016)                  376     0.19     0.13    0.00      0.91
+Share of zero-fee services                             526     0.03     0.06    0.00      0.64
+Share of bank services                                 526     0.18     0.18    0.00      0.76
+Grey-listed at some point in the year (0/1)            526     0.22     0.41    0.00      1.00
+Banks' deposits abroad, BIS (USD million)              515  3202.09  6357.88    1.00  35586.34
+International lending to banks, BIS (USD million)      492  2119.85  5075.05    0.00  34555.18
+Commercial banks' foreign assets, IMF (USD million)    467  3853.01  9605.33    0.31  64799.31
+Reserves (months of imports)                           390     4.76     4.17    0.06     34.82
+Remittances received (% of GDP)                        467     4.88     5.72    0.00     27.16
+GDP per capita (USD)                                   502  2159.19  1821.14  235.33   8646.06
+Adults with an account (%)                             390    43.23    17.44    5.82     90.12
+Adults with mobile money (%)                           289    29.21    19.37    0.03     87.50
+Fragile or conflict-affected (0/1)                     526     0.32     0.47    0.00      1.00
+==============================================================================================================
+ADDITIONAL CHECK (not pre-specified): do the channel effects survive type-specific time trends?
+  'common quarters' = step 6 model; 'own quarters' = each type of service gets its own quarter effects
+==============================================================================================================
+                                               model      outcome          variable  coef ci95_lo ci95_hi     p mde80              verdict
+      S2 bank vs non-bank | common quarters (step 6) cost_pct_200       grey_x_bank +0.46   -0.16   +1.07 0.142  0.87         inconclusive
+      S2 bank vs non-bank | common quarters (step 6) cost_pct_200    grey_x_nonbank -0.13   -0.40   +0.14 0.328  0.38 no meaningful effect
+          S2 bank vs non-bank | own quarters (check) cost_pct_200       grey_x_bank -0.02   -0.73   +0.69 0.958  1.00         inconclusive
+          S2 bank vs non-bank | own quarters (check) cost_pct_200    grey_x_nonbank -0.02   -0.25   +0.20 0.837  0.32 no meaningful effect
+S3 digital vs not (2016+) | common quarters (step 6) cost_pct_200    grey_x_digital -0.68   -1.05   -0.31 0.001  0.53    MEANINGFUL EFFECT
+S3 digital vs not (2016+) | common quarters (step 6) cost_pct_200 grey_x_nondigital +0.08   -0.23   +0.39 0.604  0.44 no meaningful effect
+    S3 digital vs not (2016+) | own quarters (check) cost_pct_200    grey_x_digital +0.21   -0.37   +0.80 0.466  0.83         inconclusive
+    S3 digital vs not (2016+) | own quarters (check) cost_pct_200 grey_x_nondigital -0.29   -0.60   +0.03 0.072  0.44         inconclusive
+       S4 zero-fee vs fee | common quarters (step 6) cost_pct_200   grey_x_zero_fee -1.35   -1.79   -0.91 0.000  0.62    MEANINGFUL EFFECT
+       S4 zero-fee vs fee | common quarters (step 6) cost_pct_200   grey_x_with_fee +0.06   -0.17   +0.28 0.609  0.31 no meaningful effect
+           S4 zero-fee vs fee | own quarters (check) cost_pct_200   grey_x_zero_fee +0.17   -0.27   +0.61 0.445  0.63         inconclusive
+           S4 zero-fee vs fee | own quarters (check) cost_pct_200   grey_x_with_fee -0.05   -0.27   +0.16 0.615  0.30 no meaningful effect
+
+Services that contribute to the estimate (observed both on and off the list):
+  zero-fee : 139 services
+  digital  : 447 services
+==============================================================================================================
+ROBUSTNESS CHECKS (Section 4.7): does the main conclusion hold when one thing changes?
+  coef = change in total cost (points); 'deposits abroad halve' = effect of a 50% fall
+==============================================================================================================
+                                         model              variable  coef ci95_lo ci95_hi     p mde80              verdict
+              0. MAIN MODEL (Table 2, model C)           grey-listed +0.08   -0.51   +0.67 0.781  0.83         inconclusive
+              0. MAIN MODEL (Table 2, model C) deposits abroad halve +0.04   -0.25   +0.34 0.755  0.41 no meaningful effect
+                1a. Grey-listed on 31 December           grey-listed +0.10   -0.49   +0.68 0.737  0.83         inconclusive
+                1a. Grey-listed on 31 December deposits abroad halve +0.05   -0.25   +0.34 0.740  0.42 no meaningful effect
+                 1b. Share of year grey-listed           grey-listed +0.15   -0.51   +0.81 0.651  0.94         inconclusive
+                 1b. Share of year grey-listed deposits abroad halve +0.05   -0.25   +0.34 0.745  0.42 no meaningful effect
+                2a. Deposits lagged 4 quarters           grey-listed +0.08   -0.50   +0.66 0.778  0.82         inconclusive
+                2a. Deposits lagged 4 quarters deposits abroad halve +0.05   -0.25   +0.36 0.717  0.43 no meaningful effect
+        2b. Deposits with unrelated banks only           grey-listed +0.12   -0.46   +0.71 0.673  0.83         inconclusive
+        2b. Deposits with unrelated banks only deposits abroad halve +0.08   -0.21   +0.38 0.560  0.41 no meaningful effect
+        2c. IMF commercial-bank foreign assets           grey-listed +0.23   -0.38   +0.84 0.446  0.86         inconclusive
+        2c. IMF commercial-bank foreign assets deposits abroad halve -0.04   -0.14   +0.06 0.368  0.14 no meaningful effect
+3. Excl. countries with BIS > 2x IMF (adapted)           grey-listed -0.00   -0.39   +0.38 0.987  0.55 no meaningful effect
+3. Excl. countries with BIS > 2x IMF (adapted) deposits abroad halve +0.04   -0.30   +0.39 0.795  0.49 no meaningful effect
+            4. Excl. negative-FX-margin quotes           grey-listed +0.15   -0.40   +0.71 0.577  0.79         inconclusive
+            4. Excl. negative-FX-margin quotes deposits abroad halve +0.09   -0.18   +0.35 0.513  0.38 no meaningful effect
+          5. Excl. top-5 negative-FX countries           grey-listed +0.18   -0.61   +0.97 0.646  1.12         inconclusive
+          5. Excl. top-5 negative-FX countries deposits abroad halve +0.03   -0.30   +0.37 0.836  0.48 no meaningful effect
+      6. Digital services only (service level)           grey-listed +0.05   -0.57   +0.68 0.865  0.89         inconclusive
+      6. Digital services only (service level) deposits abroad halve -0.14   -0.56   +0.28 0.509  0.60 no meaningful effect
+                 7. USD 500 instead of USD 200           grey-listed -0.06   -0.39   +0.28 0.726  0.48 no meaningful effect
+                 7. USD 500 instead of USD 200 deposits abroad halve -0.03   -0.23   +0.17 0.727  0.28 no meaningful effect
+          8. Outliers put back in (968 quotes)           grey-listed -0.02   -0.92   +0.88 0.960  1.28         inconclusive
+          8. Outliers put back in (968 quotes) deposits abroad halve +0.09   -0.30   +0.48 0.635  0.56 no meaningful effect
+
+Check 3 excluded (BIS > 2x IMF): AGO, CPV, DZA, MOZ, SWZ, TUN, UGA
+Check 5 excluded (most negative FX margins): NGA, SEN, TGO, EGY, GHA
+Libya is not among the receiving countries in the price data, so the planned 'exclude Libya' check does not apply.
+====================================================================================================
+COUNTRIES IN THE PRICE DATA BUT NOT IN THE MAIN MODEL
+====================================================================================================
+  BEN Benin (WAEMU) | missing for the whole period: ['L1_log_reserves']
+  CIV Côte d'Ivoire (WAEMU) | missing for the whole period: ['L1_log_reserves']
+  ERI Eritrea | missing for the whole period: ['L1_log_remit_in']
+  MLI Mali (WAEMU) | missing for the whole period: ['L1_log_reserves']
+  NAM Namibia | missing for the whole period: ['L1_log_dep']
+  SEN Senegal (WAEMU) | missing for the whole period: ['L1_log_reserves']
+  SOM Somalia | missing for the whole period: ['L1_log_reserves', 'L1_log_remit_in']
+  SSD South Sudan | missing for the whole period: none (never all at once)
+  TGO Togo (WAEMU) | missing for the whole period: ['L1_log_reserves']
+
+====================================================================================================
+MAIN MODEL WITH AND WITHOUT THE RESERVES CONTROL
+====================================================================================================
+                                             model              variable  coef ci95_lo ci95_hi     p mde80              verdict  n_obs  n_clusters
+                  0. MAIN MODEL (Table 2, model C)           grey-listed +0.08   -0.51   +0.67 0.781  0.83         inconclusive   3733          29
+                  0. MAIN MODEL (Table 2, model C) deposits abroad halve +0.04   -0.25   +0.34 0.755  0.41 no meaningful effect   3733          29
+                       9. Without reserves control           grey-listed -0.12   -0.67   +0.44 0.676  0.79         inconclusive   4325          34
+                       9. Without reserves control deposits abroad halve -0.16   -0.75   +0.44 0.596  0.84         inconclusive   4325          34
+9b. Without reserves control, main-model rows only           grey-listed +0.08   -0.51   +0.67 0.793  0.84         inconclusive   3733          29
+9b. Without reserves control, main-model rows only deposits abroad halve +0.05   -0.23   +0.33 0.719  0.40 no meaningful effect   3733          29
+
+Countries brought back by dropping the reserves control: BEN, CIV, MLI, SEN, TGO
+
+====================================================================================================
+CHECK 9, LEAVING OUT ONE WAEMU COUNTRY AT A TIME (de-risking estimate only)
+====================================================================================================
+                  model              variable  coef ci95_lo ci95_hi     p mde80      verdict  n_obs  n_clusters
+9c. Check 9 without BEN deposits abroad halve -0.16   -0.75   +0.44 0.591  0.84 inconclusive   4305          33
+9c. Check 9 without CIV deposits abroad halve -0.12   -0.73   +0.48 0.680  0.86 inconclusive   4271          33
+9c. Check 9 without MLI deposits abroad halve -0.24   -0.85   +0.36 0.421  0.86 inconclusive   4162          33
+9c. Check 9 without SEN deposits abroad halve -0.18   -0.79   +0.43 0.557  0.87 inconclusive   4222          33
+9c. Check 9 without TGO deposits abroad halve -0.15   -0.75   +0.44 0.608  0.85 inconclusive   4233          33
+==============================================================================================================
+ADDITIONAL CHECK (not pre-specified): does grey-listing or de-risking change the number or mix of services?
+  Number of services: % change | Share of bank services: change in percentage points
+==============================================================================================================
+Number of services (log)             grey-listed              -5.1%  (95% CI -10.4 to +0.6)  p = 0.078  n = 3,733, countries = 29
+Number of services (log)             deposits abroad halve    -7.4%  (95% CI -10.9 to -3.7)  p = 0.000  n = 3,733, countries = 29
+Share of services offered by banks   grey-listed              -0.6 pts  (95% CI -3.3 to +2.1)  p = 0.642  n = 3,733, countries = 29
+Share of services offered by banks   deposits abroad halve    +0.5 pts  (95% CI -1.9 to +2.8)  p = 0.682  n = 3,733, countries = 29
+
+For scale: the average corridor-quarter has 12.9 services (median 11); banks offer 16% of services on average.
+========================================================================================================================
+SERVICES RESULT, ROBUSTNESS (additional, not pre-specified): % change in the number of services
+========================================================================================================================
+0. As in 06e                               grey-listed                        -5.1%  (95% CI  -10.4 to   +0.6)  p = 0.078  n = 3,733, countries = 29
+0. As in 06e                               deposits abroad halve              -7.4%  (95% CI  -10.9 to   -3.7)  p = 0.000 *  n = 3,733, countries = 29
+2a. Deposits lagged 4 quarters             grey-listed                        -5.0%  (95% CI  -10.4 to   +0.7)  p = 0.083  n = 3,748, countries = 30
+2a. Deposits lagged 4 quarters             deposits abroad halve              -6.6%  (95% CI  -10.2 to   -2.8)  p = 0.001 *  n = 3,748, countries = 30
+2b. Deposits with unrelated banks only     grey-listed                        -3.2%  (95% CI  -10.1 to   +4.1)  p = 0.367  n = 3,486, countries = 29
+2b. Deposits with unrelated banks only     deposits abroad halve              -5.6%  (95% CI   -9.9 to   -1.2)  p = 0.016 *  n = 3,486, countries = 29
+2c. IMF commercial-bank foreign assets     grey-listed                        -4.8%  (95% CI  -11.6 to   +2.6)  p = 0.192  n = 3,507, countries = 30
+2c. IMF commercial-bank foreign assets     deposits abroad halve              -0.8%  (95% CI   -1.7 to   +0.1)  p = 0.080  n = 3,507, countries = 30
+3. Excl. countries with BIS > 2x IMF       grey-listed                        -9.4%  (95% CI  -14.8 to   -3.8)  p = 0.003 *  n = 3,101, countries = 22
+3. Excl. countries with BIS > 2x IMF       deposits abroad halve              -5.3%  (95% CI   -9.0 to   -1.5)  p = 0.008 *  n = 3,101, countries = 22
+9. Without reserves control (adds WAEMU)   grey-listed                        -4.3%  (95% CI  -11.6 to   +3.7)  p = 0.272  n = 4,325, countries = 34
+9. Without reserves control (adds WAEMU)   deposits abroad halve              -5.8%  (95% CI  -11.4 to   +0.1)  p = 0.053  n = 4,325, countries = 34
+10. Distinct firms instead of services     grey-listed                        -3.1%  (95% CI   -7.0 to   +1.0)  p = 0.131  n = 3,733, countries = 29
+10. Distinct firms instead of services     deposits abroad halve              -6.2%  (95% CI   -9.3 to   -3.0)  p = 0.001 *  n = 3,733, countries = 29
+11. Placebo: deposits 4 quarters ahead     grey-listed                        -3.8%  (95% CI   -9.8 to   +2.7)  p = 0.237  n = 3,276, countries = 29
+11. Placebo: deposits 4 quarters ahead     deposits abroad halve              -4.1%  (95% CI   -7.2 to   -0.9)  p = 0.015 *  n = 3,276, countries = 29
+11. Placebo: deposits 4 quarters ahead     deposits AHEAD halve (placebo)     -5.1%  (95% CI   -8.6 to   -1.5)  p = 0.008 *  n = 3,276, countries = 29
+
+* = statistically different from zero at the 5% level
+Check 3 excluded: AGO, CPV, DZA, MOZ, SWZ, TUN, UGA
+====================================================================================================
+TABLE 2. Grey-listing (H1) and de-risking (H2): corridor level
+  grey_qend  = change in price (points) while the receiving country is grey-listed
+  L1_log_dep = change in price (points) if banks' deposits abroad HALVED (previous quarter)
+====================================================================================================
+          model outcome   variable  coef ci95_lo ci95_hi     p mde80              verdict
+   A: grey only    cost  grey_qend -0.12   -0.65   +0.40 0.637  0.74         inconclusive
+  B: + controls    cost  grey_qend +0.07   -0.50   +0.65 0.804  0.82         inconclusive
+C: + de-risking    cost  grey_qend +0.08   -0.51   +0.67 0.781  0.83         inconclusive
+C: + de-risking    cost L1_log_dep +0.04   -0.25   +0.34 0.755  0.41 no meaningful effect
+   A: grey only     fee  grey_qend +0.12   -0.35   +0.59 0.598  0.67         inconclusive
+  B: + controls     fee  grey_qend +0.27   -0.25   +0.79 0.301  0.74         inconclusive
+C: + de-risking     fee  grey_qend +0.27   -0.25   +0.79 0.302  0.74         inconclusive
+C: + de-risking     fee L1_log_dep +0.11   -0.20   +0.42 0.460  0.44 no meaningful effect
+   A: grey only      fx  grey_qend -0.25   -0.57   +0.07 0.128  0.45         inconclusive
+  B: + controls      fx  grey_qend -0.20   -0.53   +0.13 0.232  0.47 no meaningful effect
+C: + de-risking      fx  grey_qend -0.19   -0.51   +0.14 0.244  0.46 no meaningful effect
+C: + de-risking      fx L1_log_dep -0.07   -0.31   +0.17 0.561  0.34 no meaningful effect
+
+Observations: 3,733-4,883 corridor-quarters; clusters (receiving countries): 38
+
+====================================================================================================
+TABLE 3. Channels (H3, H5): service level, total cost
+  each row = the effect for that type of service; de-risking rows = deposits abroad halving
+====================================================================================================
+                           model      outcome          variable  coef ci95_lo ci95_hi     p mde80                    verdict
+                S1: all services cost_pct_200         grey_qend -0.02   -0.23   +0.18 0.825  0.29       no meaningful effect
+            S2: bank vs non-bank cost_pct_200       grey_x_bank +0.46   -0.16   +1.07 0.142  0.87               inconclusive
+            S2: bank vs non-bank cost_pct_200    grey_x_nonbank -0.13   -0.40   +0.14 0.328  0.38       no meaningful effect
+      S3: digital vs not (2016+) cost_pct_200    grey_x_digital -0.68   -1.05   -0.31 0.001  0.53          MEANINGFUL EFFECT
+      S3: digital vs not (2016+) cost_pct_200 grey_x_nondigital +0.08   -0.23   +0.39 0.604  0.44       no meaningful effect
+             S4: zero-fee vs fee cost_pct_200   grey_x_zero_fee -1.35   -1.79   -0.91 0.000  0.62          MEANINGFUL EFFECT
+             S4: zero-fee vs fee cost_pct_200   grey_x_with_fee +0.06   -0.17   +0.28 0.609  0.31       no meaningful effect
+S5: de-risking, bank vs non-bank cost_pct_200        dep_x_bank +0.07   -0.19   +0.33 0.580  0.37       no meaningful effect
+S5: de-risking, bank vs non-bank cost_pct_200     dep_x_nonbank -0.15   -0.38   +0.09 0.217  0.33       no meaningful effect
+  S6: de-risking, digital vs not cost_pct_200     dep_x_digital +0.21   -0.06   +0.48 0.116  0.38       no meaningful effect
+  S6: de-risking, digital vs not cost_pct_200  dep_x_nondigital -0.26   -0.52   -0.01 0.043  0.36 real but negligible (<0.5)
+
+====================================================================================================
+TABLE 4. UK corridors (H4) and mobile money: corridor level, total cost, with controls
+  grey_x_mm = how the grey-listing effect changes for each +10 points of adults with mobile money
+====================================================================================================
+                                model outcome     variable  coef ci95_lo ci95_hi     p mde80              verdict
+              U1: UK vs other senders    cost    grey_x_uk -0.14   -0.66   +0.37 0.570  0.73         inconclusive
+              U1: UK vs other senders    cost grey_x_other +0.11   -0.56   +0.78 0.732  0.95         inconclusive
+          U2: de-risking, UK vs other    cost     dep_x_uk -0.04   -0.99   +0.91 0.934  1.35         inconclusive
+          U2: de-risking, UK vs other    cost  dep_x_other +0.06   -0.26   +0.38 0.711  0.45 no meaningful effect
+M1: grey x mobile money (per +10 pts)    cost    grey_qend -0.15   -0.60   +0.30 0.492  0.63         inconclusive
+M1: grey x mobile money (per +10 pts)    cost    grey_x_mm +0.23   -0.08   +0.54 0.140  0.44 no meaningful effect
+
+UK corridors in the data: 15; of which with a receiving country that changed grey-list status: 9
+
+Verdicts follow Section 4.6: 'no meaningful effect' only if the equivalence test at +/-0.5 passes;
+'inconclusive' if the estimate is neither significant nor provably below 0.5.
+====================================================================================================
+EVENT STUDY: change in total cost (points) by year relative to the event, vs the year before
+  k-3 = 3 or more years before; k0 = the event's first year; k4 = 4 or more years after
+====================================================================================================
+
+--- LISTING: number of events in the price data = 22 ---
+             model variable  coef ci95_lo ci95_hi     p mde80              verdict
+ stacked | listing      k-3 +0.48   -0.21   +1.17 0.166  0.98         inconclusive
+ stacked | listing      k-2 +0.38   -0.17   +0.94 0.167  0.78         inconclusive
+ stacked | listing       k0 -0.01   -0.41   +0.39 0.959  0.57 no meaningful effect
+ stacked | listing       k1 +0.05   -0.56   +0.65 0.880  0.86         inconclusive
+ stacked | listing       k2 +0.07   -0.94   +1.08 0.895  1.44         inconclusive
+ stacked | listing       k3 +0.94   -0.61   +2.49 0.226  2.20         inconclusive
+ stacked | listing       k4 -0.02   -1.65   +1.61 0.982  2.32         inconclusive
+standard | listing      k-3 +0.89   +0.05   +1.74 0.038  1.19    MEANINGFUL EFFECT
+standard | listing      k-2 +0.54   -0.02   +1.10 0.056  0.79         inconclusive
+standard | listing       k0 +0.09   -0.26   +0.44 0.606  0.50 no meaningful effect
+standard | listing       k1 +0.11   -0.45   +0.68 0.684  0.80         inconclusive
+standard | listing       k2 +0.01   -0.71   +0.73 0.976  1.02         inconclusive
+standard | listing       k3 +1.02   -0.44   +2.48 0.167  2.08         inconclusive
+standard | listing       k4 +0.58   -0.79   +1.94 0.397  1.94         inconclusive
+
+--- REMOVAL: number of events in the price data = 22 ---
+             model variable  coef ci95_lo ci95_hi     p mde80      verdict
+ stacked | removal      k-3 -0.45   -1.30   +0.39 0.286  1.20 inconclusive
+ stacked | removal      k-2 -0.13   -0.84   +0.57 0.706  1.00 inconclusive
+ stacked | removal       k0 -0.44   -1.27   +0.39 0.294  1.18 inconclusive
+ stacked | removal       k1 -0.34   -1.28   +0.60 0.471  1.34 inconclusive
+ stacked | removal       k2 -0.52   -1.27   +0.23 0.170  1.07 inconclusive
+ stacked | removal       k3 -0.76   -1.61   +0.09 0.078  1.20 inconclusive
+ stacked | removal       k4 -0.43   -1.34   +0.49 0.352  1.30 inconclusive
+standard | removal      k-3 -1.06   -2.55   +0.43 0.156  2.12 inconclusive
+standard | removal      k-2 -0.47   -1.61   +0.67 0.406  1.62 inconclusive
+standard | removal       k0 -0.26   -0.97   +0.45 0.455  1.01 inconclusive
+standard | removal       k1 -0.32   -1.47   +0.83 0.578  1.64 inconclusive
+standard | removal       k2 -0.18   -1.27   +0.91 0.738  1.55 inconclusive
+standard | removal       k3 -0.47   -1.74   +0.80 0.457  1.81 inconclusive
+standard | removal       k4 -0.18   -1.38   +1.02 0.761  1.70 inconclusive
+
+====================================================================================================
+STACKED SUMMARY: average change in total cost in the years after the event (one number per event type)
+====================================================================================================
+                    model variable  coef ci95_lo ci95_hi     p mde80      verdict
+stacked average | listing    after -0.13   -1.03   +0.77 0.773  1.28 inconclusive
+stacked average | removal    after -0.31   -1.08   +0.46 0.422  1.09 inconclusive
+Events used in the stacked design: {'stacked average | listing': 22, 'stacked average | removal': 22}
+
+Saved outputs/figures/figure2_event_study.png
+2024 quotes: 7,678; with a known payout method: 7,677
+==============================================================================================================
+SHARE OF CORRIDORS (corridor x payout method, 2024) MEETING THE SDG 10.c BENCHMARKS, %
+  quoted = as recorded by RPW; low / high = adding published estimates of unrecorded charges
+==============================================================================================================
+            payout  pairs  median_quoted  <= 5% | quoted  <= 5% | low  <= 5% | high  <= 3% | quoted  <= 3% | low  <= 3% | high
+      Bank account     81            7.0            33.3         32.1           0.0             9.9          8.6           0.0
+       Cash pickup    102            7.1            23.5         23.5          23.5             2.0          2.0           2.0
+     Mobile wallet     53            4.5            56.6         56.6          32.1            15.1         15.1           3.8
+All payout methods    236            6.4            34.3         33.9          17.4             7.6          7.2           1.7
+
+Add-ons used (points of the amount sent, low / high):
+  Bank account  : +0.20 / +5.20

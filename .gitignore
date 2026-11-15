@@ -1,0 +1,18 @@
+# Raw downloads: large, and each source has its own terms of use
+data/raw/
+
+# Credentials: never commit
+caller-key.json
+*-key.json
+*.pem
+.env
+
+# Python and editor clutter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+
+# Manuscript stays private until publication
+paper/
+*.docx

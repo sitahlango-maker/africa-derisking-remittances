@@ -1,0 +1,13 @@
+2024 quotes: 7,678; with a known payout method: 7,677
+==============================================================================================================
+SHARE OF CORRIDORS (corridor x payout method, 2024) MEETING THE SDG 10.c BENCHMARKS, %
+  quoted = as recorded by RPW; low / high = adding published estimates of unrecorded charges
+==============================================================================================================
+            payout  pairs  median_quoted  <= 5% | quoted  <= 5% | low  <= 5% | high  <= 3% | quoted  <= 3% | low  <= 3% | high
+      Bank account     81            7.0            33.3         32.1           0.0             9.9          8.6           0.0
+       Cash pickup    102            7.1            23.5         23.5          23.5             2.0          2.0           2.0
+     Mobile wallet     53            4.5            56.6         56.6          32.1            15.1         15.1           3.8
+All payout methods    236            6.4            34.3         33.9          17.4             7.6          7.2           1.7
+
+Add-ons used (points of the amount sent, low / high):
+  Bank account  : +0.20 / +5.20
