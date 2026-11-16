@@ -118,12 +118,12 @@ def fmt(df, model_start, variable, outcome=None):
     return f"{r['coef']:+.2f} percentage points (95% CI {r['ci95_lo']:+.2f} to {r['ci95_hi']:+.2f})"
 
 
-# robust grey-listing estimate (step 06k): average of the four years after a first change of status
-t6j = pd.read_csv(T + "table6j_robust_did.csv")
+# robust grey-listing estimate (step 06m): listings only, average of the four years after listing
+t6m = pd.read_csv(T + "table6m_listing_removal.csv")
 
 
 def robust(level):
-    r = t6j[(t6j["model"] == level) & (t6j["what"] == "average")].iloc[0]
+    r = t6m[(t6m["model"] == f"{level} | listings only") & (t6m["what"] == "average")].iloc[0]
     return f"{r['coef']:+.2f} percentage points (95% CI {r['ci95_lo']:+.2f} to {r['ci95_hi']:+.2f})"
 
 
@@ -135,8 +135,8 @@ meta = {
         "grey_listing_corridor_level": fmt(t2, "C", "grey_qend", "cost"),
         "deposits_abroad_halve": fmt(t2, "C", "L1_log_dep", "cost"),
         "years_after_removal": fmt(t5, "stacked average | removal", "after"),
-        "grey_listing_robust_service": robust("service level"),
-        "grey_listing_robust_corridor": robust("corridor level"),
+        "grey_listing_robust_service": robust("service"),
+        "grey_listing_robust_corridor": robust("corridor"),
     },
     "sources": "World Bank RPW 2011-2025 Q3; FATF statements; BIS LBS; IMF MFS; World Bank WDI, Findex 2025, FCS lists",
 }

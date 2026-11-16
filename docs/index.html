@@ -257,8 +257,8 @@ Promise.all([d3.json("map_data.json"), d3.json("ne_110m_admin_0_countries.geojso
   const f = data.meta.pooled_findings;
   document.getElementById("findings").innerHTML =
     `<li>If a country's banks' deposits abroad halve, the quoted cost of sending USD 200 changes by <b>${f.deposits_abroad_halve}</b>: no meaningful effect.</li>
-     <li>Grey-listing has <b>no consistent effect</b>. The standard estimate, following individual services, is <b>${f.grey_listing_service_level}</b>. Allowing the effect to differ across countries and over time, it is <b>${f.grey_listing_robust_service}</b> on average over the four years after a change of status: prices rose after some listings (such as South Africa's and Uganda's) and fell after others (such as Mozambique's and the DRC's).</li>
-     <li>Years after removal from the grey list: <b>${f.years_after_removal}</b> on average, which is inconclusive.</li>
+     <li>The average effect of <b>grey-listing</b> is close to zero but imprecise: <b>${f.grey_listing_robust_service}</b> over the four years after a listing, with an estimator robust to effects that differ across countries (standard estimate: ${f.grey_listing_service_level}). Prices rose after some listings, such as South Africa's and Uganda's, but the evidence that countries really differ is weak.</li>
+     <li>There is no robust evidence that removal from the list lowers prices.</li>
      <li>The quoted price misses costs paid along the chain and by recipients: in an illustrative calculation with published estimates of those costs, the share of corridor–payout pairs meeting 5% halves.</li>`;
   document.getElementById("sources").textContent = data.meta.sources;
   world.features.forEach(ft => { const p = ft.properties; let iso = p.ISO_A3 && p.ISO_A3 !== "-99" ? p.ISO_A3 : p.ADM0_A3; p.iso = FIX[iso] || iso; p.name = p.NAME || p.ADMIN || p.iso; });

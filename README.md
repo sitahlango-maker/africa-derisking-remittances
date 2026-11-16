@@ -11,8 +11,8 @@ This repository contains the code, cleaned data and results behind the paper of 
 When African countries are placed on the FATF grey list, or their banks lose correspondent banking depth, does the cost of sending remittances to them rise?
 
 - **Banks' deposits abroad:** a halving changes the quoted cost of sending USD 200 by +0.04 percentage points (95% CI −0.25 to +0.34), an effect statistically smaller than half a percentage point in the main sample.
-- **Grey-listing has no consistent effect.** The standard estimate, following individual services over time, is −0.02 points (95% CI −0.23 to +0.18). Estimators that allow the effect to differ across countries and over time are much less precise (+0.24, 95% CI −0.45 to +0.93, averaged over the four years after a change of status) and show wide variation: prices rose after some listings, such as South Africa's and Uganda's, and fell after others, such as Mozambique's and the Democratic Republic of Congo's. An average increase of up to about one percentage point cannot be ruled out, and there is no clear evidence that removal from the list lowers prices.
-- **The quoted price is not the whole cost.** In an illustrative calculation adding published global estimates of charges taken by intermediaries or paid by recipients, the share of corridor–payout pairs that meet the 5% SDG benchmark halves, from 34% to 17%.
+- **Grey-listing:** the average effect is close to zero but imprecise. The standard estimate, following individual services, is −0.02 points (95% CI −0.23 to +0.18); an estimator robust to effects that differ across countries and over time gives −0.10 points over the four years after a listing (95% CI −0.89 to +0.69). Prices rose by 1.3 to 2.0 points after the listings of South Africa, Uganda and Botswana, but the evidence that this variation exceeds ordinary price movements is weak. There is no robust evidence that removal from the list lowers prices.
+- **The quoted price is not the whole cost.** In an illustrative calculation adding published global estimates of charges taken by intermediaries or paid by recipients, the share of corridor–payout pairs that meet the 5% SDG benchmark halves, from 34% to 17%; charges of 1.4 points added to every pair would be enough.
 
 ## Data (all public)
 
@@ -43,7 +43,7 @@ Python 3 with pandas, numpy, matplotlib and openpyxl. Run the scripts in order f
 | 6 | `06_models.py` (+ `fe.py`) | Main results: Tables 2–4 |
 | 6b–6f | `06b_channel_trends.py`, `06c_robustness.py`, `06d_sample_coverage.py`, `06e_services_count.py`, `06f_services_robustness.py` | Additional checks, robustness (Table 6) and the number of services (Online Appendix B) |
 | 6g–6j | `06g_wild_bootstrap.py`, `06h_review_checks.py`, `06i_country_trends.py`, `06j_referee_checks.py` | Wild cluster bootstrap, pre-trend sensitivity, provider exit, secondary-source dates, country trends, sender × quarter effects (Table 6, checks 10–15) |
-| 6k–6l | `06k_robust_did.py`, `06l_robust_did_countries.py` | Grey-listing estimates robust to heterogeneous effects, service-level event study, and results by country (Section 5.3; Online Appendix C) |
+| 6k–6n | `06k_robust_did.py`, `06l_robust_did_countries.py`, `06m_listing_removal.py`, `06n_final_checks.py` | Grey-listing estimates robust to heterogeneous effects (listings and removals separately), service-level event study, results by country, tests of differences across countries, H3/H6 tests and the break-even calculation (Section 5.3; Online Appendices C and E) |
 | 7 | `07_event_study.py` | Event studies around listing and removal (Figure 4) |
 | 8 | `08_figures.py`, `08b_summary_figure.py` | Prices by channel (Figure 3) and key findings (Figure 1) |
 | 9 | `09_end_to_end_sensitivity.py` | Corridor–payout pairs meeting 3% and 5% with unrecorded charges (Table 5) |

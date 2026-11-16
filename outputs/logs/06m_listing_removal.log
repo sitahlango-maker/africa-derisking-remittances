@@ -1,0 +1,95 @@
+====================================================================================================
+PART 1. LISTINGS ONLY AND REMOVALS ONLY (removals with natural sign: negative = prices fell)
+====================================================================================================
+                   model    what years  coef ci95_lo ci95_hi     p tost_p_0.5                        reading  switching_countries
+ service | listings only  effect     0 +0.18   -0.36   +0.72 0.481      0.109                not significant                   11
+ service | listings only  effect     1 +0.36   -0.58   +1.30 0.409      0.376                not significant                   11
+ service | listings only  effect     2 -0.25   -1.17   +0.67 0.559      0.281                not significant                   11
+ service | listings only  effect     3 -0.70   -2.11   +0.71 0.297      0.619                not significant                   11
+ service | listings only placebo     1 +0.13   -0.25   +0.51 0.454      0.028 not significant; within +/-0.5                   11
+ service | listings only placebo     2 +0.67   -0.43   +1.77 0.204      0.633                not significant                   11
+ service | listings only average   0-3 -0.10   -0.89   +0.69 0.780      0.143                not significant                   11
+ service | removals only  effect     0 -0.38   -1.30   +0.53 0.370      0.392                not significant                   11
+ service | removals only  effect     1 -1.15   -2.58   +0.28 0.104      0.832                not significant                   11
+ service | removals only  effect     2 -1.91   -2.54   -1.28 0.000      1.000                    significant                   11
+ service | removals only  effect     3  +nan    +nan    +nan   nan        nan                not significant                   11
+ service | removals only placebo     1 -0.28   -0.90   +0.34 0.340      0.221                not significant                   11
+ service | removals only placebo     2 +0.90   -1.41   +3.20 0.406      0.646                not significant                   11
+ service | removals only average   0-3 -1.15   -1.88   -0.42 0.006      0.962                    significant                   11
+corridor | listings only  effect     0 -0.43   -1.36   +0.50 0.328      0.436                not significant                   11
+corridor | listings only  effect     1 -0.31   -1.67   +1.04 0.616      0.384                not significant                   11
+corridor | listings only  effect     2 -0.47   -1.97   +1.04 0.506      0.481                not significant                   11
+corridor | listings only  effect     3 -0.04   -2.24   +2.15 0.967      0.326                not significant                   11
+corridor | listings only placebo     1 -0.09   -0.84   +0.65 0.784      0.128                not significant                   11
+corridor | listings only placebo     2 +0.29   -0.68   +1.26 0.523      0.319                not significant                   11
+corridor | listings only average   0-3 -0.31   -1.63   +1.00 0.606      0.379                not significant                   11
+corridor | removals only  effect     0 -0.13   -1.31   +1.06 0.819      0.249                not significant                   11
+corridor | removals only  effect     1 -0.69   -2.27   +0.88 0.348      0.606                not significant                   11
+corridor | removals only  effect     2 +0.60   -1.16   +2.37 0.463      0.551                not significant                   11
+corridor | removals only  effect     3  +nan    +nan    +nan   nan        nan                not significant                   11
+corridor | removals only placebo     1 -0.26   -0.89   +0.37 0.385      0.205                not significant                   11
+corridor | removals only placebo     2 +0.14   -1.18   +1.47 0.813      0.282                not significant                   11
+corridor | removals only average   0-3 -0.07   -1.02   +0.87 0.869      0.168                not significant                   11
+  service: removals in the data 11; with an estimable comparison 7; not estimable: Angola, Algeria, Namibia, Sudan
+  corridor: removals in the data 11; with an estimable comparison 7; not estimable: Angola, Algeria, Namibia, Sudan
+
+====================================================================================================
+PART 2. DO EFFECTS REALLY DIFFER ACROSS COUNTRIES? (service level, listings)
+====================================================================================================
+
+--- listings: 11 countries with a one-year estimate ---
+  a) Cochran's Q = 34.4 on 10 df, p = 0.000; I-squared = 71%  (generous to finding differences: ignores country-specific shocks)
+  b) Spread of country estimates AFTER (one year) = 1.03 points; BEFORE (placebo) = 0.47 points (11 countries).
+     Variance ratio after/before = 4.88, one-sided p = 0.010; Levene test p = 0.078
+     If the spread after is not clearly larger than before, the variation is no more than country noise.
+  c) Each listed country's own one-year estimate (95% interval treats its services as independent,
+     so it is too narrow if country-specific shocks matter):
+     Botswana           +2.02  (+0.52 to +3.52); services 7
+     South Africa       +1.42  (+0.78 to +2.07); services 46
+     Uganda             +1.33  (+0.43 to +2.24); services 28
+     Tunisia            +0.56  (-0.09 to +1.22); services 24
+     South Sudan        +0.12  (-1.59 to +1.82); services 22
+     Cameroon           +0.04  (-0.61 to +0.69); services 29
+     Senegal            -0.01  (-2.13 to +2.10); services 8
+     Cote d'Ivoire      -0.02  (-0.95 to +0.92); services 13
+     Mali               -0.60  (-1.60 to +0.41); services 9
+     Congo, Dem. Rep.   -0.97  (-2.10 to +0.15); services 20
+     Mozambique         -1.29  (-2.91 to +0.33); services 21
+
+--- all changes, removals sign-reversed: 17 countries with a one-year estimate ---
+  a) Cochran's Q = 38.7 on 16 df, p = 0.001; I-squared = 59%  (generous to finding differences: ignores country-specific shocks)
+  b) Spread of country estimates AFTER (one year) = 1.03 points; BEFORE (placebo) = 0.56 points (20 countries).
+     Variance ratio after/before = 3.36, one-sided p = 0.007; Levene test p = 0.019
+     If the spread after is not clearly larger than before, the variation is no more than country noise.
+
+====================================================================================================
+PART 3. THE 2013-2014 REMOVALS: WHO ARE THEY COMPARED WITH? (service level)
+====================================================================================================
+  Ghana        removed 2013: one-year change vs still-listed countries -2.30; compared with: Angola, Algeria, Namibia, Sudan, Zimbabwe
+  Morocco      removed 2013: one-year change vs still-listed countries -0.44; compared with: Angola, Algeria, Namibia, Sudan, Zimbabwe
+  Nigeria      removed 2013: one-year change vs still-listed countries -1.94; compared with: Angola, Algeria, Namibia, Sudan, Zimbabwe
+  Ethiopia     removed 2014: one-year change vs still-listed countries -0.07; compared with: Angola, Algeria
+  Kenya        removed 2014: one-year change vs still-listed countries -0.70; compared with: Angola, Algeria
+  Tanzania     removed 2014: one-year change vs still-listed countries -0.70; compared with: Angola, Algeria
+  Namibia      removed 2015: no comparison country still listed one year later
+  Sudan        removed 2015: no comparison country still listed one year later
+  Zimbabwe     removed 2015: no comparison country still listed one year later
+  Angola       removed 2016: no comparison country still listed one year later
+  Algeria      removed 2016: no comparison country still listed one year later
+                                     model    what years  coef ci95_lo ci95_hi     p tost_p_0.5                        reading  switching_countries
+     service | removals, Zimbabwe left out  effect     0 -0.24   -1.34   +0.86 0.634      0.303                not significant                   10
+     service | removals, Zimbabwe left out  effect     1 -0.88   -2.15   +0.38 0.150      0.743                not significant                   10
+     service | removals, Zimbabwe left out  effect     2 -1.91   -2.55   -1.27 0.000      1.000                    significant                   10
+     service | removals, Zimbabwe left out  effect     3  +nan    +nan    +nan   nan        nan                not significant                   10
+     service | removals, Zimbabwe left out placebo     1 -0.25   -1.12   +0.61 0.523      0.267                not significant                   10
+     service | removals, Zimbabwe left out placebo     2 +1.51   -0.59   +3.60 0.138      0.848                not significant                   10
+     service | removals, Zimbabwe left out average   0-3 -1.01   -2.15   +0.13 0.075      0.832                not significant                   10
+service | removals vs countries NOT listed  effect     0 -0.45   -1.31   +0.41 0.268      0.450                not significant                   11
+service | removals vs countries NOT listed  effect     1 -0.60   -1.81   +0.61 0.297      0.569                not significant                   11
+service | removals vs countries NOT listed  effect     2 -0.36   -1.44   +0.71 0.470      0.390                not significant                   11
+service | removals vs countries NOT listed  effect     3 -1.43   -3.54   +0.68 0.163      0.825                not significant                   11
+service | removals vs countries NOT listed placebo     1 -0.00   -0.59   +0.58 0.989      0.045 not significant; within +/-0.5                   11
+service | removals vs countries NOT listed placebo     2 +1.14   -1.79   +4.07 0.406      0.682                not significant                   11
+service | removals vs countries NOT listed average   0-3 -0.71   -1.77   +0.35 0.166      0.666                not significant                   11
+
+Saved outputs/tables/table6m_listing_removal.csv and table6m_heterogeneity.csv
