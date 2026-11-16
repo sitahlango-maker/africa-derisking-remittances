@@ -256,11 +256,10 @@ Promise.all([d3.json("map_data.json"), d3.json("ne_110m_admin_0_countries.geojso
   DATA = data;
   const f = data.meta.pooled_findings;
   document.getElementById("findings").innerHTML =
-    `<li>Grey-listing changes the quoted cost of sending USD 200 by <b>${f.grey_listing_service_level}</b>, following individual services over time.</li>
-     <li>At corridor level: <b>${f.grey_listing_corridor_level}</b>.</li>
-     <li>If a country's banks' deposits abroad halve: <b>${f.deposits_abroad_halve}</b>.</li>
-     <li>Years after removal from the grey list: <b>${f.years_after_removal}</b> on average.</li>
-     <li>But the quoted price misses costs paid along the chain and by recipients: with published estimates of those costs, the share of corridors meeting 5% can halve.</li>`;
+    `<li>If a country's banks' deposits abroad halve, the quoted cost of sending USD 200 changes by <b>${f.deposits_abroad_halve}</b>: no meaningful effect.</li>
+     <li>Grey-listing has <b>no consistent effect</b>. The standard estimate, following individual services, is <b>${f.grey_listing_service_level}</b>. Allowing the effect to differ across countries and over time, it is <b>${f.grey_listing_robust_service}</b> on average over the four years after a change of status: prices rose after some listings (such as South Africa's and Uganda's) and fell after others (such as Mozambique's and the DRC's).</li>
+     <li>Years after removal from the grey list: <b>${f.years_after_removal}</b> on average, which is inconclusive.</li>
+     <li>The quoted price misses costs paid along the chain and by recipients: in an illustrative calculation with published estimates of those costs, the share of corridor–payout pairs meeting 5% halves.</li>`;
   document.getElementById("sources").textContent = data.meta.sources;
   world.features.forEach(ft => { const p = ft.properties; let iso = p.ISO_A3 && p.ISO_A3 !== "-99" ? p.ISO_A3 : p.ADM0_A3; p.iso = FIX[iso] || iso; p.name = p.NAME || p.ADMIN || p.iso; });
   const africa = {type: "FeatureCollection", features: world.features.filter(ft => ft.properties.CONTINENT === "Africa")};

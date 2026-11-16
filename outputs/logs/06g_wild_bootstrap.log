@@ -1,0 +1,17 @@
+Wild cluster bootstrap, 9,999 draws per test (this takes a few minutes)...
+  done: A: grey only | grey_qend
+  done: B: + controls | grey_qend
+  done: C: + de-risking | grey_qend
+  done: C: + de-risking (deposits halve) | L1_log_dep
+  done: S1: all services | grey_qend
+
+WILD CLUSTER BOOTSTRAP vs the paper's standard errors (total cost, percentage points)
+                           model  coef paper_ci95_lo paper_ci95_hi wild_ci95_lo wild_ci95_hi paper_p wild_p wild_tost_p_0.5  n_clusters        paper_verdict         wild_verdict
+                    A: grey only -0.12         -0.65         +0.40        -0.64        +0.45   0.637  0.668           0.090          38         inconclusive         inconclusive
+                   B: + controls +0.07         -0.50         +0.65        -0.51        +0.75   0.804  0.829           0.088          31         inconclusive         inconclusive
+                 C: + de-risking +0.08         -0.51         +0.67        -0.49        +0.79   0.781  0.804           0.097          29         inconclusive         inconclusive
+C: + de-risking (deposits halve) +0.04         -0.25         +0.34        -0.29        +0.33   0.755  0.763           0.003          29 no meaningful effect no meaningful effect
+                S1: all services -0.02         -0.23         +0.18        -0.24        +0.22   0.825  0.822           0.000          38 no meaningful effect no meaningful effect
+
+If the wild ranges are similar to the paper's and the verdicts match, the conclusions do not
+depend on the small-sample correction. Saved outputs/tables/table6d_wild_bootstrap.csv

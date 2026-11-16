@@ -1,0 +1,45 @@
+====================================================================================================
+PART 1. PRE-TREND SENSITIVITY: average change in total cost (points) in the years after the event
+  'no adjustment' = average of the post-event years, as in the event study
+  'relative to the pre-event trend' = the same, after extending the pre-event line forward
+====================================================================================================
+                                            model  coef ci95_lo ci95_hi     p mde80      verdict
+                  listing: stacked, no adjustment +0.20   -0.66   +1.07 0.633  1.22 inconclusive
+listing: stacked, relative to the pre-event trend +0.88   -0.27   +2.02 0.130  1.63 inconclusive
+                  removal: stacked, no adjustment -0.50   -1.17   +0.17 0.142  0.95 inconclusive
+removal: stacked, relative to the pre-event trend -1.21   -2.59   +0.18 0.086  1.96 inconclusive
+  listing: pre-event estimates k-3 = +0.48, k-2 = +0.38; if the post-event trend differed by as much as 0.48, the range widens to -1.14 to +1.55
+  listing: pre-event trend = -0.24 points per year
+  removal: pre-event estimates k-3 = -0.45, k-2 = -0.13; if the post-event trend differed by as much as 0.45, the range widens to -1.62 to +0.63
+  removal: pre-event trend = +0.23 points per year
+
+====================================================================================================
+PART 2. PROVIDER EXIT: change in the chance (percentage points) that a service is quoted for the last time
+  average chance in any quarter: 9.2%   (corridor + quarter fixed effects; clustered by country)
+  L1_log_dep = if banks' deposits abroad HALVED. Verdict thresholds (0.5 / 1 point) are the paper's price
+  thresholds and do not apply here: read the estimate against the average chance instead.
+====================================================================================================
+                        model   variable  coef ci95_lo ci95_hi     p mde80
+             E1: grey-listing  grey_qend +0.68   -0.21   +1.56 0.130  1.26
+E2: + de-risking and controls  grey_qend +0.58   -0.36   +1.52 0.220  1.33
+E2: + de-risking and controls L1_log_dep -0.25   -1.15   +0.65 0.574  1.28
+
+====================================================================================================
+PART 3. SECONDARY-SOURCE GREY-LIST DATES: main models re-estimated
+====================================================================================================
+                                                               model   variable  coef ci95_lo ci95_hi     p mde80              verdict
+                                          A: grey only | main sample  grey_qend -0.12   -0.65   +0.40 0.637  0.74         inconclusive
+                                       C: + de-risking | main sample  grey_qend +0.08   -0.51   +0.67 0.781  0.83         inconclusive
+                                       C: + de-risking | main sample L1_log_dep +0.04   -0.25   +0.34 0.755  0.41 no meaningful effect
+                                      S1: all services | main sample  grey_qend -0.02   -0.23   +0.18 0.825  0.29 no meaningful effect
+    A: grey only | (a) without quarters within a year of the 8 dates  grey_qend -0.04   -0.59   +0.51 0.880  0.78 no meaningful effect
+ C: + de-risking | (a) without quarters within a year of the 8 dates  grey_qend +0.18   -0.44   +0.80 0.555  0.88         inconclusive
+ C: + de-risking | (a) without quarters within a year of the 8 dates L1_log_dep +0.03   -0.28   +0.34 0.864  0.44 no meaningful effect
+S1: all services | (a) without quarters within a year of the 8 dates  grey_qend -0.04   -0.28   +0.21 0.751  0.35 no meaningful effect
+                          A: grey only | (b) without the 8 countries  grey_qend +0.06   -0.55   +0.67 0.843  0.86         inconclusive
+                       C: + de-risking | (b) without the 8 countries  grey_qend +0.35   -0.31   +1.01 0.282  0.94         inconclusive
+                       C: + de-risking | (b) without the 8 countries L1_log_dep +0.03   -0.32   +0.39 0.846  0.50 no meaningful effect
+                      S1: all services | (b) without the 8 countries  grey_qend +0.08   -0.15   +0.31 0.483  0.32 no meaningful effect
+
+Countries with a secondary-source date in the price window: BWA, COD, MLI, MOZ, MUS, NGA, TZA, ZAF
+Saved outputs/tables/table6e_pretrend.csv, table6f_exit.csv, table6g_secondary_dates.csv

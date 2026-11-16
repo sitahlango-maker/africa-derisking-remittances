@@ -118,6 +118,15 @@ def fmt(df, model_start, variable, outcome=None):
     return f"{r['coef']:+.2f} percentage points (95% CI {r['ci95_lo']:+.2f} to {r['ci95_hi']:+.2f})"
 
 
+# robust grey-listing estimate (step 06k): average of the four years after a first change of status
+t6j = pd.read_csv(T + "table6j_robust_did.csv")
+
+
+def robust(level):
+    r = t6j[(t6j["model"] == level) & (t6j["what"] == "average")].iloc[0]
+    return f"{r['coef']:+.2f} percentage points (95% CI {r['ci95_lo']:+.2f} to {r['ci95_hi']:+.2f})"
+
+
 meta = {
     "title": "De-risking, grey-listing and the cost of remittances to Africa, 2011-2025",
     "author": "Winnie Sitah Lang'o",
@@ -126,6 +135,8 @@ meta = {
         "grey_listing_corridor_level": fmt(t2, "C", "grey_qend", "cost"),
         "deposits_abroad_halve": fmt(t2, "C", "L1_log_dep", "cost"),
         "years_after_removal": fmt(t5, "stacked average | removal", "after"),
+        "grey_listing_robust_service": robust("service level"),
+        "grey_listing_robust_corridor": robust("corridor level"),
     },
     "sources": "World Bank RPW 2011-2025 Q3; FATF statements; BIS LBS; IMF MFS; World Bank WDI, Findex 2025, FCS lists",
 }
@@ -140,4 +151,4 @@ k = out.get("KEN", {})
 print("  grey episodes:", [(g['listed'], g['removed']) for g in k.get('grey_episodes', [])])
 print("  cost 2011 / last year:", k.get("cost", [None])[0], "/", k.get("cost", [None])[-1])
 print("  2024 targets:", k.get("targets_2024"))
-print(f"\nSaved docs/map_data.json ({os.path.getsize('docs/map_data.json') / 1024:.0f} KB)")/africa-de
+print(f"\nSaved docs/map_data.json ({os.path.getsize('docs/map_data.json') / 1024:.0f} KB)")

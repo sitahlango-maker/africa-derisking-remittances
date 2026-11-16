@@ -6,7 +6,9 @@
    "grey_listing_service_level": "-0.02 percentage points (95% CI -0.23 to +0.18)",
    "grey_listing_corridor_level": "+0.08 percentage points (95% CI -0.51 to +0.67)",
    "deposits_abroad_halve": "+0.04 percentage points (95% CI -0.25 to +0.34)",
-   "years_after_removal": "-0.31 percentage points (95% CI -1.08 to +0.46)"
+   "years_after_removal": "-0.31 percentage points (95% CI -1.08 to +0.46)",
+   "grey_listing_robust_service": "+0.24 percentage points (95% CI -0.45 to +0.93)",
+   "grey_listing_robust_corridor": "-0.12 percentage points (95% CI -1.00 to +0.75)"
   },
   "sources": "World Bank RPW 2011-2025 Q3; FATF statements; BIS LBS; IMF MFS; World Bank WDI, Findex 2025, FCS lists"
  },

@@ -1,0 +1,49 @@
+====================================================================================================
+PART 1. GREY-LISTING, ROBUST TO EFFECTS THAT DIFFER ACROSS COUNTRIES AND OVER TIME
+  (de Chaisemartin-D'Haultfoeuille style: first change of status vs countries not yet changed)
+====================================================================================================
+  corridor level: 22 countries change status in the data (11 added to the list, 11 removed)
+  service level: 22 countries change status in the data (11 added to the list, 11 removed)
+                       model  coef ci95_lo ci95_hi     p mde80              verdict
+   corridor level | effect 0 -0.13   -0.82   +0.56 0.701  0.98         inconclusive
+   corridor level | effect 1 +0.21   -0.77   +1.20 0.667  1.40         inconclusive
+   corridor level | effect 2 -0.53   -1.53   +0.48 0.295  1.43         inconclusive
+   corridor level | effect 3 -0.04   -2.04   +1.96 0.966  2.84         inconclusive
+  corridor level | placebo 1 +0.10   -0.34   +0.54 0.634  0.62 no meaningful effect
+  corridor level | placebo 2 +0.13   -0.51   +0.77 0.680  0.91         inconclusive
+corridor level | average 0-3 -0.12   -1.00   +0.75 0.778  1.24         inconclusive
+    service level | effect 0 +0.28   -0.15   +0.71 0.194  0.61         inconclusive
+    service level | effect 1 +0.71   +0.02   +1.39 0.044  0.98    MEANINGFUL EFFECT
+    service level | effect 2 +0.67   -1.38   +2.72 0.513  2.91         inconclusive
+    service level | effect 3 -0.70   -1.98   +0.59 0.278  1.82         inconclusive
+   service level | placebo 1 +0.21   -0.11   +0.53 0.193  0.45 no meaningful effect
+   service level | placebo 2 +0.22   -0.78   +1.22 0.660  1.42         inconclusive
+ service level | average 0-3 +0.24   -0.45   +0.93 0.484  0.97         inconclusive
+  effect l = years after the change (0 = the year of the change); placebo p = p years BEFORE (should be ~0)
+  average 0-3 = simple average of the four yearly effects (the headline robust estimate)
+
+====================================================================================================
+PART 2. STACKED EVENT STUDY AT SERVICE LEVEL (change in total cost vs the year before the event)
+====================================================================================================
+  listing: 22 events, 310,377 stacked observations; estimating...
+  removal: 22 events, 279,829 stacked observations; estimating...
+                            model variable  coef ci95_lo ci95_hi     p mde80              verdict
+        service stacked | listing      k-3 +0.40   -0.28   +1.08 0.237  0.97         inconclusive
+        service stacked | listing      k-2 +0.04   -0.24   +0.32 0.780  0.40 no meaningful effect
+        service stacked | listing       k0 +0.20   -0.08   +0.47 0.153  0.39 no meaningful effect
+        service stacked | listing       k1 +0.14   -0.27   +0.54 0.505  0.58 no meaningful effect
+        service stacked | listing       k2 +0.09   -0.52   +0.70 0.773  0.86         inconclusive
+        service stacked | listing       k3 +0.75   -0.14   +1.65 0.097  1.27         inconclusive
+        service stacked | listing       k4 +0.84   -0.03   +1.71 0.058  1.23         inconclusive
+service stacked average | listing    after +0.15   -0.33   +0.63 0.523  0.68         inconclusive
+        service stacked | removal      k-3 -0.16   -0.70   +0.38 0.549  0.76         inconclusive
+        service stacked | removal      k-2 +0.06   -0.21   +0.33 0.670  0.38 no meaningful effect
+        service stacked | removal       k0 +0.05   -0.21   +0.31 0.723  0.37 no meaningful effect
+        service stacked | removal       k1 +0.32   -0.16   +0.80 0.188  0.69         inconclusive
+        service stacked | removal       k2 -0.30   -0.89   +0.29 0.305  0.84         inconclusive
+        service stacked | removal       k3 -0.43   -1.15   +0.29 0.232  1.02         inconclusive
+        service stacked | removal       k4 -0.04   -0.99   +0.91 0.931  1.34         inconclusive
+service stacked average | removal    after +0.07   -0.28   +0.42 0.697  0.49 no meaningful effect
+  k-3 = 3+ years before ... k4 = 4+ years after; the year before (k-1) is the reference
+
+Saved outputs/tables/table6j_robust_did.csv and table6k_service_event_study.csv

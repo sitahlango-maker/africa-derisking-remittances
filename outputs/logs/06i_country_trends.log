@@ -1,0 +1,16 @@
+====================================================================================================
+COUNTRY-SPECIFIC LINEAR TRENDS: headline estimates with and without (total cost, percentage points)
+  'paper' rows should match Tables 2 and 3; L1_log_dep = if banks' deposits abroad HALVED
+====================================================================================================
+                              model   variable  coef ci95_lo ci95_hi     p mde80              verdict
+               A: grey only | paper  grey_qend -0.12   -0.65   +0.40 0.637  0.74         inconclusive
+    A: grey only | + country trends  grey_qend +0.20   -0.26   +0.66 0.383  0.65         inconclusive
+            C: + de-risking | paper  grey_qend +0.08   -0.51   +0.67 0.781  0.83         inconclusive
+            C: + de-risking | paper L1_log_dep +0.04   -0.25   +0.34 0.755  0.41 no meaningful effect
+ C: + de-risking | + country trends  grey_qend +0.29   -0.24   +0.82 0.268  0.75         inconclusive
+ C: + de-risking | + country trends L1_log_dep +0.11   -0.12   +0.33 0.354  0.32 no meaningful effect
+           S1: all services | paper  grey_qend -0.02   -0.23   +0.18 0.825  0.29 no meaningful effect
+S1: all services | + country trends  grey_qend +0.03   -0.17   +0.23 0.757  0.29 no meaningful effect
+
+Country trends added: 37 (corridor level), 37 (service level)
+Saved outputs/tables/table6h_country_trends.csv

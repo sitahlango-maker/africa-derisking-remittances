@@ -1,0 +1,31 @@
+====================================================================================================
+WHICH COUNTRIES DRIVE THE ROBUST GREY-LISTING ESTIMATES? (service level, total cost, points)
+====================================================================================================
+Overall: year 0 +0.28 | year 1 +0.71 | year 2 +0.67 | year 3 -0.70 | average +0.24   (should match 06k)
+
+effect_yL = the country's own estimate L years after its change (removals sign-flipped)
+contribution_to_y1 = its share of the overall year-1 estimate (sums to the overall year-1 number)
+year1_without / avg_without = overall estimates if that country is left out
+
+iso3  change  year_of_change  effect_y0  effect_y1  effect_y2  effect_y3  services_y1  contribution_to_y1  year1_without  avg_without
+ GHA removed            2013      -0.01       2.30       2.45        NaN         37.0                0.21           0.55         0.14
+ NGA removed            2013       1.13       1.94       1.41        NaN         35.0                0.17           0.59         0.16
+ ZAF   added            2023       0.73       1.42       0.38        NaN         46.0                0.16           0.60         0.21
+ UGA   added            2014       0.67       1.33       0.64        NaN         28.0                0.09           0.66         0.22
+ MAR removed            2013      -0.04       0.44       1.87        NaN         58.0                0.06           0.75         0.20
+ KEN removed            2014       0.49       0.70        NaN        NaN         30.0                0.05           0.71         0.23
+ BWA   added            2018       0.85       2.02       2.98       0.43          7.0                0.04           0.69         0.20
+ TUN   added            2017       0.44       0.56       0.03       0.24         24.0                0.03           0.71         0.18
+ SSD   added            2021      -0.98       0.12      -1.00      -1.24         22.0                0.01           0.75         0.33
+ TZA removed            2014       0.71       0.70        NaN        NaN          3.0                0.01           0.71         0.24
+ CIV   added            2024       1.40      -0.02        NaN        NaN         13.0               -0.00           0.73         0.23
+ ETH removed            2014       0.86       0.07        NaN        NaN         13.0                0.00           0.73         0.24
+ CMR   added            2023       0.24       0.04      -0.14        NaN         29.0                0.00           0.76         0.26
+ SEN   added            2021      -0.14      -0.01      -0.52       2.02          8.0               -0.00           0.72         0.17
+ MLI   added            2021      -0.16      -0.60      -1.47      -1.55          9.0               -0.01           0.73         0.28
+ COD   added            2022      -0.34      -0.97      -1.43      -2.88         20.0               -0.05           0.79         0.39
+ MOZ   added            2022      -0.49      -1.29      -1.33      -1.24         21.0               -0.07           0.82         0.35
+ ZWE removed            2015       0.93        NaN        NaN        NaN          NaN                 NaN           0.59         0.19
+
+Year-1 estimate when each country is left out: from +0.55 to +0.82
+Saved outputs/tables/table6l_robust_did_countries.csv

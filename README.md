@@ -10,8 +10,9 @@ This repository contains the code, cleaned data and results behind the paper of 
 
 When African countries are placed on the FATF grey list, or their banks lose correspondent banking depth, does the cost of sending remittances to them rise?
 
-- Following individual services over time, grey-listing changes the quoted cost of sending USD 200 by −0.02 percentage points (95% CI −0.23 to +0.18). A halving of banks' deposits abroad changes it by +0.04 points (95% CI −0.25 to +0.34). Both are statistically smaller than half a percentage point, and removal from the list is not followed by lower prices.
-- The quoted price is not the whole cost. Adding published estimates of charges taken by intermediaries or paid by recipients can halve the share of corridors that meet the 5% SDG benchmark, from 34% to 17%.
+- **Banks' deposits abroad:** a halving changes the quoted cost of sending USD 200 by +0.04 percentage points (95% CI −0.25 to +0.34), an effect statistically smaller than half a percentage point in the main sample.
+- **Grey-listing has no consistent effect.** The standard estimate, following individual services over time, is −0.02 points (95% CI −0.23 to +0.18). Estimators that allow the effect to differ across countries and over time are much less precise (+0.24, 95% CI −0.45 to +0.93, averaged over the four years after a change of status) and show wide variation: prices rose after some listings, such as South Africa's and Uganda's, and fell after others, such as Mozambique's and the Democratic Republic of Congo's. An average increase of up to about one percentage point cannot be ruled out, and there is no clear evidence that removal from the list lowers prices.
+- **The quoted price is not the whole cost.** In an illustrative calculation adding published global estimates of charges taken by intermediaries or paid by recipients, the share of corridor–payout pairs that meet the 5% SDG benchmark halves, from 34% to 17%.
 
 ## Data (all public)
 
@@ -40,13 +41,15 @@ Python 3 with pandas, numpy, matplotlib and openpyxl. Run the scripts in order f
 | 4a–4d | `04a_wdi.py`, `04b_findex.py`, `04c_fcs.py`, `04d_imf_odc.py` | Controls and the IMF cross-check |
 | 5 | `05_build_panels.py` | Builds the service, corridor-quarter and country-year panels; Table 1 |
 | 6 | `06_models.py` (+ `fe.py`) | Main results: Tables 2–4 |
-| 6b–6f | `06b_channel_trends.py`, `06c_robustness.py`, `06d_sample_coverage.py`, `06e_services_count.py`, `06f_services_robustness.py` | Additional checks, robustness (Table 6) and the number of services (Table 9) |
-| 7 | `07_event_study.py` | Event studies around listing and removal (Figure 3) |
-| 8 | `08_figures.py`, `08b_summary_figure.py` | Prices by channel (Figure 2) and key findings (Figure 1) |
-| 9 | `09_end_to_end_sensitivity.py` | Corridors meeting 3% and 5% with unrecorded charges (Table 7) |
-| 10–11 | `10_map_data.py`, `11_map_figure.py` | Data for the interactive map; Map 1 |
+| 6b–6f | `06b_channel_trends.py`, `06c_robustness.py`, `06d_sample_coverage.py`, `06e_services_count.py`, `06f_services_robustness.py` | Additional checks, robustness (Table 6) and the number of services (Online Appendix B) |
+| 6g–6j | `06g_wild_bootstrap.py`, `06h_review_checks.py`, `06i_country_trends.py`, `06j_referee_checks.py` | Wild cluster bootstrap, pre-trend sensitivity, provider exit, secondary-source dates, country trends, sender × quarter effects (Table 6, checks 10–15) |
+| 6k–6l | `06k_robust_did.py`, `06l_robust_did_countries.py` | Grey-listing estimates robust to heterogeneous effects, service-level event study, and results by country (Section 5.3; Online Appendix C) |
+| 7 | `07_event_study.py` | Event studies around listing and removal (Figure 4) |
+| 8 | `08_figures.py`, `08b_summary_figure.py` | Prices by channel (Figure 3) and key findings (Figure 1) |
+| 9 | `09_end_to_end_sensitivity.py` | Corridor–payout pairs meeting 3% and 5% with unrecorded charges (Table 5) |
+| 10–11 | `10_map_data.py`, `11_map_figure.py` | Data for the interactive map; map of countries covered (Figure 2) |
 
-Results are written to `outputs/tables/` and `outputs/figures/`; the console output of each step is kept in `outputs/logs/`. The decision rules (equivalence tests at ±0.5 percentage points, minimum detectable effects) are set out in Section 4.6 of the paper; analyses added after the method was fixed are labelled as additional in the code and the paper.
+Results are written to `outputs/tables/` and `outputs/figures/`; the console output of each step is kept in `outputs/logs/`. The decision rules (equivalence tests at ±0.5 percentage points, minimum detectable effects) are set out in Section 4.6 of the paper; analyses added after the method was fixed are labelled as additional (not planned) in the code and the paper.
 
 ## Citation
 

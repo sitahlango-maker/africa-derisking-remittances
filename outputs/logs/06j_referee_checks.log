@@ -1,0 +1,61 @@
+====================================================================================================
+PARTS 1, 2 AND 4: total cost of sending USD 200 (percentage points)
+  grey_qend = while grey-listed; L1_log_dep = if banks' deposits abroad HALVED
+  The 'reference' rows should match Tables 2 and 3.
+====================================================================================================
+
+--- 0 REFERENCE ---
+                           model   variable  coef ci95_lo ci95_hi     p mde80              verdict
+B: paper (with services control)  grey_qend +0.07   -0.50   +0.65 0.804  0.82         inconclusive
+C: paper (with services control)  grey_qend +0.08   -0.51   +0.67 0.781  0.83         inconclusive
+C: paper (with services control) L1_log_dep +0.04   -0.25   +0.34 0.755  0.41 no meaningful effect
+                       S1: paper  grey_qend -0.02   -0.23   +0.18 0.825  0.29 no meaningful effect
+    observations / receiving countries: B 3,785/31; C 3,733/29; S1 61,627/38
+
+--- 1 NO SERVICES CONTROL ---
+                      model   variable  coef ci95_lo ci95_hi     p mde80              verdict
+B: without services control  grey_qend +0.08   -0.48   +0.64 0.770  0.80         inconclusive
+C: without services control  grey_qend +0.10   -0.47   +0.67 0.720  0.81         inconclusive
+C: without services control L1_log_dep +0.08   -0.23   +0.38 0.617  0.43 no meaningful effect
+    observations / receiving countries: B 3,785/31; C 3,733/29
+
+--- 2 SENDER X QUARTER ---
+                                       model   variable  coef ci95_lo ci95_hi     p mde80              verdict
+                      A: sender x quarter FE  grey_qend -0.24   -0.75   +0.26 0.336  0.72         inconclusive
+C: sender x quarter FE (no services control)  grey_qend +0.02   -0.49   +0.53 0.941  0.73 no meaningful effect
+C: sender x quarter FE (no services control) L1_log_dep -0.01   -0.38   +0.36 0.965  0.52 no meaningful effect
+                     S1: sender x quarter FE  grey_qend -0.04   -0.28   +0.19 0.721  0.33 no meaningful effect
+    observations / receiving countries: A 4,372/37; C 3,296/29; S1 61,617/38
+
+--- 4 FROM 2016 ---
+                                model   variable  coef ci95_lo ci95_hi     p mde80              verdict
+                      A: 2016 onwards  grey_qend -0.16   -0.77   +0.44 0.584  0.86         inconclusive
+C: 2016 onwards (no services control)  grey_qend +0.03   -0.63   +0.69 0.918  0.93         inconclusive
+C: 2016 onwards (no services control) L1_log_dep +0.07   -0.28   +0.41 0.692  0.49 no meaningful effect
+                     S1: 2016 onwards  grey_qend -0.11   -0.35   +0.14 0.383  0.34 no meaningful effect
+    observations / receiving countries: A 3,911/38; C 2,900/29; S1 51,522/38
+
+====================================================================================================
+PART 3. HOW MUCH DO BANKS' DEPOSITS ABROAD MOVE? (main-model sample)
+====================================================================================================
+Receiving countries: 29
+Within-country standard deviation of log deposits: 0.37 (i.e. a typical deviation from a country's own average of about 45%)
+  by country, median 0.29, range 0.09 to 0.73
+Countries whose deposits ever HALVED within four quarters: 12
+Countries whose deposits ever fell to HALF their earlier peak: 20
+
+Largest falls from peak (log points; -0.69 = halved):
+      sd_within  worst_4q  worst_from_peak
+iso3                                      
+CPV        0.65     -1.01            -2.29
+RWA        0.45     -0.97            -2.03
+ZWE        0.62     -1.16            -1.91
+COM        0.46     -1.36            -1.76
+MWI        0.48     -1.28            -1.69
+AGO        0.40     -0.45            -1.58
+CMR        0.73     -1.31            -1.34
+MDG        0.32     -1.08            -1.33
+EGY        0.36     -0.55            -1.11
+MAR        0.40     -0.78            -1.05
+
+Saved outputs/tables/table6i_referee_checks.csv
