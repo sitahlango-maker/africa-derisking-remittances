@@ -19,7 +19,7 @@ matplotlib.use("Agg")                      # draw to a file (Cloud Shell has no 
 import matplotlib.pyplot as plt           # noqa: E402
 from matplotlib.patches import Patch, Polygon  # noqa: E402
 
-COLOURS = {"current": "#eb6834", "earlier": "#2a78d6", "never": "#cfe0f5", "nodata": "#efeeea"}
+COLOURS = {"current": "#d0603f", "earlier": "#1f5f7a", "never": "#8ec5b8", "nodata": "#ebe6dc"}
 LABELS = {"current": "On the grey list (November 2026)", "earlier": "Grey-listed earlier, 2011–2026",
           "never": "In the price data, not grey-listed", "nodata": "No remittance price data"}
 FIX = {"SDS": "SSD", "SAH": "ESH", "SOL": "SOM"}   # Natural Earth codes -> ISO3 used in the data

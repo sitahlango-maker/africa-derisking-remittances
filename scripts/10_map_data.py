@@ -152,3 +152,4 @@ print("  grey episodes:", [(g['listed'], g['removed']) for g in k.get('grey_epis
 print("  cost 2011 / last year:", k.get("cost", [None])[0], "/", k.get("cost", [None])[-1])
 print("  2024 targets:", k.get("targets_2024"))
 print(f"\nSaved docs/map_data.json ({os.path.getsize('docs/map_data.json') / 1024:.0f} KB)")
+~/africa-de
