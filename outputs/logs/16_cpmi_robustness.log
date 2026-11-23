@@ -1,0 +1,16 @@
+Leave one country out (service level): coefficient range +0.68 to +1.12; significant at 5% in 0 of 38 runs
+Most influential countries:
+ dropped  coef    lo   hi    p
+    EGY  0.68 -1.60 2.96 0.55
+    NGA  0.70 -0.61 2.02 0.28
+    SSD  1.12 -0.13 2.38 0.08
+    ETH  0.78 -0.47 2.02 0.21
+    GHA  1.06 -0.06 2.18 0.06 
+
+Long difference: 58 corridors in 28 countries
+
+                                 model      outcome variable  coef ci95_lo ci95_hi     p mde80      verdict
+                      1 lag | corridor cost_pct_200  log_cbr +0.14   -1.56   +1.85 0.864  2.42 inconclusive
+                       1 lag | service cost_pct_200  log_cbr +0.47   -1.27   +2.21 0.587  2.47 inconclusive
+                  2 service + controls cost_pct_200  log_cbr +1.78   -0.18   +3.75 0.073  2.78 inconclusive
+4 long difference 2011-2022 | corridor       d_cost  log_cbr +1.46   -1.56   +4.48 0.329  4.28 inconclusive

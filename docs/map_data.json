@@ -1,16 +1,18 @@
 {
  "meta": {
-  "title": "De-risking, grey-listing and the cost of remittances to Africa, 2011-2025",
+  "title": "Grey-Listed but Not Pricier? De-risking, Business Models and the Hidden Cost of Sending Money to Africa",
   "author": "Winnie Sitah Lang'o",
   "pooled_findings": {
    "grey_listing_service_level": "-0.02 percentage points (95% CI -0.23 to +0.18)",
    "grey_listing_corridor_level": "+0.08 percentage points (95% CI -0.51 to +0.67)",
    "deposits_abroad_halve": "+0.04 percentage points (95% CI -0.25 to +0.34)",
+   "correspondents_halve_service": "+0.92 percentage points (95% CI -0.27 to +2.11)",
+   "correspondents_halve_corridor": "+0.89 percentage points (95% CI -0.82 to +2.59)",
    "years_after_removal": "-0.31 percentage points (95% CI -1.08 to +0.46)",
    "grey_listing_robust_service": "-0.10 percentage points (95% CI -0.89 to +0.69)",
    "grey_listing_robust_corridor": "-0.31 percentage points (95% CI -1.63 to +1.00)"
   },
-  "sources": "World Bank RPW 2011-2025 Q3; FATF statements; BIS LBS; IMF MFS; World Bank WDI, Findex 2025, FCS lists"
+  "sources": "World Bank RPW 2011-2025 Q3; FATF statements; CPMI correspondent banking data; BIS LBS; IMF MFS; World Bank WDI, Findex 2025, FCS lists"
  },
  "countries": {
   "AGO": {
@@ -30,6 +32,12 @@
      "source": "listed 25 Oct 2024; still listed"
     }
    ],
+   "correspondents_index": {
+    "2018": 67.0,
+    "2019": 67.0,
+    "2020": 66.0,
+    "2022": 65.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 1,
@@ -185,6 +193,12 @@
    "name": "Benin",
    "in_price_data": true,
    "grey_episodes": [],
+   "correspondents_index": {
+    "2018": 86.0,
+    "2019": 83.0,
+    "2020": 79.0,
+    "2022": 72.0
+   },
    "in_main_model": false,
    "why_not_in_main_model": "no reserves data",
    "corridors": 1,
@@ -269,7 +283,8 @@
      "checked": "FATF",
      "source": "listed Feb 2021; removed 24 Oct 2025"
     }
-   ]
+   ],
+   "correspondents_index": null
   },
   "BWA": {
    "name": "Botswana",
@@ -282,6 +297,12 @@
      "source": "listed 19 Oct 2018 (FATF); removed 21 Oct 2021 (IFC Review)"
     }
    ],
+   "correspondents_index": {
+    "2018": 80.0,
+    "2019": 72.0,
+    "2020": 56.0,
+    "2022": 42.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 1,
@@ -447,6 +468,12 @@
      "source": "listed 25 Oct 2024 (FATF); removed 30 Oct 2026 (Sumsub; FATF page did not load)"
     }
    ],
+   "correspondents_index": {
+    "2018": 92.0,
+    "2019": 91.0,
+    "2020": 86.0,
+    "2022": 84.0
+   },
    "in_main_model": false,
    "why_not_in_main_model": "no reserves data",
    "corridors": 1,
@@ -608,6 +635,12 @@
      "source": "listed 23 Jun 2023; still listed"
     }
    ],
+   "correspondents_index": {
+    "2018": 91.0,
+    "2019": 88.0,
+    "2020": 82.0,
+    "2022": 83.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 1,
@@ -741,6 +774,12 @@
      "source": "listed 21 Oct 2022; removed 30 Oct 2026 (Sumsub; FATF page did not load)"
     }
    ],
+   "correspondents_index": {
+    "2018": 107.0,
+    "2019": 98.0,
+    "2020": 87.0,
+    "2022": 93.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 1,
@@ -860,6 +899,12 @@
    "name": "Comoros",
    "in_price_data": true,
    "grey_episodes": [],
+   "correspondents_index": {
+    "2018": 73.0,
+    "2019": 77.0,
+    "2020": 62.0,
+    "2022": 81.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 1,
@@ -979,6 +1024,12 @@
    "name": "Cabo Verde",
    "in_price_data": true,
    "grey_episodes": [],
+   "correspondents_index": {
+    "2018": 85.0,
+    "2019": 77.0,
+    "2020": 73.0,
+    "2022": 72.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 2,
@@ -1144,6 +1195,12 @@
      "source": "listed 25 Oct 2024; removed 19 Jun 2026"
     }
    ],
+   "correspondents_index": {
+    "2018": 74.0,
+    "2019": 73.0,
+    "2020": 67.0,
+    "2022": 65.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 2,
@@ -1295,6 +1352,12 @@
    "name": "Egypt, Arab Rep.",
    "in_price_data": true,
    "grey_episodes": [],
+   "correspondents_index": {
+    "2018": 69.0,
+    "2019": 80.0,
+    "2020": 78.0,
+    "2022": 79.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 8,
@@ -1453,6 +1516,12 @@
    "name": "Eritrea",
    "in_price_data": true,
    "grey_episodes": [],
+   "correspondents_index": {
+    "2018": 36.0,
+    "2019": 36.0,
+    "2020": 36.0,
+    "2022": 26.0
+   },
    "in_main_model": false,
    "why_not_in_main_model": "no remittance inflows data",
    "corridors": 2,
@@ -1611,6 +1680,12 @@
      "source": "commitment Feb 2017 (Jun 2017 statement); removed 18 Oct 2019"
     }
    ],
+   "correspondents_index": {
+    "2018": 76.0,
+    "2019": 78.0,
+    "2020": 72.0,
+    "2022": 73.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 4,
@@ -1782,6 +1857,12 @@
      "source": "listed 19 Oct 2018; removed Jun 2021"
     }
    ],
+   "correspondents_index": {
+    "2018": 68.0,
+    "2019": 66.0,
+    "2020": 64.0,
+    "2022": 62.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 5,
@@ -1940,6 +2021,12 @@
    "name": "Gambia, The",
    "in_price_data": true,
    "grey_episodes": [],
+   "correspondents_index": {
+    "2018": 79.0,
+    "2019": 81.0,
+    "2020": 77.0,
+    "2022": 68.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 1,
@@ -2107,6 +2194,12 @@
      "source": "listed 23 Feb 2024; still listed"
     }
    ],
+   "correspondents_index": {
+    "2018": 90.0,
+    "2019": 86.0,
+    "2020": 81.0,
+    "2022": 76.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 6,
@@ -2269,6 +2362,12 @@
    "name": "Liberia",
    "in_price_data": true,
    "grey_episodes": [],
+   "correspondents_index": {
+    "2018": 98.0,
+    "2019": 100.0,
+    "2020": 98.0,
+    "2022": 93.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 1,
@@ -2420,6 +2519,12 @@
    "name": "Lesotho",
    "in_price_data": true,
    "grey_episodes": [],
+   "correspondents_index": {
+    "2018": 91.0,
+    "2019": 95.0,
+    "2020": 86.0,
+    "2022": 76.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 1,
@@ -2591,6 +2696,12 @@
      "source": "listed Feb 2021; removed 24 Feb 2023 (date: RBI)"
     }
    ],
+   "correspondents_index": {
+    "2018": 61.0,
+    "2019": 59.0,
+    "2020": 54.0,
+    "2022": 50.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 7,
@@ -2753,6 +2864,12 @@
    "name": "Madagascar",
    "in_price_data": true,
    "grey_episodes": [],
+   "correspondents_index": {
+    "2018": 66.0,
+    "2019": 62.0,
+    "2020": 60.0,
+    "2022": 55.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 1,
@@ -2886,6 +3003,12 @@
      "source": "listed 21 Oct 2021 (IFC Review); removed 13 Jun 2025 (FATF)"
     }
    ],
+   "correspondents_index": {
+    "2018": 86.0,
+    "2019": 90.0,
+    "2020": 86.0,
+    "2022": 81.0
+   },
    "in_main_model": false,
    "why_not_in_main_model": "no reserves data",
    "corridors": 4,
@@ -3055,6 +3178,12 @@
      "source": "listed 21 Oct 2022 (FATF page did not load); removed 24 Oct 2025 (FATF)"
     }
    ],
+   "correspondents_index": {
+    "2018": 69.0,
+    "2019": 66.0,
+    "2020": 62.0,
+    "2022": 57.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 2,
@@ -3219,12 +3348,19 @@
      "checked": "secondary",
      "source": "listed 21 Feb 2020 (FATF); removed 21 Oct 2021 (IFC Review)"
     }
-   ]
+   ],
+   "correspondents_index": null
   },
   "MWI": {
    "name": "Malawi",
    "in_price_data": true,
    "grey_episodes": [],
+   "correspondents_index": {
+    "2018": 92.0,
+    "2019": 80.0,
+    "2020": 78.0,
+    "2022": 74.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 1,
@@ -3396,6 +3532,12 @@
      "source": "listed 23 Feb 2024; removed 19 Jun 2026"
     }
    ],
+   "correspondents_index": {
+    "2018": 77.0,
+    "2019": 66.0,
+    "2020": 62.0,
+    "2022": 54.0
+   },
    "in_main_model": false,
    "why_not_in_main_model": "no BIS deposits abroad data",
    "corridors": 1,
@@ -3528,6 +3670,12 @@
      "source": "listed 24 Feb 2023 (RBI); removed 24 Oct 2025 (FATF)"
     }
    ],
+   "correspondents_index": {
+    "2018": 96.0,
+    "2019": 99.0,
+    "2020": 92.0,
+    "2022": 90.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 10,
@@ -3686,6 +3834,12 @@
    "name": "Rwanda",
    "in_price_data": true,
    "grey_episodes": [],
+   "correspondents_index": {
+    "2018": 106.0,
+    "2019": 106.0,
+    "2020": 104.0,
+    "2022": 104.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 4,
@@ -3855,6 +4009,12 @@
      "source": "on Feb 2011 list; removed 23 Oct 2015"
     }
    ],
+   "correspondents_index": {
+    "2018": 59.0,
+    "2019": 56.0,
+    "2020": 58.0,
+    "2022": 54.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 3,
@@ -3982,6 +4142,12 @@
      "source": "listed Feb 2021; removed 25 Oct 2024"
     }
    ],
+   "correspondents_index": {
+    "2018": 94.0,
+    "2019": 93.0,
+    "2020": 89.0,
+    "2022": 87.0
+   },
    "in_main_model": false,
    "why_not_in_main_model": "no reserves data",
    "corridors": 2,
@@ -4144,6 +4310,12 @@
    "name": "Sierra Leone",
    "in_price_data": true,
    "grey_episodes": [],
+   "correspondents_index": {
+    "2018": 69.0,
+    "2019": 75.0,
+    "2020": 78.0,
+    "2022": 73.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 1,
@@ -4298,6 +4470,12 @@
    "name": "Somalia",
    "in_price_data": true,
    "grey_episodes": [],
+   "correspondents_index": {
+    "2018": null,
+    "2019": null,
+    "2020": null,
+    "2022": null
+   },
    "in_main_model": false,
    "why_not_in_main_model": "no reserves or remittance inflows data",
    "corridors": 5,
@@ -4456,6 +4634,12 @@
      "source": "listed Jun 2021; still listed"
     }
    ],
+   "correspondents_index": {
+    "2018": 113.0,
+    "2019": 117.0,
+    "2020": 87.0,
+    "2022": 96.0
+   },
    "in_main_model": false,
    "why_not_in_main_model": "inputs never all available in the same year",
    "corridors": 5,
@@ -4582,12 +4766,19 @@
      "checked": "FATF",
      "source": "on Feb 2011 list; 18 Oct 2013: to continue work with GIABA (left FATF process)"
     }
-   ]
+   ],
+   "correspondents_index": null
   },
   "SWZ": {
    "name": "Eswatini",
    "in_price_data": true,
    "grey_episodes": [],
+   "correspondents_index": {
+    "2018": 80.0,
+    "2019": 76.0,
+    "2020": 68.0,
+    "2022": 60.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 1,
@@ -4746,6 +4937,12 @@
    "name": "Togo",
    "in_price_data": true,
    "grey_episodes": [],
+   "correspondents_index": {
+    "2018": 94.0,
+    "2019": 89.0,
+    "2020": 88.0,
+    "2022": 79.0
+   },
    "in_main_model": false,
    "why_not_in_main_model": "no reserves data",
    "corridors": 3,
@@ -4893,6 +5090,12 @@
      "source": "listed 3 Nov 2017; removed 18 Oct 2019"
     }
    ],
+   "correspondents_index": {
+    "2018": 80.0,
+    "2019": 71.0,
+    "2020": 68.0,
+    "2022": 64.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 2,
@@ -5068,6 +5271,12 @@
      "source": "listed 21 Oct 2022 (FATF page did not load); removed 13 Jun 2025 (FATF)"
     }
    ],
+   "correspondents_index": {
+    "2018": 90.0,
+    "2019": 90.0,
+    "2020": 87.0,
+    "2022": 77.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 3,
@@ -5243,6 +5452,12 @@
      "source": "listed 21 Feb 2020; removed 23 Feb 2024"
     }
    ],
+   "correspondents_index": {
+    "2018": 92.0,
+    "2019": 95.0,
+    "2020": 93.0,
+    "2022": 84.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 3,
@@ -5412,6 +5627,12 @@
      "source": "listed 24 Feb 2023 (RBI); removed 24 Oct 2025 (FATF)"
     }
    ],
+   "correspondents_index": {
+    "2018": 77.0,
+    "2019": 73.0,
+    "2020": 71.0,
+    "2022": 67.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 2,
@@ -5566,6 +5787,12 @@
    "name": "Zambia",
    "in_price_data": true,
    "grey_episodes": [],
+   "correspondents_index": {
+    "2018": 93.0,
+    "2019": 93.0,
+    "2020": 86.0,
+    "2022": 81.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 2,
@@ -5737,6 +5964,12 @@
      "source": "listed 18 Oct 2019; removed Mar 2022 (date 4 Mar 2022: RBI)"
     }
    ],
+   "correspondents_index": {
+    "2018": 71.0,
+    "2019": 68.0,
+    "2020": 61.0,
+    "2022": 53.0
+   },
    "in_main_model": true,
    "why_not_in_main_model": null,
    "corridors": 4,

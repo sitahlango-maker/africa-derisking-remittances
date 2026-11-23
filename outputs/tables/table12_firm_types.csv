@@ -1,0 +1,308 @@
+firm,quotes,bank,digital_share,ptype
+EcoBank Rapid Transfer,1058,1,0.32514177693761814,bank
+ABSA,908,1,0.4868073878627968,bank
+First National Bank of South Africa,806,1,0.3365695792880259,bank
+Standard Bank,479,1,0.09912536443148688,bank
+Nedbank,435,1,0.0,bank
+Attijariwafa Bank,432,1,0.3118279569892473,bank
+Societe Generale,409,1,0.0,bank
+Kenya Commercial Bank (KCB),321,1,0.30526315789473685,bank
+United Bank for Africa (UBA),299,1,0.46558704453441296,bank
+Unicredit Banca,228,1,0.0,bank
+Banca Intesa SanPaolo,224,1,0.0,bank
+Extrabanca,221,1,0.0,bank
+ABC Bank,217,1,0.6284153005464481,bank
+Development Bank of Kenya,216,1,0.6208791208791209,bank
+Toronto Dominion Bank,213,1,0.6730769230769231,bank
+GT Bank,207,1,0.6149732620320856,bank
+Citibank,203,1,0.6711409395973155,bank
+Banca Monte dei Paschi di Siena,200,1,0.0,bank
+UBA Africash,198,1,0.0,bank
+Banque Populaire,193,1,0.3118279569892473,bank
+Ecobank,182,1,0.0,bank
+ScotiaBank,181,1,0.0,bank
+Royal Bank of Canada,168,1,1.0,bank
+KCB Bank,165,1,0.32727272727272727,bank
+ING Bank/Postbank,153,1,0.0,bank
+ABN AMRO Bank,147,1,0.0,bank
+Stanbic Bank,147,1,0.0,bank
+Ecobank RapidCash,129,1,0.1951219512195122,bank
+Arab Bank,126,1,0.20833333333333334,bank
+Caisse D'Epargne I'lle de France,125,1,0.775,bank
+Rabobank,123,1,0.0,bank
+Banque Chaabi de Maroc,106,1,0.0,bank
+Bidvest Bank,104,1,,bank
+Deutsche Bank,100,1,,bank
+Bank of Athens,96,1,,bank
+BNP Paribas,93,1,,bank
+La Banque Postale,90,1,0.4444444444444444,bank
+Equatorial Commercial Bank,86,1,1.0,bank
+Credit Agricole,80,1,,bank
+Credit Lyonnais,80,1,,bank
+Commonwealth Bank,73,1,0.5211267605633803,bank
+QNB,70,1,0.0,bank
+Al-Rajhi Bank,66,1,0.0,bank
+Barclays,58,1,0.0,bank
+National Bank of Commerce Ltd (NBC),56,1,0.0,bank
+Chaabi Bank,55,1,0.0,bank
+Europhil,54,1,0.0,bank
+Cooperative Rural Development Bank (CRDB),53,1,0.0,bank
+Hamburger Sparkasse,53,1,,bank
+La Caixa,52,1,0.0,bank
+Commercial Bank,51,1,0.7142857142857143,bank
+Commerzbank AG,51,1,,bank
+NBC (National Bank of Commerce Ltd),48,1,0.0,bank
+Enjaz Bank,41,1,0.0,bank
+Ghana International Bank,41,1,0.0,bank
+HypoVereinsbank,41,1,,bank
+Spire Bank,37,1,0.8108108108108109,bank
+Israel Discount Bank,31,1,0.0,bank
+Exim Bank Tanzania Ltd,30,1,,bank
+Sparkasse KolnBonn,29,1,,bank
+Wells Fargo,29,1,0.0,bank
+DirectRemit (NBD),28,1,1.0,bank
+Twiga Bancorp,27,1,,bank
+BPR Bank Rwanda PLC,26,1,0.11538461538461539,bank
+Mashreq Bank,26,1,0.0,bank
+HSBC,22,1,,bank
+Standard Chartered Bank,19,1,0.0,bank
+Fina Direct,14,1,,bank
+Bank Hapoalim,13,1,0.0,bank
+Guaranty Trust Bank,13,1,,bank
+Bank Albilad,12,1,0.0,bank
+Zenith Bank,9,1,,bank
+Ecobank Rapidcash,6,1,0.3333333333333333,bank
+KCB (Kenya Commercial Bank),6,1,,bank
+BPR Bank Rwanda Plc,4,1,0.0,bank
+Bank of Africa Senegal,4,1,0.0,bank
+Boursorama,4,1,1.0,bank
+Banque Atlantique,3,1,0.0,bank
+Banque Islamique du Senegal,3,1,0.0,bank
+SUNU BICIS,3,1,0.0,bank
+Skyeflitcash,3,1,0.0,bank
+Standard Charterd Bank Tanzania,3,1,,bank
+Al Rayan Bank,2,1,0.5,bank
+China Construction Bank,2,1,0.5,bank
+Banco Santander,1,1,,bank
+ING Bank,1,1,,bank
+St. George Bank,1,1,1.0,bank
+WorldRemit,5414,0,0.5140955364134691,digital
+Remitly,2310,0,0.5601731601731602,digital
+Azimo,1029,0,0.5866957470010905,digital
+Xoom,642,0,0.25117004680187205,digital
+Wise,637,0,1.0,digital
+M-Pesa,181,0,0.3409090909090909,digital
+Sendwave,164,0,1.0,digital
+TapTap Send,164,0,0.9451219512195121,digital
+Transferwise,152,0,0.9861111111111112,digital
+Orange Money,143,0,1.0,digital
+Wave,134,0,0.9029850746268657,digital
+Xendpay,131,0,0.99,digital
+exchange4free.com,98,0,1.0,digital
+Skrill,89,0,1.0,digital
+Equity Direct,73,0,1.0,digital
+Flouss,64,0,1.0,digital
+Rewire,58,0,1.0,digital
+Rocket Remit,56,0,0.9107142857142857,digital
+MTN Mobile Money,37,0,1.0,digital
+Easy Exchange,36,0,1.0,digital
+TransferGo,33,0,1.0,digital
+Tranzfers.com,33,0,1.0,digital
+1st Contact Forex,27,0,1.0,digital
+azimo,26,0,,digital
+Paysend,24,0,1.0,digital
+Exact Change,20,0,1.0,digital
+Softeller,19,0,1.0,digital
+ChipperCash,16,0,1.0,digital
+Lebara Money,14,0,1.0,digital
+Banque Populaire via Wise,9,1,1.0,digital
+Caisse D'Epargne I'lle de France via Wise,9,0,1.0,digital
+Modern Exchange Company,8,0,1.0,digital
+Use Remit,8,0,1.0,digital
+EverSend,6,0,1.0,digital
+Econet Wireless,4,0,1.0,digital
+Taptap Send,4,0,1.0,digital
+mHITs Remit,2,0,1.0,digital
+MTN,1,0,1.0,digital
+Western Union,10824,0,0.10552707822598618,global_mto
+MoneyGram,8059,0,0.10292604028819291,global_mto
+Ria,4019,0,0.0490337467551197,global_mto
+La Poste via Western Union,425,0,0.0,global_mto
+Poste Italiane via MoneyGram,265,0,0.0,global_mto
+Postbank via Western Union,244,0,0.0,global_mto
+Banca Intesa SanPaolo via Western Union,212,0,0.0,global_mto
+La Banque Postale via Western Union,167,0,0.0,global_mto
+Poste Italiane via Western Union,155,1,0.0,global_mto
+ABSA via Western Union,70,0,0.0,global_mto
+La Poste via Ria,46,0,0.0,global_mto
+First National Bank of South Africa via MoneyGram,43,0,0.0,global_mto
+Post Office UK via Western Union,11,0,0.0,global_mto
+Standard Bank via MoneyGram,5,0,0.0,global_mto
+Deutsche Postbank via Western Union,1,1,,global_mto
+Small World,2265,0,0.3297919433377601,other_mto
+Mukuru,1160,0,0.1096579476861167,other_mto
+Dahabshiil,709,0,0.0,other_mto
+Xpress Money,578,0,0.011450381679389313,other_mto
+Sigue Money Transfers,560,0,0.0,other_mto
+Walmart2World,555,1,0.0,other_mto
+Hello-Paisa,483,0,0.04592901878914405,other_mto
+ATL Money Transfer,422,0,0.41232227488151657,other_mto
+Transfer Galaxy,371,0,0.5256064690026954,other_mto
+La Poste,352,0,0.29545454545454547,other_mto
+Mama Money,337,0,0.2891566265060241,other_mto
+Postbank,305,0,0.4972375690607735,other_mto
+MoneyTrans,281,0,0.0,other_mto
+CashMinute,247,0,0.6639676113360324,other_mto
+Poste Italiane via Eurogiro,218,0,0.0,other_mto
+Sikhona Money Transfers,195,0,0.005128205128205128,other_mto
+Al Fardan Exchange,171,0,0.0,other_mto
+Unity Monetary Services BV,171,0,0.0,other_mto
+ACE Money Transfer,167,0,0.48502994011976047,other_mto
+Coinstar,146,0,,other_mto
+Lari,145,0,0.0,other_mto
+Cassava Remit,144,0,0.6875,other_mto
+Amal Express,141,0,0.0,other_mto
+Iftin Express,136,0,0.0,other_mto
+Al Ansari,126,0,0.0,other_mto
+Moneyglobe,126,0,0.0,other_mto
+Monisnap,117,0,0.0,other_mto
+UAE Exchange,115,0,0.0,other_mto
+Lulu Exchange,114,0,0.21052631578947367,other_mto
+ExpressLinks UK,110,0,0.22972972972972974,other_mto
+Al Mulla Exchange,96,0,0.11702127659574468,other_mto
+NMB (National Microfinance Bank),96,0,0.0,other_mto
+Bahrain Exchange Company,95,0,0.0,other_mto
+Money Exchange,93,0,0.0759493670886076,other_mto
+Unity Link,93,0,0.2222222222222222,other_mto
+Tawakal Express,92,0,0.0,other_mto
+Aman Exchange,91,0,0.0898876404494382,other_mto
+PayTop,88,0,0.0,other_mto
+Money Express,84,0,0.0,other_mto
+STC Pay,84,0,0.21428571428571427,other_mto
+South African Post Office (SAPO),81,0,,other_mto
+Tanzania Postal Corporation,78,0,0.0,other_mto
+Atena Money Transfert,77,0,0.0,other_mto
+Transfast,76,0,0.027777777777777776,other_mto
+Lebara,71,0,0.6923076923076923,other_mto
+Tempo Money Transfer,69,0,0.0,other_mto
+Trans-Fast,69,0,0.25396825396825395,other_mto
+Ezremit,67,0,0.0,other_mto
+Suri-Change,66,0,0.11764705882352941,other_mto
+Wall St Exchange,65,0,0.0,other_mto
+EcoCash Remit,63,0,0.0,other_mto
+Al Dar Exchange,61,0,0.0,other_mto
+Maccorp Exact Change,61,0,0.0,other_mto
+X Press Money,61,0,,other_mto
+Kaah Express,59,0,0.0,other_mto
+Lyca Remit,59,0,0.3220338983050847,other_mto
+Kanson Services,58,0,0.0,other_mto
+Posta Kenya,58,0,0.0,other_mto
+BBVA Dinero Express,57,0,0.0,other_mto
+Small World FS-LCC,55,0,0.0,other_mto
+TeleMoney,54,0,0.0,other_mto
+Small World FS-Global Link,53,0,,other_mto
+Moneybookers,51,0,,other_mto
+YaYeh Instant Services,48,0,0.0,other_mto
+Shoprite Money Transfer,47,0,0.0,other_mto
+First African Remittances,46,0,0.0,other_mto
+Al-Mustaqbal Express,44,0,0.0,other_mto
+Universal Money Transfer Gmbh,42,0,0.0,other_mto
+Fawri,41,0,0.34146341463414637,other_mto
+Tigo,41,0,0.7804878048780488,other_mto
+Global Link,39,0,,other_mto
+Fadugu,38,0,,other_mto
+Money Exchange Italia,38,0,0.02631578947368421,other_mto
+Moneyline UK,38,0,0.0,other_mto
+Al Muzaini Exchange ,37,0,0.0,other_mto
+Alaweneh Exchange,37,0,0.0,other_mto
+Abu Skeikha Exchange,36,0,0.0,other_mto
+Al Aman Office for Exchange,36,0,0.0,other_mto
+Al Hindi and Al Sadat Office for Exchange,36,0,0.0,other_mto
+Al Raya Office for Exchange,36,0,0.0,other_mto
+All Alami Exchange,36,0,0.0,other_mto
+Hamza Office for Exchange,36,0,0.0,other_mto
+Al Saudi Office for Exchange,35,0,0.0,other_mto
+Double Crown International,35,0,0.0,other_mto
+Saudi American Bank (SAMBA),34,0,0.0,other_mto
+Express Money,33,0,0.0,other_mto
+Telegiros,33,0,0.0,other_mto
+LCC,30,0,,other_mto
+Ace Money Transfer,29,0,0.6896551724137931,other_mto
+Dahabshil,28,0,0.0,other_mto
+Musharbash Exchange ,28,0,0.0,other_mto
+Al Salam Exchange ,27,0,0.0,other_mto
+Uber Remit,26,0,0.7692307692307693,other_mto
+Bahrain Financing Company,25,0,0.0,other_mto
+Crew Card,24,0,,other_mto
+Go,24,0,,other_mto
+Money X Press,24,0,,other_mto
+NEC Remit,24,0,0.0,other_mto
+Taaj Money Transfer,23,0,0.0,other_mto
+Samba Money Transfers,22,0,0.0,other_mto
+Express Funds,21,0,,other_mto
+Mustaqbal Express,21,0,0.0,other_mto
+Santander Envíos,21,0,0.0,other_mto
+Vigo,21,0,,other_mto
+PayAfrique.com,20,0,0.0,other_mto
+Pay iZi!,19,0,0.0,other_mto
+mtnmmo.com,19,0,,other_mto
+SFX,18,0,0.0,other_mto
+Wari,18,0,0.0,other_mto
+Al Zamil Exchange,16,0,0.0,other_mto
+OMM,15,0,0.06666666666666667,other_mto
+Real Transfer,15,0,0.0,other_mto
+Sahloul Exchange ,14,0,0.0,other_mto
+Sasai Money Transfer,14,0,0.5714285714285714,other_mto
+Small World FS-Express Funds,14,0,,other_mto
+Al Muzaini Exchange,13,0,0.0,other_mto
+GMT Money Transfer,13,0,0.0,other_mto
+MobiCash,13,0,,other_mto
+Money Remittance Worldwide,12,0,,other_mto
+Maico Money Transfer,11,0,0.0,other_mto
+Dalil Exchange Company,10,0,0.0,other_mto
+Juba Express,10,0,0.0,other_mto
+Small World FS-Choice,10,0,0.0,other_mto
+Express Global Finance,9,0,,other_mto
+Mondial Bony Service,9,0,,other_mto
+iKobo,9,0,,other_mto
+Afritrans,8,0,,other_mto
+Al Salam Exchange,8,0,0.0,other_mto
+Lulu Money,8,0,0.25,other_mto
+Moov Africa,8,0,0.5,other_mto
+Speedfast,8,0,0.0,other_mto
+Amaana Express,6,0,0.0,other_mto
+Musharbash Exchange,6,0,0.0,other_mto
+TalkRemit,6,0,0.0,other_mto
+Bayba,5,0,,other_mto
+Jambo Global,5,0,,other_mto
+Express Global Finance (EGF),4,0,,other_mto
+Joni Joni,4,0,0.0,other_mto
+Lyca,4,0,0.0,other_mto
+MoneySwift,4,0,0.0,other_mto
+Poste Italiane,4,0,,other_mto
+Universal de Envios,4,0,,other_mto
+AN Express,3,0,,other_mto
+Cash Express,3,0,0.0,other_mto
+Faster Money Transfers,3,0,,other_mto
+HM Transfer,3,0,0.0,other_mto
+J-Fin,3,0,,other_mto
+PaySii,3,0,0.0,other_mto
+Qaran Express,3,0,,other_mto
+Safe Money Transfer,3,0,,other_mto
+Sahloul Exchange,3,0,0.0,other_mto
+Unimoni,3,0,0.0,other_mto
+Al Issra Office for Exchange,2,0,0.0,other_mto
+Choice Money Transfer,2,0,,other_mto
+Liberty Transfer,2,0,,other_mto
+Malam Connection,2,0,,other_mto
+MasterLink,2,0,,other_mto
+Money Share Card,2,0,,other_mto
+Musika,2,0,,other_mto
+Sahamiye,2,0,,other_mto
+Atena Money Tranfert,1,0,,other_mto
+Master Envios Unidos,1,0,,other_mto
+Musandam Exchange,1,0,0.0,other_mto
+Mustaqbal,1,0,,other_mto
+Palestine Office for Exchange ,1,0,0.0,other_mto
+Pangea,1,0,0.0,other_mto
+Santander Envios,1,0,0.0,other_mto

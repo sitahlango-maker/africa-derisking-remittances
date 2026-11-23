@@ -8,7 +8,8 @@ For each country:
   - whether it is in the price data, and whether it is in the main model (and if not, why)
   - yearly price of sending USD 200: total cost, fee, exchange-rate margin, number of quotes
   - 2024 average total cost by type of provider
-  - banks' deposits abroad (BIS) and commercial banks' foreign assets (IMF) by year
+  - correspondent banking relationships (CPMI, index 2011 = 100) at end-2018, 2019, 2020, 2022
+  - banks' balances abroad (BIS) and commercial banks' foreign assets (IMF) by year
   - latest remittances (% of GDP), account and mobile money ownership
   - 2024 share of corridor-payout pairs at or below 5% and 3%, as quoted and with
     published estimates of unrecorded charges (low / high), as in step 9
@@ -16,7 +17,7 @@ For each country:
 The map states the paper's POOLED results for all countries; it does not show
 country-specific effects, because the paper does not estimate them.
 
-Needs: the step 1, 2 and 5 outputs and the result tables (steps 6-7)
+Needs: the step 1, 2 and 5 outputs, the result tables (steps 6-7) and step 15 (CPMI)
 Output: docs/map_data.json  (the "docs" folder is what GitHub Pages publishes)
 
 Run from the repo folder:  python scripts/10_map_data.py
@@ -36,6 +37,7 @@ cy = pd.read_csv(P + "panel_country_year.csv")
 cq = pd.read_csv(P + "panel_corridor_quarter.csv")
 svc = pd.read_csv(P + "panel_services.csv", low_memory=False)
 rpw = pd.read_csv(P + "rpw_africa_services_clean.csv", low_memory=False)
+cbr = pd.read_csv(P + "cpmi_cbr_africa.csv")
 
 # --- Main-model coverage (same rule as 06d): every input available
 NEED = ["L1_log_dep", "L1_log_reserves", "L1_log_remit_in", "L1_log_gdp_pc", "fcs"]
@@ -82,6 +84,8 @@ for c in countries:
         "grey_episodes": [{"listed": r.listed_from, "removed": (None if pd.isna(r.removed_at) else r.removed_at),
                            "checked": r.checked, "source": r.source} for r in e.itertuples()],
     }
+    k_cbr = cbr[(cbr["iso3"] == c) & (cbr["year"] > 2011)].sort_values("year")
+    rec["correspondents_index"] = {str(int(r.year)): num(r.cbr_index, 0) for r in k_cbr.itertuples()} or None
     if len(d):
         rec["in_main_model"] = c in used
         rec["why_not_in_main_model"] = None if c in used else why_missing(c)
@@ -108,6 +112,7 @@ for c in countries:
 
 T = "outputs/tables/"
 t2, t3, t5 = (pd.read_csv(T + f) for f in ("table2_main.csv", "table3_channels.csv", "table5_event_study.csv"))
+t15 = pd.read_csv(T + "table15_cpmi_prices.csv")
 
 
 def fmt(df, model_start, variable, outcome=None):
@@ -128,17 +133,19 @@ def robust(level):
 
 
 meta = {
-    "title": "De-risking, grey-listing and the cost of remittances to Africa, 2011-2025",
+    "title": "Grey-Listed but Not Pricier? De-risking, Business Models and the Hidden Cost of Sending Money to Africa",
     "author": "Winnie Sitah Lang'o",
     "pooled_findings": {   # read from the saved result tables
         "grey_listing_service_level": fmt(t3, "S1", "grey_qend"),
         "grey_listing_corridor_level": fmt(t2, "C", "grey_qend", "cost"),
         "deposits_abroad_halve": fmt(t2, "C", "L1_log_dep", "cost"),
+        "correspondents_halve_service": fmt(t15, "service | relationships halve", "log_cbr", "cost_pct_200"),
+        "correspondents_halve_corridor": fmt(t15, "corridor | relationships halve", "log_cbr", "cost_pct_200"),
         "years_after_removal": fmt(t5, "stacked average | removal", "after"),
         "grey_listing_robust_service": robust("service"),
         "grey_listing_robust_corridor": robust("corridor"),
     },
-    "sources": "World Bank RPW 2011-2025 Q3; FATF statements; BIS LBS; IMF MFS; World Bank WDI, Findex 2025, FCS lists",
+    "sources": "World Bank RPW 2011-2025 Q3; FATF statements; CPMI correspondent banking data; BIS LBS; IMF MFS; World Bank WDI, Findex 2025, FCS lists",
 }
 with open("docs/map_data.json", "w", encoding="utf-8") as f:
     json.dump({"meta": meta, "countries": out}, f, ensure_ascii=False, indent=1)
@@ -149,7 +156,7 @@ print("Pooled findings:", json.dumps(meta["pooled_findings"], ensure_ascii=False
 print("Example (Kenya):")
 k = out.get("KEN", {})
 print("  grey episodes:", [(g['listed'], g['removed']) for g in k.get('grey_episodes', [])])
+print("  correspondents (2011 = 100):", k.get("correspondents_index"))
 print("  cost 2011 / last year:", k.get("cost", [None])[0], "/", k.get("cost", [None])[-1])
 print("  2024 targets:", k.get("targets_2024"))
 print(f"\nSaved docs/map_data.json ({os.path.getsize('docs/map_data.json') / 1024:.0f} KB)")
-~/africa-de

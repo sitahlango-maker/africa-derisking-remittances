@@ -1,0 +1,83 @@
+African countries matched to CPMI, by vintage:
+vintage
+2018    50
+2019    50
+2020    50
+2022    50
+BIS African countries not found in CPMI (check names): ['Democratic Republic of the Congo', 'Republic of Congo', 'Somalia', 'São Tomé and Príncipe'] 
+
+Change since 2011: BIS deposits abroad against CPMI correspondent relationships (rank correlation)
+                         measure  vintage  countries  spearman     p  same_direction_pct
+    deposits_abroad_banks_change     2018         50    -0.025 0.864                50.0
+    deposits_abroad_banks_change     2019         50    -0.142 0.325                44.0
+    deposits_abroad_banks_change     2020         50    -0.159 0.271                42.0
+    deposits_abroad_banks_change     2022         50    -0.171 0.234                38.0
+deposits_abroad_unrelated_change     2018          0       NaN   NaN                 NaN
+deposits_abroad_unrelated_change     2019          0       NaN   NaN                 NaN
+deposits_abroad_unrelated_change     2020          0       NaN   NaN                 NaN
+deposits_abroad_unrelated_change     2022          0       NaN   NaN                 NaN
+      deposits_abroad_all_change     2018         50    -0.210 0.144                40.0
+      deposits_abroad_all_change     2019         50    -0.239 0.095                36.0
+      deposits_abroad_all_change     2020         50    -0.237 0.097                38.0
+      deposits_abroad_all_change     2022         50    -0.119 0.412                40.0 
+
+Pooled elasticity of correspondent relationships to deposits abroad (log changes, vintage effects): -0.073 on 200 country-vintages
+
+Classification sensitivity (service + type-specific quarter fixed effects):
+                   model       outcome          variable  coef ci95_lo ci95_hi     p mde80              verdict
+               main grey  cost_pct_200       grey_x_bank -0.04   -0.75   +0.68 0.920  1.01         inconclusive
+               main grey  cost_pct_200 grey_x_global_mto -0.04   -0.29   +0.21 0.737  0.36 no meaningful effect
+               main grey  cost_pct_200    grey_x_digital -0.07   -0.44   +0.30 0.701  0.53 no meaningful effect
+               main grey  cost_pct_200  grey_x_other_mto -0.06   -0.39   +0.26 0.700  0.46 no meaningful effect
+           main deposits  cost_pct_200        dep_x_bank +0.01   -0.37   +0.38 0.977  0.53 no meaningful effect
+           main deposits  cost_pct_200  dep_x_global_mto +0.10   -0.18   +0.37 0.487  0.39 no meaningful effect
+           main deposits  cost_pct_200     dep_x_digital -0.17   -0.53   +0.19 0.337  0.51 no meaningful effect
+           main deposits  cost_pct_200   dep_x_other_mto -0.25   -0.54   +0.04 0.088  0.41 no meaningful effect
+               main grey fx_margin_pct       grey_x_bank +0.19   -0.06   +0.44 0.130  0.36 no meaningful effect
+               main grey fx_margin_pct grey_x_global_mto -0.16   -0.38   +0.07 0.165  0.32 no meaningful effect
+               main grey fx_margin_pct    grey_x_digital +0.04   -0.23   +0.31 0.755  0.38 no meaningful effect
+               main grey fx_margin_pct  grey_x_other_mto -0.19   -0.48   +0.10 0.194  0.41 no meaningful effect
+           main deposits fx_margin_pct        dep_x_bank -0.09   -0.28   +0.09 0.312  0.27 no meaningful effect
+           main deposits fx_margin_pct  dep_x_global_mto +0.07   -0.20   +0.34 0.604  0.38 no meaningful effect
+           main deposits fx_margin_pct     dep_x_digital -0.03   -0.31   +0.25 0.836  0.40 no meaningful effect
+           main deposits fx_margin_pct   dep_x_other_mto -0.18   -0.45   +0.10 0.210  0.40 no meaningful effect
+    agents_to_other grey  cost_pct_200       grey_x_bank -0.04   -0.75   +0.68 0.920  1.01         inconclusive
+    agents_to_other grey  cost_pct_200 grey_x_global_mto -0.04   -0.28   +0.20 0.765  0.34 no meaningful effect
+    agents_to_other grey  cost_pct_200    grey_x_digital -0.07   -0.44   +0.30 0.701  0.53 no meaningful effect
+    agents_to_other grey  cost_pct_200  grey_x_other_mto -0.09   -0.44   +0.26 0.614  0.50 no meaningful effect
+agents_to_other deposits  cost_pct_200        dep_x_bank +0.00   -0.37   +0.38 0.980  0.53 no meaningful effect
+agents_to_other deposits  cost_pct_200  dep_x_global_mto +0.10   -0.18   +0.38 0.455  0.40 no meaningful effect
+agents_to_other deposits  cost_pct_200     dep_x_digital -0.17   -0.53   +0.19 0.331  0.51 no meaningful effect
+agents_to_other deposits  cost_pct_200   dep_x_other_mto -0.26   -0.55   +0.04 0.087  0.42         inconclusive
+    agents_to_other grey fx_margin_pct       grey_x_bank +0.19   -0.06   +0.44 0.130  0.36 no meaningful effect
+    agents_to_other grey fx_margin_pct grey_x_global_mto -0.14   -0.35   +0.07 0.189  0.30 no meaningful effect
+    agents_to_other grey fx_margin_pct    grey_x_digital +0.04   -0.23   +0.31 0.755  0.38 no meaningful effect
+    agents_to_other grey fx_margin_pct  grey_x_other_mto -0.20   -0.48   +0.07 0.139  0.39 no meaningful effect
+agents_to_other deposits fx_margin_pct        dep_x_bank -0.09   -0.28   +0.09 0.314  0.27 no meaningful effect
+agents_to_other deposits fx_margin_pct  dep_x_global_mto +0.07   -0.20   +0.34 0.582  0.38 no meaningful effect
+agents_to_other deposits fx_margin_pct     dep_x_digital -0.03   -0.31   +0.25 0.824  0.40 no meaningful effect
+agents_to_other deposits fx_margin_pct   dep_x_other_mto -0.18   -0.44   +0.08 0.160  0.37 no meaningful effect
+    mobile_to_other grey  cost_pct_200       grey_x_bank -0.04   -0.75   +0.68 0.920  1.01         inconclusive
+    mobile_to_other grey  cost_pct_200 grey_x_global_mto -0.04   -0.29   +0.21 0.737  0.36 no meaningful effect
+    mobile_to_other grey  cost_pct_200    grey_x_digital -0.02   -0.34   +0.31 0.926  0.47 no meaningful effect
+    mobile_to_other grey  cost_pct_200  grey_x_other_mto -0.08   -0.42   +0.25 0.609  0.47 no meaningful effect
+mobile_to_other deposits  cost_pct_200        dep_x_bank +0.01   -0.37   +0.38 0.978  0.53 no meaningful effect
+mobile_to_other deposits  cost_pct_200  dep_x_global_mto +0.10   -0.18   +0.37 0.485  0.39 no meaningful effect
+mobile_to_other deposits  cost_pct_200     dep_x_digital -0.17   -0.51   +0.18 0.337  0.49 no meaningful effect
+mobile_to_other deposits  cost_pct_200   dep_x_other_mto -0.24   -0.52   +0.04 0.085  0.39 no meaningful effect
+    mobile_to_other grey fx_margin_pct       grey_x_bank +0.19   -0.06   +0.44 0.130  0.36 no meaningful effect
+    mobile_to_other grey fx_margin_pct grey_x_global_mto -0.16   -0.38   +0.07 0.165  0.32 no meaningful effect
+    mobile_to_other grey fx_margin_pct    grey_x_digital +0.09   -0.11   +0.28 0.366  0.27 no meaningful effect
+    mobile_to_other grey fx_margin_pct  grey_x_other_mto -0.18   -0.49   +0.13 0.242  0.44 no meaningful effect
+mobile_to_other deposits fx_margin_pct        dep_x_bank -0.10   -0.28   +0.09 0.309  0.27 no meaningful effect
+mobile_to_other deposits fx_margin_pct  dep_x_global_mto +0.07   -0.20   +0.34 0.601  0.38 no meaningful effect
+mobile_to_other deposits fx_margin_pct     dep_x_digital -0.03   -0.31   +0.25 0.832  0.39 no meaningful effect
+mobile_to_other deposits fx_margin_pct   dep_x_other_mto -0.15   -0.43   +0.12 0.262  0.39 no meaningful effect
+
+Counts (last row: 'services' = corridors, 'quotes' = corridor-quarters):
+                                            type  receiving_countries  countries_changing_status  services  quotes
+                                            bank                   32                       18.0      1071   11222
+                                      global_mto                   38                       21.0      2130   24546
+                                         digital                   34                       20.0      1749   11875
+                                       other_mto                   37                       21.0      1817   15134
+corridor-quarters with banks and global networks                   32                        NaN        71    2539

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Remittance Costs Africa Map</title>
-<meta name="description" content="Interactive companion to the paper 'De-risking, Grey-Listing and the Cost of Remittances to Africa: Corridor-Level Evidence, 2011–2025' by Winnie Sitah Lang'o.">
+<meta name="description" content="Interactive companion to the paper 'Grey-Listed but Not Pricier? De-risking, Business Models and the Hidden Cost of Sending Money to Africa' by Winnie Sitah Lang'o.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -87,7 +87,7 @@ footer a{color:var(--accent)}
 <body>
 <header><div class="inner">
   <p class="kicker">Interactive companion to the research paper</p>
-  <h1>De-risking, grey-listing and the cost of remittances to Africa, 2011–2025</h1>
+  <h1>Grey-Listed but Not Pricier? De-risking, Business Models and the Hidden Cost of Sending Money to Africa</h1>
   <p class="byline">Winnie Sitah Lang'o · Click a country to see its data</p>
 </div></header>
 
@@ -221,6 +221,7 @@ function panel(iso){
     }
     h += `<h3>Banks' balances abroad (USD million)</h3>`;
     h += spark([{name:"Deposits abroad (BIS)", values:c.deposits_abroad_bis_usdmn, color:css("--accent")}, {name:"Commercial banks' foreign assets (IMF)", values:c.foreign_assets_imf_usdmn, color:css("--current")}], c.years, {label:"Balances abroad"});
+    if (c.correspondents_index) h += `<p>Correspondent banking relationships (CPMI, 2011 = 100): ${Object.entries(c.correspondents_index).map(([y, v]) => `${y}: <b>${v}</b>`).join(" · ")}</p>`;
     const f = (o, u) => o ? `${o.value}${u} (${o.year})` : "not available";
     h += `<h3>Context</h3><table>
       <tr><td>Remittances received, % of GDP</td><td class="num">${f(c.remit_pct_gdp_latest, "%")}</td></tr>
@@ -256,7 +257,7 @@ Promise.all([d3.json("map_data.json"), d3.json("ne_110m_admin_0_countries.geojso
   DATA = data;
   const f = data.meta.pooled_findings;
   document.getElementById("findings").innerHTML =
-    `<li>If a country's banks' deposits abroad halve, the quoted cost of sending USD 200 changes by <b>${f.deposits_abroad_halve}</b>: no meaningful effect.</li>
+    `<li>If a country's correspondent banking relationships (CPMI) halve, the quoted cost of sending USD 200 changes by <b>${f.correspondents_halve_service}</b> at service level: inconclusive, with moderate increases not ruled out.</li><li>If a country's banks' balances abroad (BIS) halve, the quoted cost changes by <b>${f.deposits_abroad_halve}</b>: no meaningful effect, but these balances do not track correspondent relationships.</li>
      <li>The average effect of <b>grey-listing</b> is close to zero but imprecise: <b>${f.grey_listing_robust_service}</b> over the four years after a listing, with an estimator robust to effects that differ across countries (standard estimate: ${f.grey_listing_service_level}). Prices rose after some listings, such as South Africa's and Uganda's, but the evidence that countries really differ is weak.</li>
      <li>There is no robust evidence that removal from the list lowers prices.</li>
      <li>The quoted price misses costs paid along the chain and by recipients: in an illustrative calculation with published estimates of those costs, the share of corridor–payout pairs meeting 5% halves.</li>`;

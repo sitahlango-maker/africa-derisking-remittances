@@ -1,0 +1,13 @@
+measure,vintage,countries,spearman,p,same_direction_pct
+deposits_abroad_banks_change,2018,50,-0.025,0.864,50.0
+deposits_abroad_banks_change,2019,50,-0.142,0.325,44.0
+deposits_abroad_banks_change,2020,50,-0.159,0.271,42.0
+deposits_abroad_banks_change,2022,50,-0.171,0.234,38.0
+deposits_abroad_unrelated_change,2018,0,,,
+deposits_abroad_unrelated_change,2019,0,,,
+deposits_abroad_unrelated_change,2020,0,,,
+deposits_abroad_unrelated_change,2022,0,,,
+deposits_abroad_all_change,2018,50,-0.21,0.144,40.0
+deposits_abroad_all_change,2019,50,-0.239,0.095,36.0
+deposits_abroad_all_change,2020,50,-0.237,0.097,38.0
+deposits_abroad_all_change,2022,50,-0.119,0.412,40.0

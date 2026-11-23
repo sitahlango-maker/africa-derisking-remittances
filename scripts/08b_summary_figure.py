@@ -3,16 +3,17 @@
 The key-findings figure for the end of the Introduction: the paper's story in one image.
 
   Left  - "What moves the quoted price?": the main estimates as dots with 95% confidence
-          intervals, against the +/-0.5-point band (Section 4.6). Grey-listing is shown with
+          intervals, against the +/-0.5-point band (Section 4). Grey-listing is shown with
           the standard estimates and with the estimator robust to heterogeneous effects
-          (listings only, step 06m); deposits abroad with the BIS and IMF measures.
+          (listings only, step 06m); de-risking with the direct CPMI counts of correspondent
+          relationships (step 15); balances abroad with the BIS and IMF measures.
   Right - "What the quoted price misses": share of corridor-payout pairs meeting the 5%
-          benchmark in 2024, as quoted and in the illustrative high scenario (Table 5).
+          benchmark in 2024, as quoted and in the illustrative high scenario.
 
 Every number is read from the tables the earlier steps saved, so nothing is typed by hand.
 
 Needs: outputs/tables/table2_main.csv, table3_channels.csv, table6_robustness.csv,
-       table6m_listing_removal.csv, table7_end_to_end.csv
+       table6m_listing_removal.csv, table7_end_to_end.csv, table15_cpmi_prices.csv
 Output: outputs/figures/figure0_key_findings.png
 
 Run from the repo folder:  python scripts/08b_summary_figure.py
@@ -26,12 +27,14 @@ import pandas as pd                        # noqa: E402
 
 T = "outputs/tables/"
 BLUE, ORANGE, INK, MUTED = "#2a78d6", "#eb6834", "#0b0b0b", "#52514e"
+MINUS = "−"                           # a true minus sign for labels
 
 t2 = pd.read_csv(T + "table2_main.csv")
 t3 = pd.read_csv(T + "table3_channels.csv")
 t6m = pd.read_csv(T + "table6m_listing_removal.csv")
 t6 = pd.read_csv(T + "table6_robustness.csv")
 t7 = pd.read_csv(T + "table7_end_to_end.csv")
+t15 = pd.read_csv(T + "table15_cpmi_prices.csv")
 
 
 def pick(df, model_start, variable, outcome=None):
@@ -42,11 +45,13 @@ def pick(df, model_start, variable, outcome=None):
     return r["coef"], r["ci95_lo"], r["ci95_hi"]
 
 
-
-
 def robust(level):
     r = t6m[(t6m["model"] == f"{level} | listings only") & (t6m["what"] == "average")].iloc[0]
     return r["coef"], r["ci95_lo"], r["ci95_hi"]
+
+
+def fmt(v):
+    return f"{v:+.2f}".replace("-", MINUS)
 
 
 rows = [  # (label, (coef, lo, hi))
@@ -54,11 +59,13 @@ rows = [  # (label, (coef, lo, hi))
     ("Grey-listed: service level", pick(t3, "S1", "grey_qend")),
     ("Listing, robust: corridor level", robust("corridor")),
     ("Listing, robust: service level", robust("service")),
-    ("Deposits abroad halve: BIS", pick(t2, "C", "L1_log_dep", "cost")),
-    ("Deposits abroad halve: IMF", pick(t6, "2c", "deposits abroad halve")),
+    ("Correspondents halve (CPMI): corridor", pick(t15, "corridor | relationships halve", "log_cbr", "cost_pct_200")),
+    ("Correspondents halve (CPMI): service", pick(t15, "service | relationships halve", "log_cbr", "cost_pct_200")),
+    ("Balances abroad halve: BIS", pick(t2, "C", "L1_log_dep", "cost")),
+    ("Balances abroad halve: IMF", pick(t6, "2c", "deposits abroad halve")),
 ]
 
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12.5, 4.6), gridspec_kw={"width_ratios": [1.25, 1]})
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12.5, 5.0), gridspec_kw={"width_ratios": [1.3, 1]})
 
 # ---- Left: estimates against the +/-0.5 band
 y = np.arange(len(rows))[::-1]
@@ -67,10 +74,10 @@ ax1.axvline(0, color=INK, lw=0.8)
 for yi, (label, (c, lo, hi)) in zip(y, rows):
     ax1.plot([lo, hi], [yi, yi], color=BLUE, lw=2)
     ax1.plot(c, yi, "o", color=BLUE, ms=7, mec="white", mew=1.5)
-    ax1.text(hi + 0.08, yi, f"{c:+.2f}", va="center", fontsize=8.5, color=INK)
+    ax1.text(hi + 0.08, yi, fmt(c), va="center", fontsize=8.5, color=INK)
 ax1.set_yticks(y)
 ax1.set_yticklabels([r[0] for r in rows], fontsize=9)
-ax1.set_xlim(-2.0, 1.6)
+ax1.set_xlim(-2.0, 3.1)
 ax1.set_xlabel("Change in total cost of sending USD 200 (percentage points)", fontsize=9)
 ax1.text(0, len(rows) - 0.35, "±0.5-point band", ha="center", fontsize=8, color=MUTED)
 ax1.set_ylim(-0.7, len(rows) + 0.3)
@@ -107,6 +114,6 @@ fig.savefig("outputs/figures/figure0_key_findings.png", dpi=200)
 
 print("Numbers in the figure (read from the saved tables):")
 for label, (c, lo, hi) in rows:
-    print(f"  {label:32s} {c:+.2f}  (95% CI {lo:+.2f} to {hi:+.2f})")
+    print(f"  {label:40s} {c:+.2f}  (95% CI {lo:+.2f} to {hi:+.2f})")
 print(t7[["<= 5% | quoted", "<= 5% | high"]].round(1).to_string())
 print("\nSaved outputs/figures/figure0_key_findings.png")
